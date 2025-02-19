@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    ['link', { rel: 'icon', href: '/竹笋-黑.png' }],
+  ],
   title: "bmcu wiki",
   description: "bmcu资料整理",
   themeConfig: {
@@ -13,6 +16,7 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
     ],
+    logo: '/竹笋-黑.png',
 
     sidebar: [
       {
@@ -27,6 +31,12 @@ export default defineConfig({
         text: '制作中',
         items: [
           { text: '130制作教程', link: '/doc/build/130' },
+        ]
+      },
+      {
+        text: '调试',
+        items: [
+          { text: '常见问题', link: '/doc/debug/problems' },
         ]
       }
     ],
