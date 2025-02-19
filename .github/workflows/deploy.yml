@@ -1,0 +1,33 @@
+name: deploy website
+
+# 触发条件：在 push 到 master 分支后
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+     - main
+
+# 任务
+jobs:
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: pull
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      # 1、生成静态文件
+      - name: Build
+        run: npm install && npm run build
+
+      - name: Deploy to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:  
+          username: 'root'   #ssh user name
+          server: '${{ secrets.SERVER_IP }}' #引用之前创建好的secret
+          ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}' #引用之前创建好的secret
+          local_path: './dist'  # 对应我们项目build的文件夹路径
+          remote_path: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index'
+          delete_remote_files: true
