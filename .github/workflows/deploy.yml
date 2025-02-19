@@ -28,6 +28,6 @@ jobs:
           username: 'root'   #ssh user name
           server: '${{ secrets.SERVER_IP }}' #引用之前创建好的secret
           ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}' #引用之前创建好的secret
-          local_path: './dist'  # 对应我们项目build的文件夹路径
+          local_path: './.vitepress/dist'  # 对应我们项目build的文件夹路径
           remote_path: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index/here'
           delete_remote_files: true
