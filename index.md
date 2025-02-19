@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 查看资料
-      link: /doc/desc/what-is-it
+      link: /doc/prepare/what-is-it
     - theme: alt
       text: 前往gitee
       link: https://gitee.com/at_4061N/BMCU

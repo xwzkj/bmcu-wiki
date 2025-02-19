@@ -18,9 +18,15 @@ export default defineConfig({
       {
         text: '制作前',
         items: [
-          { text: '什么是bmcu', link: '/doc/desc/what-is-it' },
-          { text: '版本分支', link: '/doc/desc/versions' },
-          { text: '制作前准备', link: '/doc/desc/prepare' },
+          { text: '什么是bmcu', link: '/doc/prepare/what-is-it' },
+          { text: '版本分支', link: '/doc/prepare/versions' },
+          { text: '制作前准备', link: '/doc/prepare/prepare' },
+        ]
+      },
+      {
+        text: '制作中',
+        items: [
+          { text: '130制作教程', link: '/doc/build/130' },
         ]
       }
     ],
