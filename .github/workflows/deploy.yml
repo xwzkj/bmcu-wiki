@@ -19,15 +19,15 @@ jobs:
           ssh-keyscan ${{secrets.SERVER_IP}} >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
-      - name: Setup SSH Key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
+      # - name: Setup SSH Key
+      #   run: |
+      #     mkdir -p ~/.ssh
+      #     echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+      #     chmod 600 ~/.ssh/id_ed25519
 
 
-      - name: 手动 SSH 连接测试
-        run: ssh -vvv -i ~/.ssh/id_ed25519 root@${{secrets.SERVER_IP}}
+      # - name: 手动 SSH 连接测试
+      #   run: ssh -vvv -i ~/.ssh/id_ed25519 root@${{secrets.SERVER_IP}}
 
 
       # 拉取代码
