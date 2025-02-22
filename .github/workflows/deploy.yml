@@ -23,7 +23,7 @@ jobs:
         run: npm install && npm run build
 
       - name: Deploy to server
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
         with:  
           username: 'root'
           server: '${{ secrets.SERVER_IP }}'
