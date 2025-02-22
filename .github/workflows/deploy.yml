@@ -13,8 +13,21 @@ jobs:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
+      - name: Add SSH host key
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan pl.xwzkj.top >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+
       - name: 手动 SSH 连接测试
-        run: ssh -vvv -i <(echo "${{ secrets.SSH_PRIVATE_KEY }}") root@pl.xwzkj.top
+        run: ssh -vvv -i ~/.ssh/id_rsa root@pl.xwzkj.top
 
 
       # 拉取代码
