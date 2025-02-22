@@ -22,24 +22,24 @@ jobs:
       - name: Build
         run: npm install && npm run build
 
-      # - name: Deploy to server
-      #   uses: wlixcc/SFTP-Deploy-Action@v1.2.5
-      #   with:  
-      #     username: 'root'   #ssh user name
-      #     server: '${{ secrets.SERVER_IP }}' #引用之前创建好的secret
-      #     ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}' #引用之前创建好的secret
-      #     port: 22
-      #     local_path: './.vitepress/dist/*'  # 对应我们项目build的文件夹路径
-      #     remote_path: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index'
-      #     delete_remote_files: true
-
       - name: Deploy to server
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: ./.vitepress/dist
-          target: /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index
-          overwrite: true
-          rm: true
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:  
+          username: 'root'
+          server: '${{ secrets.SERVER_IP }}'
+          ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}'
+          port: 22
+          local_path: './.vitepress/dist/*'
+          remote_path: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index'
+          delete_remote_files: true
+
+      # - name: Deploy to server
+      #   uses: appleboy/scp-action@v0.1.7
+      #   with:
+      #     host: ${{ secrets.SERVER_IP }}
+      #     username: ${{ secrets.SERVER_USER }}
+      #     key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #     source: ./.vitepress/dist
+      #     target: /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index
+      #     overwrite: true
+      #     rm: true
