@@ -22,12 +22,12 @@ jobs:
       - name: Setup SSH Key
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
 
 
       - name: 手动 SSH 连接测试
-        run: ssh -vvv -i ~/.ssh/id_rsa root@pl.xwzkj.top
+        run: ssh -vvv -i ~/.ssh/id_ed25519 root@pl.xwzkj.top
 
 
       # 拉取代码
