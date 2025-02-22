@@ -22,16 +22,16 @@ jobs:
       - name: Build
         run: npm install && npm run build
 
-      - name: Deploy to server
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.5
-        with:  
-          username: 'root'
-          server: '${{ secrets.SERVER_IP }}'
-          ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}'
-          port: 22
-          local_path: './.vitepress/dist/*'
-          remote_path: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index'
-          delete_remote_files: true
+      # - name: Deploy to server
+      #   uses: wlixcc/SFTP-Deploy-Action@v1.2.5
+      #   with:  
+      #     username: 'root'
+      #     server: '${{ secrets.SERVER_IP }}'
+      #     ssh_private_key: '${{ secrets.SSH_PRIVATE_KEY }}'
+      #     port: 22
+      #     local_path: './.vitepress/dist/*'
+      #     remote_path: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index'
+      #     delete_remote_files: true
 
       # - name: Deploy to server
       #   uses: appleboy/scp-action@v0.1.7
