@@ -40,7 +40,7 @@ jobs:
         run: npm install && npm run build
           
       - name: 打包文件
-        run: tar -czvf site.tar.gz .vitepress/dist/*
+        run: cd .vitepress/dist && tar -czvf ../../site.tar.gz *
 
       - name: Deploy to server
         uses: marcodallasanta/ssh-scp-deploy@v1.2.0
