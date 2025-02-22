@@ -64,7 +64,7 @@ jobs:
       - name: Deploy to server
         uses: marcodallasanta/ssh-scp-deploy@v1.2.0
         with:
-          local: './.vitepress/dist'                                                  # Local file path - REQUIRED false - DEFAULT ./
+          local: './.vitepress/dist/*'                                                  # Local file path - REQUIRED false - DEFAULT ./
           remote: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index' # Remote file path - REQUIRED false - DEFAULT ~/
           host: ${{secrets.SERVER_IP}}                                 # Remote server address - REQUIRED true
           port: '22'                                                   # Remote server port - REQUIRED false - DEFAULT 22
