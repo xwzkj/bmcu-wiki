@@ -7,6 +7,17 @@ on:
     branches:
      - main
 
+# 允许一个并发的部署
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 # 任务
 jobs:
   build-and-deploy:
@@ -38,11 +49,27 @@ jobs:
           
       - name: 构建
         run: npm install && npm run build
+
+
+      # github pages相关
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.vitepress/dist'
+        
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
           
-      - name: 打包文件
+          
+      - name: 打包文件为tar.gz
         run: cd .vitepress/dist && tar -czvf ../../site.tar.gz *
 
-      - name: Deploy to server
+      - name: 发布到服务器
         uses: marcodallasanta/ssh-scp-deploy@v1.2.0
         with:
           local: 'site.tar.gz'                                                  # Local file path - REQUIRED false - DEFAULT ./
@@ -55,3 +82,5 @@ jobs:
           post_upload: cd /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index && tar -xzvf site.tar.gz       # Command to run via ssh after scp upload - REQUIRED false
           ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
           scp_options: -v
+
+          
