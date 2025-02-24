@@ -45,6 +45,7 @@ export default defineConfig({
         text: '调试',
         items: [
           { text: '常见问题', link: '/doc/debug/problems' },
+          { text: '对地值参考', link: '/doc/debug/value-to-ground' }
         ]
       }
     ],
