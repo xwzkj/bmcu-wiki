@@ -1,5 +1,8 @@
 import { defineConfig } from 'vitepress'
 
+console.log(import.meta);
+
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [
@@ -8,6 +11,10 @@ export default defineConfig({
   title: "bmcu wiki",
   description: "bmcu资料整理",
   lastUpdated: true,
+  sitemap: {
+    hostname: 'https://bmcu.xwzkj.top'
+  },
+  base: '/bmcu-doc/',
   themeConfig: {
 
     // https://vitepress.dev/reference/default-theme-config
