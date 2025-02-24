@@ -14,7 +14,7 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://bmcu.xwzkj.top'
   },
-  base: '/bmcu-doc/',
+  // base: '/bmcu-doc/',
   themeConfig: {
 
     // https://vitepress.dev/reference/default-theme-config
