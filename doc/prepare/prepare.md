@@ -26,13 +26,7 @@
 :::
 
 :::details 优信电子的130马达没货了怎么办
-很多群友在问这个问题
-
-可以[前往咸鱼购买同款](https://m.tb.cn/h.TqiacGI?tk=Za9zehEXEfn)
-
-经我测试也可购买12v 10000转的版本(我购买自淘宝 [尚诚电子](https://e.tb.cn/h.TsBU9reGkELUQUl?tk=hny9e83pKWz))，但是噪音偏大、轴短（蜗杆不要插到底）
-
-或者推荐制作370电机的版本
+[看这里的提示](http://localhost:5173/doc/prepare/list.html#%E6%8C%A4%E5%87%BA%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86-%E5%B7%B2%E4%B9%98%E5%9B%9B%E9%80%9A%E9%81%93)
 :::
 
 ::: details 我到底要做130版本还是370版本？
