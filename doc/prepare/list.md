@@ -123,25 +123,25 @@
 
 ### 挤出组件部分（已乘四通道）
 
-| 名称                       | 总数量 | 购买链接                                                                      | 选择购买量   | 备注                       |
-| -------------------------- | ------ | ----------------------------------------------------------------------------- | ------------ | -------------------------- |
-| MR85ZZ轴承                 | 8      | [链接](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8（推荐9）   |                            |
-| BMG齿轮套装                | 4      | [链接](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4            |                            |
-| D5x22mm轴                  | 4      | [链接](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1            | 精度不好，用之前选公差小的 |
-| D2x10mm轴                  | 16     | [链接](https://detail.tmall.com/item.htm?id=680516964370&skuId=4882059537282) | 1            |                            |
-| D2x20mm轴                  | 12     | [链接](https://item.taobao.com/item.htm?id=25771992682)                       | 12（推荐15） |                            |
-| 20082B双层直齿轮           | 8      | [链接](https://item.taobao.com/item.htm?id=18751470868&skuId=45440640259)     | 8（推荐9）   |                            |
-| 182A齿轮                   | 8      | [链接](https://item.taobao.com/item.htm?id=18760030298)                       | 8（推荐9）   | 备注要4.2mm厚度            |
-| 242A齿轮                   | 4      | [链接](https://item.taobao.com/item.htm?id=18762710098)                       | 4（推荐5）   |                            |
-| 682A蜗杆齿轮               | 4      | [链接](https://item.taobao.com/item.htm?id=20964703851)                       | 4（推荐5）   |                            |
-| FF-130 SH电机              | 4      | [链接](https://item.taobao.com/item.htm?id=586011289551)                      | 4（推荐5）   | 没货了                     |
-| 导线（5cm以上）            | 8      | [链接](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1            |                            |
-| 62B轴套                    | 28     | [链接](https://item.taobao.com/item.htm?id=557038811656)                      | 3（推荐4）   |                            |
-| PC4气动头 6mm              | 4      | [链接](https://detail.tmall.com/item.htm?id=644546493913&skuId=4816633895773) | 4（推荐5）   |                            |
-| 弹簧0.5*6x10mm             | 4      | [链接](https://detail.tmall.com/item.htm?id=649882524891&skuId=4728198936053) | 1            |                            |
-| 弹簧0.6*4x10mm             | 4      | [链接](https://detail.tmall.com/item.htm?id=651034855393&skuId=4686988224285) | 1            |                            |
-| M2*8沉头自攻螺丝           | 48     | [链接](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1            |                            |
-| 1.75mm透明耗材（用于导光） | 1m     | -                                                                             | -            | 可以买1.5mm光纤            |
+| 名称                       | 总数量 | 购买链接                                                                      | 选择购买量   | 备注                                                                                    |
+| -------------------------- | ------ | ----------------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------- |
+| MR85ZZ轴承                 | 8      | [链接](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8（推荐9）   |                                                                                         |
+| BMG齿轮套装                | 4      | [链接](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4            |                                                                                         |
+| D5x22mm轴                  | 4      | [链接](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1            | 精度不好，用之前选公差小的                                                              |
+| D2x10mm轴                  | 16     | [链接](https://detail.tmall.com/item.htm?id=680516964370&skuId=4882059537282) | 1            |                                                                                         |
+| D2x20mm轴                  | 12     | [链接](https://item.taobao.com/item.htm?id=25771992682)                       | 12（推荐15） |                                                                                         |
+| 20082B双层直齿轮           | 8      | [链接](https://item.taobao.com/item.htm?id=18751470868&skuId=45440640259)     | 8（推荐9）   |                                                                                         |
+| 182A齿轮                   | 8      | [链接](https://item.taobao.com/item.htm?id=18760030298)                       | 8（推荐9）   | 备注要4.2mm厚度                                                                         |
+| 242A齿轮                   | 4      | [链接](https://item.taobao.com/item.htm?id=18762710098)                       | 4（推荐5）   |                                                                                         |
+| 682A蜗杆齿轮               | 4      | [链接](https://item.taobao.com/item.htm?id=20964703851)                       | 4（推荐5）   |                                                                                         |
+| FF-130 SH电机              | 4      | [链接](https://item.taobao.com/item.htm?id=586011289551)                      | 4（推荐5）   | 没货了                                                                                  |
+| 导线（5cm以上）            | 8      | [链接](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1            |                                                                                         |
+| 62B轴套                    | 28     | [链接](https://item.taobao.com/item.htm?id=557038811656)                      | 3（推荐4）   |                                                                                         |
+| PC4气动头 6mm              | 4      | [链接](https://detail.tmall.com/item.htm?id=644546493913&skuId=4816633895773) | 4（推荐5）   |                                                                                         |
+| 弹簧0.5*6x10mm             | 4      | [链接](https://detail.tmall.com/item.htm?id=649882524891&skuId=4728198936053) | 1            |                                                                                         |
+| 弹簧0.6*4x10mm             | 4      | [链接](https://detail.tmall.com/item.htm?id=651034855393&skuId=4686988224285) | 1            |                                                                                         |
+| M2*8沉头自攻螺丝           | 48     | [链接](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1            |                                                                                         |
+| 1.75mm透明耗材（用于导光） | 1m     | -                                                                             | -            | 可以买[1.5mm光纤](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890) |
 
 ::: warning 警告
 130电机优信电子没货了，建议去[闲鱼](https://m.tb.cn/h.TqiacGI?tk=Za9zehEXEfn)买12v6000转的 万宝至 的电机
