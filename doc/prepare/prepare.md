@@ -26,7 +26,7 @@
 :::
 
 :::details 优信电子的130马达没货了怎么办
-[看这里的提示](http://localhost:5173/doc/prepare/list.html#%E6%8C%A4%E5%87%BA%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86-%E5%B7%B2%E4%B9%98%E5%9B%9B%E9%80%9A%E9%81%93)
+[看这里的提示](./list.html#%E6%8C%A4%E5%87%BA%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86-%E5%B7%B2%E4%B9%98%E5%9B%9B%E9%80%9A%E9%81%93)
 :::
 
 ::: details 我到底要做130版本还是370版本？
