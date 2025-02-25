@@ -33,6 +33,7 @@ export default defineConfig({
           { text: '什么是bmcu', link: '/doc/prepare/what-is-it' },
           { text: '版本分支', link: '/doc/prepare/versions' },
           { text: '制作前准备', link: '/doc/prepare/prepare' },
+          { text: '材料清单', link: '/doc/prepare/list' }
         ]
       },
       {
