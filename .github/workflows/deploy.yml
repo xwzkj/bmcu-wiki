@@ -53,34 +53,34 @@ jobs:
 
       # github pages相关
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.vitepress/dist'
-        
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-          
-          
-      # - name: 打包文件为tar.gz
-      #   run: cd .vitepress/dist && tar -czvf ../../site.tar.gz *
-
-      # - name: 发布到服务器
-      #   uses: marcodallasanta/ssh-scp-deploy@v1.2.0
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v3
       #   with:
-      #     local: 'site.tar.gz'                                                  # Local file path - REQUIRED false - DEFAULT ./
-      #     remote: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index' # Remote file path - REQUIRED false - DEFAULT ~/
-      #     host: ${{secrets.SERVER_IP}}                                 # Remote server address - REQUIRED true
-      #     port: '22'                                                   # Remote server port - REQUIRED false - DEFAULT 22
-      #     user: 'root'                                                 # Remote server user - REQUIRED true
-      #     key: ${{secrets.SSH_PRIVATE_KEY}}                                        # Remote server private key - REQUIRED at least one of "password" or "key" 
-      #     pre_upload: rm -r /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index/*  # Command to run via ssh before scp upload - REQUIRED false
-      #     post_upload: cd /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index && tar -xzvf site.tar.gz       # Command to run via ssh after scp upload - REQUIRED false
-      #     ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
-      #     scp_options: -v
+      #     path: '.vitepress/dist'
+        
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: actions/deploy-pages@v4
+          
+          
+      - name: 打包文件为tar.gz
+        run: cd .vitepress/dist && tar -czvf ../../site.tar.gz *
+
+      - name: 发布到服务器
+        uses: marcodallasanta/ssh-scp-deploy@v1.2.0
+        with:
+          local: 'site.tar.gz'                                                  # Local file path - REQUIRED false - DEFAULT ./
+          remote: '/opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index' # Remote file path - REQUIRED false - DEFAULT ~/
+          host: ${{secrets.SERVER_IP}}                                 # Remote server address - REQUIRED true
+          port: '22'                                                   # Remote server port - REQUIRED false - DEFAULT 22
+          user: 'root'                                                 # Remote server user - REQUIRED true
+          key: ${{secrets.SSH_PRIVATE_KEY}}                                        # Remote server private key - REQUIRED at least one of "password" or "key" 
+          pre_upload: rm -r /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index/*  # Command to run via ssh before scp upload - REQUIRED false
+          post_upload: cd /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index && tar -xzvf site.tar.gz       # Command to run via ssh after scp upload - REQUIRED false
+          ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+          scp_options: -v
 
           
