@@ -43,9 +43,9 @@ jobs:
 
       # 拉取代码
       - name: pull
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          fetch-depth: 0
           
       - name: 构建
         run: npm install && npm run build
