@@ -40,6 +40,7 @@ export default defineConfig({
         text: '制作中',
         items: [
           { text: '130制作教程', link: '/doc/build/130' },
+          { text: '180制作教程', link: '/doc/build/180' },
         ]
       },
       {
