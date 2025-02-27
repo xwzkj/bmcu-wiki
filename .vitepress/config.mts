@@ -1,12 +1,29 @@
 import { defineConfig } from 'vitepress'
 
-console.log(import.meta);
-
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/竹笋-黑.png' }],
+    ['script', {}, `
+      window._hmt = window._hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f1e8ed6ab3fe8abee9e62989a4257d13";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();`],
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-78MFJCXQ83' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-78MFJCXQ83');`
+    ]
   ],
   title: "bmcu wiki",
   description: "bmcu资料整理",
