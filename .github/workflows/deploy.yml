@@ -81,7 +81,7 @@ jobs:
           pre_upload: rm -f /opt/xwzkj/temp/site.tar.gz
           # 删掉之前的打包
           # Command to run via ssh before scp upload - REQUIRED false
-          post_upload: cd /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index/ && rm -r ./ && tar -xzvf /opt/xwzkj/temp/site.tar.gz && rm -f /opt/xwzkj/temp/site.tar.gz
+          post_upload: cd /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index/ && rm -f * && tar -xzvf /opt/xwzkj/temp/site.tar.gz && rm -f /opt/xwzkj/temp/site.tar.gz
           # Command to run via ssh after scp upload - REQUIRED false
           ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
           scp_options: -v
