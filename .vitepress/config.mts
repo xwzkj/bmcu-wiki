@@ -35,7 +35,7 @@ export default defineConfig({
   themeConfig: {
 
     // https://vitepress.dev/reference/default-theme-config
-    siteTitle: 'bmcu_wiki',
+    siteTitle: 'bmcu wiki',
     nav: [
       { text: '主页', link: '/' },
     ],
