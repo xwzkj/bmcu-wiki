@@ -3,7 +3,9 @@
 layout: home
 
 hero:
-  image: /竹笋-黑.png
+  image: 
+    src: /竹笋-黑.png
+    alt: 竹笋logo
   name: "BMCU-wiki"
   text: "BMCU的资料整合站"
   tagline: 由BMCU社区共同打造
