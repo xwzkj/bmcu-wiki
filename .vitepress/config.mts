@@ -25,8 +25,8 @@ export default defineConfig({
         gtag('config', 'G-78MFJCXQ83');`
     ]
   ],
-  title: "bmcu wiki",
-  description: "bmcu资料整理",
+  title: "bmcu-wiki，由社区驱动的BMCU百科文档",
+  description: "这是BMCU项目的百科文档，由丸子搭建，并由社区共建，包含了BMCU项目的全流程资料，欢迎大家参与完善。",
   lastUpdated: true,
   sitemap: {
     hostname: 'https://bmcu.xwzkj.top'
@@ -38,7 +38,7 @@ export default defineConfig({
     nav: [
       { text: '主页', link: '/' },
     ],
-    logo: '/竹笋-黑.png',
+    logo: { light: '/竹笋-黑.png', dark: '/竹笋-白.png', alt: '竹笋logo' },
     footer: {
       // message: 'BMCU_WIKI',
       copyright: '版权所有 © BMCU WIKI编辑部'
