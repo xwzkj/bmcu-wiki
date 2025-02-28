@@ -4,7 +4,8 @@ layout: home
 
 hero:
   image: 
-    src: /竹笋-黑.png
+    light: /竹笋-黑.png
+    dark: /竹笋-白.png
     alt: 竹笋logo
   name: "BMCU-wiki"
   text: "BMCU的资料整合站"
