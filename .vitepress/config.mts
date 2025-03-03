@@ -67,6 +67,10 @@ export default defineConfig({
           { text: '常见问题', link: '/doc/debug/problems' },
           { text: '对地值参考', link: '/doc/debug/value-to-ground' }
         ]
+      },
+      {
+        text: '其他',
+        items: [{ text: '支持wiki运行', link: '/doc/other/donate' }]
       }
     ],
 
