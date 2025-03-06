@@ -8,7 +8,7 @@ export default defineConfig({
       window._hmt = window._hmt || [];
       (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?f1e8ed6ab3fe8abee9e62989a4257d13";
+        hm.src = "https://hm.baidu.com/hm.js?eab6301be45e2bdccae567c27ed7646c";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
       })();`],
