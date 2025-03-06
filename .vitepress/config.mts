@@ -25,7 +25,7 @@ export default defineConfig({
         gtag('config', 'G-78MFJCXQ83');`
     ]
   ],
-  title: "bmcu-wiki，由社区驱动的BMCU百科文档",
+  title: "bmcu wiki，由社区驱动的BMCU百科文档",
   description: "这是BMCU项目的百科文档，由丸子搭建，并由社区共建，包含了BMCU项目的全流程资料，欢迎大家参与完善。",
   lastUpdated: true,
   sitemap: {
