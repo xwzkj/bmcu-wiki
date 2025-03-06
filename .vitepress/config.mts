@@ -29,7 +29,7 @@ export default defineConfig({
   description: "这是BMCU项目的百科文档，由丸子搭建，并由社区共建，包含了BMCU项目的全流程资料，欢迎大家参与完善。",
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://bmcu.xwzkj.top'
+    hostname: 'https://bmcu.wanzii.cn'
   },
   // base: '/bmcu-doc/',
   themeConfig: {
