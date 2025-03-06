@@ -25,8 +25,8 @@ features:
   - title: 成本低
     details: 复刻成本仅需200+
   - title: 兼容好
-    details: 适用于竹子A1系列打印机，也稍有适配于P系列
+    details: 适用于拓竹A1系列打印机，也稍有适配于P系列
   - title: 开源
-    details: 开放共享
+    details: 开放共享，改版众多
 ---
 
