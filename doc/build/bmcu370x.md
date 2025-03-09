@@ -5,12 +5,13 @@
 :::
 
 #### 简介:
-1. 本教程为`370版本 X BMCU-微动修改版`的组装教程，本身为BMCU2.5，与原版兼容性很高。
+1. 本教程为`370版本 X BMCU-微动修改版`的组装教程，与原版兼容性很高，但并不是BMCU370原版。
 2. 这意味着你可以拿来当做原版的370参考（非钢珠倒置版）。
 3. 项目开源地址：[BMCUx - Oshwhub.com](https://oshwhub.com/xingcc1/bmcu-370x)
 4. 项目模型地址：[Makerworld CN](https://makerworld.com.cn/zh/models/1000993-bmcu-370-tie-pian-wei-dong-bo-li-zhu-hong-fa-yuan#profileId-1026446) [Makerworld Global](https://makerworld.com/zh/models/1175070-bmcu-370-surface-mount-microswitch-glass-bead-trig#profileId-1184075)
 5. 关于P1系列，你需要做一些改变比如内置五通，仍在完善中，完善后会更新。
-5. 欢迎尝试测试固件（各种整理中），目前推荐 ‘BMCU测试固件2-6.bin’ 。
+6. 欢迎尝试测试固件（各种整理中），目前推荐 ‘BMCU测试固件2-6.bin’ 。
+7. 本项目模型改自版本号为BMCU2.5的外壳。
 
 #### 组件组装:
 
