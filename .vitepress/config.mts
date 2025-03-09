@@ -51,7 +51,7 @@ export default defineConfig({
           { text: '什么是bmcu', link: '/doc/prepare/what-is-it' },
           { text: '版本分支', link: '/doc/prepare/versions' },
           { text: '制作前准备', link: '/doc/prepare/prepare' },
-          { text: '材料清单', link: '/doc/prepare/list' }
+          { text: '130材料清单（基础版）', link: '/doc/prepare/list' }
         ]
       },
       {
@@ -59,6 +59,7 @@ export default defineConfig({
         items: [
           { text: '130制作教程', link: '/doc/build/130' },
           { text: '180制作教程', link: '/doc/build/180' },
+          { text: 'BMCU370x制作教程', link: '/doc/build/bmcu370x' },
         ]
       },
       {
