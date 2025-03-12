@@ -12,7 +12,8 @@
 4. 项目模型地址：[Makerworld CN](https://makerworld.com.cn/zh/models/1000993-bmcu-370-tie-pian-wei-dong-bo-li-zhu-hong-fa-yuan#profileId-1026446) [Makerworld Global](https://makerworld.com/zh/models/1175070-bmcu-370-surface-mount-microswitch-glass-bead-trig#profileId-1184075)
 5. 关于P1系列，你需要做一些改变比如内置五通，仍在完善中，完善后会更新。
 6. 欢迎尝试测试固件（各种整理中），目前推荐 ‘BMCU测试固件2-6.bin’ 。
-7. 本项目模型改自版本号为BMCU2.5的外壳。
+7.你可以在这里定制固件，并进行测试：[bmcu370x  github.com](https://github.com/Xing-C/BMCU370x)
+8. 本项目模型改自版本号为BMCU2.5的外壳。
 
 ## 组件组装
 
