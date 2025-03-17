@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import conf from '../conf.json'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -31,7 +32,7 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://bmcu.wanzii.cn'
   },
-  // base: '/bmcu-doc/',
+  base: conf.base,// 方便用actions同时部署到github pages和服务器
   themeConfig: {
 
     // https://vitepress.dev/reference/default-theme-config
