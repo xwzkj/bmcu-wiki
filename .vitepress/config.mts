@@ -61,6 +61,7 @@ export default defineConfig({
           { text: '130制作教程', link: '/doc/build/130' },
           { text: '180制作教程', link: '/doc/build/180' },
           { text: 'BMCU370x制作教程（星尘微动版）', link: '/doc/build/bmcu370x' },
+          { text: '370钢珠版制作教程', link: '/doc/build/370' }
         ]
       },
       {
