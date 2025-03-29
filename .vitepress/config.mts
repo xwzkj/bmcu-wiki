@@ -33,6 +33,11 @@ export default defineConfig({
     hostname: 'https://bmcu.wanzii.cn'
   },
   base: conf.base,// 方便用actions同时部署到github pages和服务器
+  markdown:{
+    image:{
+      lazyLoading: true
+    }
+  },
   themeConfig: {
 
     // https://vitepress.dev/reference/default-theme-config
