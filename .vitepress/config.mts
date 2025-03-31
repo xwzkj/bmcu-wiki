@@ -33,8 +33,8 @@ export default defineConfig({
     hostname: 'https://bmcu.wanzii.cn'
   },
   base: conf.base,// 方便用actions同时部署到github pages和服务器
-  markdown:{
-    image:{
+  markdown: {
+    image: {
       lazyLoading: true
     }
   },
@@ -131,5 +131,14 @@ export default defineConfig({
     darkModeSwitchTitle: '切换到深色模式',
     skipToContentLabel: '跳转到内容',
 
+  },
+  vite: {
+    server: {
+      host: '0.0.0.0',
+      port: 80
+    },
+    ssr: {
+      noExternal: ["naive-ui"],
+    },
   }
 })

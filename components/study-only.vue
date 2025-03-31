@@ -1,6 +1,6 @@
 <script setup>
-import naive from 'naive-ui'
-const { NModal, NCard } = naive
+import { NModal, NCard } from 'naive-ui'
+
 import { ref } from 'vue'
 
 let show = ref(false)
