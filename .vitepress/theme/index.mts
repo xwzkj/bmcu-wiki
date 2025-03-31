@@ -3,5 +3,5 @@ import "./style/index.css"
 import layout from "./layout.vue"
 export default {
   extends: Theme,
-  // Layout: layout,
+  Layout: layout,
 }
