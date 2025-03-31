@@ -138,7 +138,7 @@ export default defineConfig({
       port: 80
     },
     ssr: {
-      noExternal: ["naive-ui"],
+      noExternal: ["naive-ui", "vueuc"],
     },
   }
 })
