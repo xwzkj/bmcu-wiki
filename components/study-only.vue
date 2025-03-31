@@ -1,5 +1,6 @@
 <script setup>
-import { NModal, NCard } from 'naive-ui'
+import naive from 'naive-ui'
+const { NModal, NCard } = naive
 import { ref } from 'vue'
 
 let show = ref(false)
@@ -121,7 +122,7 @@ setTimeout(() => {
             </div>
             <template #footer>
                 <div class="gray-text">
-                    {{  text?.[lang].text2 }}
+                    {{ text?.[lang].text2 }}
                 </div>
             </template>
         </n-card>

@@ -11,7 +11,8 @@
 import { ref } from 'vue'
 import studyOnly from '../../components/study-only.vue'
 import DefaultTheme from 'vitepress/theme'
-import { NConfigProvider } from 'naive-ui'
+import naive from 'naive-ui'
+const { NConfigProvider } = naive
 const { Layout } = DefaultTheme
 let themeOverrides = ref({
     common: {
