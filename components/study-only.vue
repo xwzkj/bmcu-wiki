@@ -162,6 +162,8 @@ lang.value = (() => {
     return 'en'; // 如果都匹配不到，则默认使用英语
 })()
 
+console.log('自动识别语言:', lang.value);
+
 
 setTimeout(() => {
     show.value = true
