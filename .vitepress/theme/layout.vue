@@ -1,13 +1,15 @@
 <template>
-    <ClientOnly>
-        <n-config-provider :theme-overrides="themeOverrides">
-            <Layout>
-                <template #layout-bottom>
+
+    <n-config-provider :theme-overrides="themeOverrides">
+        <Layout>
+            <template #layout-top>
+                <ClientOnly>
                     <studyOnly />
-                </template>
-            </Layout>
-        </n-config-provider>
-    </ClientOnly>
+                </ClientOnly>
+            </template>
+        </Layout>
+    </n-config-provider>
+
 </template>
 <script setup>
 import { ref } from 'vue'
