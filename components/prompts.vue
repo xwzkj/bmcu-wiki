@@ -1,9 +1,9 @@
 <script setup>
 import { NModal, NCard, NButton, NDropdown } from 'naive-ui'
 
-import { computed, nextTick, ref } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 
-let show = ref(false)
+let show = ref([false, false])
 let lang = ref('zh')
 let text = ref({
     zh: {
@@ -166,20 +166,48 @@ console.log('自动识别语言:', lang.value);
 
 
 setTimeout(() => {
-    show.value = true
+    show.value[0] = true
     nextTick(() => {
         // 去除关闭按钮的聚焦状态
         document.querySelector('.n-card > .n-card-header .n-card-header__close ').blur()
     })
+    watch(() => show.value[0], (val) => {
+        if (val == false) {
+            setTimeout(() => {
+                show.value[1] = true
+            }, 200)
+        }
+    })
 }, 500)
 </script>
 <template>
-    <n-modal v-model:show="show">
-        <n-card style="width:85%" closable @close="show = false">
+    <!-- 难度较高 -->
+    <n-modal v-model:show="show[1]">
+        <n-card style="width:85%" closable @close="show[1] = false">
+            <template #header>
+                <div class="header-title">
+                    <span style="font-size: 1.5rem; margin-right: 0.5rem;">警告</span>
+                </div>
+            </template>
+            <div class="red-text">
+                该项目电路部分对于新手难度较高
+            </div>
+            <template #footer>
+                <div class="gray-text">
+                    量力而行，也可以找人帮忙焊接
+                </div>
+            </template>
+        </n-card>
+    </n-modal>
+
+    <!-- 仅供学习 -->
+    <n-modal v-model:show="show[0]">
+        <n-card style="width:85%" closable @close="show[0] = false">
             <template #header>
                 <div class="header-title">
                     <span style="font-size: 1.5rem; margin-right: 0.5rem;">{{ text?.[lang].title }}</span>
-                    <n-dropdown trigger="click" :options="langList" @select="(key) => { lang = key }" style="max-height: 100%;">
+                    <n-dropdown trigger="click" :options="langList" @select="(key) => { lang = key }"
+                        style="max-height: 100%;">
                         <n-button secondary>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"

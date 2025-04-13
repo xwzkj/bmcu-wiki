@@ -4,7 +4,7 @@
         <Layout>
             <template #layout-top>
                 <ClientOnly>
-                    <studyOnly />
+                    <prompts />
                 </ClientOnly>
             </template>
         </Layout>
@@ -13,7 +13,7 @@
 </template>
 <script setup>
 import { ref } from 'vue'
-import studyOnly from '../../components/study-only.vue'
+import prompts from '../../components/prompts.vue'
 import DefaultTheme from 'vitepress/theme'
 import { NConfigProvider } from 'naive-ui'
 const { Layout } = DefaultTheme
