@@ -206,7 +206,7 @@
 | 5MM不锈钢钢珠        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=774271088783&skuId=5299497505386) | 1          | -                                                            |
 | 弹簧0.3\*4x5mm       | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800015352191) | 1          | 钢珠弹簧                                                     |
 | 弹簧0.6\*4x10mm      | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800019104052) | 1          | 扳手弹簧                                                     |
-| `弹簧0.7*12*25mm`    | 8      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=3358115281468) | 1          | `自己备注尺寸` 缓冲弹簧，进料压力不足可以换0.8线径           |
+| `弹簧0.8*12*25mm`    | 8      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=3358115281469) | 1          | `自己备注尺寸` 缓冲弹簧，弹簧钢材质可以买0.7mm           |
 | M2*8沉头自攻螺丝     | 48     | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1          | -                                                            |
 | 1.5mm导光纤维        | 1m     | [点此购买](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1          | 也可以用透明耗材替代                                         |
 | `n35 3*10mm圆柱磁铁` | 8      | [点此购买](https://item.taobao.com/item.htm?id=672213824269&skuId=5014364542698)  | 1          | 也可以用链接里的20mm长度替代两个吸一起，这里的10mm是备战cmcu |
