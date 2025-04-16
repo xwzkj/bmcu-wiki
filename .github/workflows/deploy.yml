@@ -84,6 +84,11 @@ jobs:
       - name: 打包文件为tar.gz
         run: cd .vitepress/dist && tar -czvf ../../site.tar.gz *
 
+
+      - name: 服务器网络连通性测试
+        run: |
+          ping -c 4 ${{secrets.SERVER_IP}}
+
       - name: 发布到服务器
         uses: marcodallasanta/ssh-scp-deploy@v1.2.0
         with:
