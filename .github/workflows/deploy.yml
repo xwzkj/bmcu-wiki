@@ -101,8 +101,8 @@ jobs:
           ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
           scp_options: -v
           
-      - name: 服务器网络连通性测试
-        run: |
-          ping -c 4 ${{secrets.SERVER_IP}}
+      # - name: 服务器网络连通性测试
+      #   run: |
+      #     ping -c 4 ${{secrets.SERVER_IP}}
           
           
