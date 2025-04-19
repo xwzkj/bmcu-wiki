@@ -102,7 +102,7 @@
 | 17   | 1    | CH32V203C8T6       | [点此购买](https://item.taobao.com/item.htm?id=708687799232&skuId=4970679344122)  | 1（推荐2） | -    |
 | 18   | 1    | 75176              | [点此购买](https://item.taobao.com/item.htm?id=654383182827)                      | 1（推荐2） | -    |
 | 19   | 4    | AT8236             | [点此购买](https://item.taobao.com/item.htm?id=803949868593)                      | 4（推荐5） | -    |
-| 20   | 1    | `22uF电容（1206）` | [点此购买](https://item.taobao.com/item.htm?id=522577016130&skuId=5896974627290)  | 1          | -    |
+| 20   | 1    | `22uF电容（1206）` | [点此购买](https://item.taobao.com/item.htm?id=633973902541&skuId=5896733511421)  | 1          | -    |
 
 #### 电源-分立元件（二选一）
 
