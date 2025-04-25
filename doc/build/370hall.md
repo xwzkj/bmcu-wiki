@@ -155,6 +155,10 @@
 
 ![安装扳手](./assets/build-370hall/扳手1.jpg)
 
+::: tip
+若您的管线及料架阻力较大，或者您使用p1打印机，请使用[此模型](https://makerworld.com.cn/zh/models/1167775)垫在扳手弹簧槽内，以增大咬合力
+:::
+
 用手按住扳手，穿入一根D2*20的轴
 
 ![安装扳手](./assets/build-370hall/扳手2.jpg)
