@@ -4,7 +4,9 @@
         <Layout>
             <template #layout-top>
                 <ClientOnly>
-                    <prompts />
+                    <n-notification-provider>
+                        <prompts />
+                    </n-notification-provider>
                 </ClientOnly>
             </template>
         </Layout>
@@ -15,7 +17,7 @@
 import { ref } from 'vue'
 import prompts from '../../components/prompts.vue'
 import DefaultTheme from 'vitepress/theme'
-import { NConfigProvider } from 'naive-ui'
+import { NConfigProvider, NNotificationProvider } from 'naive-ui'
 const { Layout } = DefaultTheme
 let themeOverrides = ref({
     common: {

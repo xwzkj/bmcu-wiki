@@ -1,7 +1,11 @@
 <script setup>
-import { NModal, NCard, NButton, NDropdown } from 'naive-ui'
+import { NModal, NCard, NButton, NDropdown, useNotification } from 'naive-ui'
 
-import { computed, nextTick, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch, h } from 'vue'
+
+const notification = useNotification()
+
+let preStatus = JSON.parse(localStorage.getItem('prompts-status') ?? JSON.stringify({ studyOnly: 0, hard: 0, websites: 0 }))
 
 let show = ref([false, false])
 let lang = ref('zh')
@@ -164,25 +168,56 @@ lang.value = (() => {
 
 console.log('自动识别语言:', lang.value);
 
+const showfirst = () => {
+    if (preStatus.studyOnly < 5) {
+        show.value[0] = true
+        preStatus.studyOnly++
+        localStorage.setItem('prompts-status', JSON.stringify(preStatus))
+    } else {
+        showsecond()
+    }
 
-setTimeout(() => {
-    show.value[0] = true
-    nextTick(() => {
-        // 去除关闭按钮的聚焦状态
-        document.querySelector('.n-card > .n-card-header .n-card-header__close ').blur()
+}
+const showsecond = () => {
+    if (preStatus.hard < 3) {
+        show.value[1] = true
+        preStatus.hard++
+        localStorage.setItem('prompts-status', JSON.stringify(preStatus))
+    } else {
+        showthird()
+    }
+}
+const showthird = () => {
+    notification.create({
+        title: '提示',
+        duration: 60 * 1000,
+        content: () => h('div', { class: 'vp-doc' },
+            ['为了提供更好的访问体验，该站点有多个域名。\n\n大陆访问者请访问:\n',
+                h('a', { href: 'https://bmcu.wanzii.cn', target: '_blank' }, 'https://bmcu.wanzii.cn'),
+                '\n\nIf you are not in Mainland China, please visit:\n',
+                h('a', { href: 'https://xwzkj.github.io/bmcu-doc', target: '_blank' }, 'https://xwzkj.github.io/bmcu-doc'),
+                '\n\nIn addition, there is a French website that is not related to this website and provides information in English:',
+                h('a', { href: 'https://wiki.yuekai.fr', target: '_blank' }, 'https://wiki.yuekai.fr'),
+            ])
     })
-    watch(() => show.value[0], (val) => {
-        if (val == false) {
-            setTimeout(() => {
-                show.value[1] = true
-            }, 200)
-        }
-    })
-}, 500)
+    preStatus.websites++
+    localStorage.setItem('prompts-status', JSON.stringify(preStatus))
+}
+
+showfirst() // 打开第一个弹窗
+
+const firstLeave = () => {
+    setTimeout(() => {
+        showsecond() // 打开第二个弹窗
+    }, 200)
+}
+const secondLeave = () => {
+    showthird() // 打开第三个弹窗
+}
 </script>
 <template>
     <!-- 难度较高 -->
-    <n-modal v-model:show="show[1]">
+    <n-modal v-model:show="show[1]" :auto-focus="false" @after-leave="secondLeave">
         <n-card style="width:85%" closable @close="show[1] = false">
             <template #header>
                 <div class="header-title">
@@ -201,7 +236,7 @@ setTimeout(() => {
     </n-modal>
 
     <!-- 仅供学习 -->
-    <n-modal v-model:show="show[0]">
+    <n-modal v-model:show="show[0]" :auto-focus="false" @after-leave="firstLeave">
         <n-card style="width:85%" closable @close="show[0] = false">
             <template #header>
                 <div class="header-title">
