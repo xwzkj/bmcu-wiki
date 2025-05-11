@@ -165,7 +165,7 @@
 | PC4气动头 6mm          | 4      | [点此购买](https://detail.tmall.com/item.htm?id=818091079521&skuId=5688154930484) | 4          | 推荐购买8个（耗材箱可多买）        |
 | `5MM不锈钢钢珠`        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=774271088783&skuId=5299497505386) | 1          | -                                  |
 | `弹簧0.3*4x5mm`        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800015352191) | 1          | 钢珠弹簧                           |
-| 弹簧0.6*4x10mm         | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800019104052) | 1          | 扳手弹簧                           |
+| 弹簧0.6*4x10mm         | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800019104052) | 1          | 扳手弹簧 给p系列用个人建议15长度   |
 | `弹簧0.6*12x30mm`      | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4804987529206) | 1          | 缓冲弹簧                           |
 | M2*8沉头自攻螺丝       | 48     | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1          | -                                  |
 | 1.5mm导光纤维          | 1m     | [点此购买](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1          | 也可以用透明耗材替代               |
@@ -191,26 +191,26 @@
 
 区别于370钢珠版的`长这样`
 
-| 名称                    | 总数量 | 购买链接                                                                          | 选择购买量 | 备注                                                         |
-| ----------------------- | ------ | --------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------ |
-| MR85ZZ轴承              | 8      | [点此购买](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8          | 推荐购买9个                                                  |
-| BMG齿轮套装             | 4      | [点此购买](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4          | -                                                            |
-| D5x22mm轴               | 4      | [点此购买](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1          | 该轴有精度问题，使用前挑选公差小的                           |
-| D2x20mm轴               | 16     | [点此购买](https://item.taobao.com/item.htm?id=25771992682)                       | 16         | 推荐购买17个                                                 |
-| 182A齿轮                | 8      | [点此购买](https://item.taobao.com/item.htm?id=18760030298)                       | 12         | `需备注4.2MM厚度`；推荐多买                                  |
-| 682A蜗杆齿轮            | 4      | [点此购买](https://item.taobao.com/item.htm?id=20964703851)                       | 4          | 推荐购买5个                                                  |
-| RS370电机 24V 6000转    | 4      | [点此购买](https://item.taobao.com/item.htm?id=693694363820&skuId=5676948302798)  | 4          | 推荐购买5个                                                  |
-| M3*5机牙螺丝            | 4      | [点此购买](https://detail.tmall.com/item.htm?id=535431829802&skuId=4932222933924) | 1          | 固定370电机                                                  |
-| 导线                    | 8      | [点此购买](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1          | 需5cm以上                                                    |
-| 62B轴套                 | 32     | [点此购买](https://item.taobao.com/item.htm?id=557038811656)                      | 5          | -                                                            |
-| PC4气动头 6mm           | 4      | [点此购买](https://detail.tmall.com/item.htm?id=818091079521&skuId=5688154930484) | 4          | 推荐购买8个（耗材箱可多买）                                  |
-| 5MM不锈钢钢珠           | 4      | [点此购买](https://detail.tmall.com/item.htm?id=774271088783&skuId=5299497505386) | 1          | -                                                            |
-| 不锈钢弹簧0.3\*4x5mm    | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800015352191) | 1          | 钢珠弹簧                                                     |
-| `弹簧钢弹簧0.6*4x10mm`  | 4      | [点此购买](https://detail.tmall.com/item.htm?id=585259720029&skuId=4133932358206) | 1          | 扳手弹簧 更换为弹簧钢材质 `需备注尺寸`                       |
-| `不锈钢弹簧0.8*12*25mm` | 8      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=3358115281469) | 1          | `自己备注尺寸` 缓冲弹簧，弹簧钢材质可以买0.7mm               |
-| M2*8沉头自攻螺丝        | 48     | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1          | -                                                            |
-| 1.5mm导光纤维           | 1m     | [点此购买](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1          | 也可以用透明耗材替代                                         |
-| `n35 3*10mm圆柱磁铁`    | 8      | [点此购买](https://item.taobao.com/item.htm?id=672213824269&skuId=5014364542698)  | 1          | 也可以用链接里的20mm长度替代两个吸一起，这里的10mm是备战cmcu |
+| 名称                    | 总数量 | 购买链接                                                                          | 选择购买量 | 备注                                                           |
+| ----------------------- | ------ | --------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------- |
+| MR85ZZ轴承              | 8      | [点此购买](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8          | 推荐购买9个                                                    |
+| BMG齿轮套装             | 4      | [点此购买](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4          | -                                                              |
+| D5x22mm轴               | 4      | [点此购买](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1          | 该轴有精度问题，使用前挑选公差小的                             |
+| D2x20mm轴               | 16     | [点此购买](https://item.taobao.com/item.htm?id=25771992682)                       | 16         | 推荐购买17个                                                   |
+| 182A齿轮                | 8      | [点此购买](https://item.taobao.com/item.htm?id=18760030298)                       | 12         | `需备注4.2MM厚度`；推荐多买                                    |
+| 682A蜗杆齿轮            | 4      | [点此购买](https://item.taobao.com/item.htm?id=20964703851)                       | 4          | 推荐购买5个                                                    |
+| RS370电机 24V 6000转    | 4      | [点此购买](https://item.taobao.com/item.htm?id=693694363820&skuId=5676948302798)  | 4          | 推荐购买5个                                                    |
+| M3*5机牙螺丝            | 4      | [点此购买](https://detail.tmall.com/item.htm?id=535431829802&skuId=4932222933924) | 1          | 固定370电机                                                    |
+| 导线                    | 8      | [点此购买](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1          | 需5cm以上                                                      |
+| 62B轴套                 | 32     | [点此购买](https://item.taobao.com/item.htm?id=557038811656)                      | 5          | -                                                              |
+| PC4气动头 6mm           | 4      | [点此购买](https://detail.tmall.com/item.htm?id=818091079521&skuId=5688154930484) | 4          | 推荐购买8个（耗材箱可多买）                                    |
+| 5MM不锈钢钢珠           | 4      | [点此购买](https://detail.tmall.com/item.htm?id=774271088783&skuId=5299497505386) | 1          | -                                                              |
+| 不锈钢弹簧0.3\*4x5mm    | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800015352191) | 1          | 钢珠弹簧                                                       |
+| `弹簧钢弹簧0.6*4x10mm`  | 4      | [点此购买](https://detail.tmall.com/item.htm?id=585259720029&skuId=4133932358206) | 1          | 扳手弹簧 更换为弹簧钢材质 `需备注尺寸` 给p系列用个人建议15长度 |
+| `不锈钢弹簧0.8*12*25mm` | 8      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=3358115281469) | 1          | `自己备注尺寸` 缓冲弹簧，弹簧钢材质可以买0.7mm                 |
+| M2*8沉头自攻螺丝        | 48     | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1          | -                                                              |
+| 1.5mm导光纤维           | 1m     | [点此购买](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1          | 也可以用透明耗材替代                                           |
+| `n35 3*10mm圆柱磁铁`    | 8      | [点此购买](https://item.taobao.com/item.htm?id=672213824269&skuId=5014364542698)  | 1          | 也可以用链接里的20mm长度替代两个吸一起，这里的10mm是备战cmcu   |
 
 ### 底座
 
