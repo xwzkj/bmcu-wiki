@@ -47,7 +47,7 @@ export default defineConfig({
     ],
     logo: { light: '/竹笋-黑.png', dark: '/竹笋-白.png', alt: '竹笋logo' },
     footer: {
-      // message: 'BMCU_WIKI',
+      message: '<a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" style="display: flex; align-items: center; justify-content: center; text-decoration: none;"> 本网站由<img src="https://static.wanzii.cn/image/又拍云_logo.png" style="height: 17px; padding-right: 2px;">提供cdn加速服务 </a>',
       copyright: '版权所有 © BMCU WIKI编辑部'
     },
     sidebar: [
