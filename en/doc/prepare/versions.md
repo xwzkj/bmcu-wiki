@@ -1,109 +1,112 @@
-# 版本
+# Versions
 
-::: warning 注意
-该内容由很强的时效性，请留意页面最低端的`最后更新时间`，若太久没更新可以找群友问，亦可提醒`@丸子`更新
+::: warning Note
+This content is highly time-sensitive. Please check the `Last Updated Time` at the bottom of the page. If it hasn't been updated for a long time, you may ask in the group or remind `@wanzi` to update it.
 :::
 
 ::: tip
-下文中提到的`官方版`是指由BMCU开发组制作的版本
+The term `official version` mentioned below refers to the version developed by the BMCU development team.
 :::
 
-## 整体版本
+## Overall Versions
 
-大致分为`130电机版`和`370电机版`
+There are generally two main versions: the `130 motor version` and the `370 motor version`.
 
-> 时间顺序
+> Chronological Order
 
-- 130电机版（过时，不再维护）：早期版本，不易调试，有离合结构，调好打印过程中不需要助力完全没噪音
-- 370电机版（早期）（过时，不再维护）：更改为电机直驱，主动送料，好组装，但容易`爆五通`
-- BMCU-B(370钢珠版)（过时，不再维护）：基于早期370，耗材光电孔改为钢珠挡片，解决光电孔不易调试、容易被碎屑堵塞的问题
-- BMCU-C(370霍尔版)（最新，强烈推荐）：光电缓冲改为霍尔缓冲，根治`爆五通`问题，同时噪音更小
+- **130 Motor Version** (outdated, no longer maintained): The earliest version with a complex clutch structure. Once properly adjusted, it does not require any additional support during printing and produces no noise.
+- **370 Motor Version (Early)** (outdated, no longer maintained): Changed to direct-drive motor with active feeding. Easier to assemble but prone to `5-way explosion` ("wu tong bao").
+- **BMCU-B (370 Ball Bearing Version)** (outdated, no longer maintained): Based on the early 370 version. Replaced the optical filament detection hole with a ball bearing blocker, solving the issue of difficult calibration and blockage caused by debris.
+- **BMCU-C (370 Hall Sensor Version)** (latest, strongly recommended): Upgraded from the previous version, replacing the optical buffer with a Hall sensor buffer, completely eliminating the `5-way explosion` issue and significantly reducing noise.
 
-早期370版本和钢珠370固件通用，建议使用3-14固件，该版本不易`爆五通`
+The early 370 version and the ball-bearing 370 version share compatible firmware. It is recommended to use firmware version 3-14, which is less prone to `5-way explosion`.
 
-另有:
+Additional variants:
 
-- 群友`@白小淘`制作的`180电机版`（基于130版本，只是更换电机尺寸）
-- 群友`@星尘`进行更多改动的`BMCU370x`贴片微动版（基于早期370版，效果类似钢珠版）该版本使用微动开关替换了耗材检测，避免了耗材光电孔容易被碎屑堵塞的问题，但主板也需要使用对应改版
-- 欢迎改版作者联系`@丸子`，加入wiki
+- **180 Motor Version** by group member `@bai_xiao_tao`: Based on the 130 version, only the motor size was changed.
+- **BMCU370x SMD Microswitch Version**, modified further by group member `@xingchen`: Based on the early 370 version, achieving similar results as the ball-bearing version. This version uses a microswitch instead of optical filament detection, avoiding issues where debris could block the optical hole. However, a corresponding modified motherboard is required.
+- Modification authors are welcome to contact `@wanzi` to have their versions added to this wiki.
 
-130版和370（早期版本以及钢珠版本）主板通用，但固件、外壳、部分机械零件有所区分、需确定一个版本并进行了解差异
+The 130 version and 370 versions (early and ball-bearing) share compatible motherboards, but differ in firmware, housing, and some mechanical components. Be sure to choose one version and understand the differences.
 
-::: info 提示
-370是主动送料，一直送料到缓冲顶起，缓冲灯不亮就停止送料；
-130是被动送料，料管耗材减少压缩缓冲，缓冲灯一亮就送料
+::: info Tip
+The 370 version uses active feeding — continuously feeds until the buffer is lifted; feeding stops when the buffer light turns off.  
+The 130 version uses passive feeding — the spring-loaded buffer compresses as filament depletes; feeding starts as soon as the buffer light turns on.
 :::
 
-### 130电机版
+### 130 Motor Version
 
-> 该版本固件需使用`0.2`版本
+> This version requires firmware `v0.2`
 
-**该版本是早期版本**，其维护点主要在于`三角板离合`结构，特别适用于A1系列打印机，能够提供良好的稳定性，但结构较为复杂，三角板不够可靠等问题仍然存在
+**This is an early version**. Its key maintenance point lies in the `triangle plate clutch` mechanism. It works particularly well with A1 series printers, offering good stability, though its structure is relatively complex. Issues such as unreliable triangle plates still exist.
 
-::: info 提示
-该版本设计采用的`万宝至FF130-SH`电机目前貌似仅能通过闲鱼购买，详细信息查看[材料清单](./list.md)的说明
+::: info Tip
+The `Mabuchi FF130-SH` motor used in this design appears to only be available via Xianyu. For more information, refer to the [Bill of Materials](./list.md).
 :::
 
-该版本资料位于群文件`/bmcu整合包`中，本站包含该版本装机教程，还有视频教程可以[前往哔哩哔哩](https://www.bilibili.com/video/BV1PuPCehEP3)观看
+The related materials for this version can be found in the group file `/bmcu integration package`. This site includes an installation guide for this version, and a video tutorial is also available [on Bilibili](https://www.bilibili.com/video/BV1PuPCehEP3).
 
-#### 180电机版
+#### 180 Motor Version
 
-该版本由群友`@白小淘`制作，属于特殊的`130电机版`，旨在解决130电机不易购买的问题，固件与结构和130版一致
+Created by group member `@bai_xiao_tao`, this is a special variant of the `130 motor version`, designed to address the difficulty in sourcing the 130 motor. It shares the same firmware and structural design as the 130 version.
 
-#### 130钢珠版
+#### 130 Ball Bearing Version
 
-由群友制作，目前资料少
+Made by a group member. Currently has limited documentation available.
 
-### 370电机版
+### 370 Motor Version
 
->该版本建议使用`3-14`版本的固件
+> It is recommended to use firmware version `3-14`
 
 ::: warning
-目前缺陷：BMCU-B(370钢珠版) 以及前代版本，由于结构为直驱主动送料导致的爆五通，3-14固件较少出现该问题，可以通过关闭切料时回抽、使用缓冲加长版、外置缓冲、五通增稳打印件等方式缓解
+Current issue: BMCU-B (370 Ball Bearing Version) and earlier versions suffer from `5-way explosion` due to the direct-drive feeding mechanism. Firmware version 3-14 reduces this problem. You can also mitigate it by disabling retraction during cutter operation, using an extended buffer, external buffer, or adding a stabilizing print piece around the 5-way connector.
 :::
 
-该版本结构简单，电机易于购买，该电机是BMCU用于P1系列打印机的前提，因130电机稳定且缓慢，会导致送料失败。
+This version has a simple structure, and the motors are easy to source. This motor became the basis for BMCU's P1 series printers, since the 130 motor was too slow and stable, causing feeding failures.
 
-该版本同样适用于A1系列，以及P/X系列 `@星尘 ：觉得更适用于P1系列`。
+This version is also suitable for A1 series, and P/X series printers (`@xingchen`: seems more suitable for P1 series).
 
-该版本资料位于群文件`/370电机资料`文件夹
+Related materials for this version can be found in the group file `/370 motor documents`.
 
-## 外壳版本
+## Housing Versions
 
-::: warning 注意
-外壳版本鱼龙混杂，版本繁多，可以跟着教程做，使用教程中使用的版本
+::: warning Note
+There are many different housing versions with varying quality. It is recommended to follow the tutorial and use the version demonstrated in it.
 :::
 
-## PCB版本
+## PCB Versions
 
-### 原版（官方）
+### Original Version (Official)
 
-该版本就是最普通的版本，不多赘述
+This is the standard official version, nothing special to note.
 
-[开源链接](https://oshwhub.com/bamboo-shoot-xmcu-pcb-team/bmcu)
+[Open Source Link](https://oshwhub.com/bamboo-shoot-xmcu-pcb-team/bmcu)
 
-### C口版本（官方）
+### Type-C Version (Official)
 
-该版本添加了板载USB转TTL的CH340芯片，烧录的时候无需外置转换模块，除此之外和普通版没什么区别
+This version adds an onboard USB-to-TTL CH340 chip, eliminating the need for an external adapter during firmware flashing. Otherwise, it is identical to the standard version.
 
-[开源链接](https://oshwhub.com/bilibili233/bmcu0000)
+[Open Source Link](https://oshwhub.com/bilibili233/bmcu0000)
 
-### BMCU370x星尘改版
+### BMCU370x Modified by Xingchen
 
-这是[星尘微动修改版](../build/bmcu370x.md)使用的主板
+This is the motherboard used for the [Xingchen microswitch modification](../build/bmcu370x.md).
 
-该版本板载USB转TTL的CH340芯片，烧录的时候无需外置转换模块，拥有二极管保护单片机。
+It features an onboard USB-to-TTL CH340 chip, allowing firmware flashing without an external adapter. It also includes diode protection for the microcontroller.
 
-改变了耗材检测部分，在光电的基础上可选微动来进行检测。
+The filament detection section has been upgraded to optionally use a microswitch instead of optical detection.
 
-增加了一路DCDC降压，默认可通过焊盘切换使用的电机，12V和24V。
+An additional DCDC buck converter is included, and the motor voltage can be switched between 12V and 24V via solder pads.
 
-该版本仍然保持兼容原版
+This version maintains compatibility with the original version.
 
-更多信息请看开源链接。
+For more details, see the open source link.
 
-[开源链接](https://oshwhub.com/xingcc1/bmcu-370x)
+[Open Source Link](https://oshwhub.com/xingcc1/bmcu-370x)
 
-### 霍尔缓冲版（官方）
+### Hall Buffer Version (Official)
 
-这是开发组目前正在测试的最新主板，相比前一代主板目前主要新增了485浮地保护（采用pmos）、霍尔缓冲器（由上一代的数字值缓冲改为模拟值缓冲）
+This is the latest motherboard currently under testing by the development team. Compared to the previous generation, it mainly adds:
+
+- 485 floating ground protection (using PMOS)
+- Hall buffer (upgraded from digital buffer to analog buffer)

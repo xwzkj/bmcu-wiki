@@ -1,40 +1,43 @@
-# 下载中心
+# Download Center
 
-以下所有资源的网盘链接：[点此](https://www.123912.com/s/qX7iVv-ZVxbv?提取码:wanz)
+All resources are available via this cloud storage link: [Click Here](https://www.123912.com/s/qX7iVv-ZVxbv?提取码:wanz)
 
-提取码：wanz
+Extraction Code: wanz
 
-若无法打开，请将域名的`123912`更换为`123pan`
+If the link doesn't work, try replacing the domain `123912` with `123pan`
 
-## 整合包 BY：丸子
+## Complete Package BY: wanzi
 
-请前往网盘下载
+Please download from the cloud storage
 
-## 固件整理
+## Firmware Collection
 
-以下包括个版本个人推荐适用的固件版本及命名规则
+Below includes recommended firmware versions for different models and naming conventions
 
-### 命名规则
+### Naming Convention
 
-1. 130固件：v0.2
-2. 其他较早期的固件：直接适用日期命名，如`固件3-14`则为25年3月14日发布的固件
-3. 25年5月修改的命名规则：BMCU版本+大版本+测试序号，其中测试序号为可选，若为稳定版固件则无此序号。如`BMCU-C-V0.1-0013测试`则为适用于BMCU-C的，V0.1版本，第13个测试版本。
-需要注意的是，当大版本发生变化，测试序号不会重置，仍继承之前的数字+1
+1. 130 firmware: v0.2
+2. Early firmware: Uses date format, e.g. `Firmware 3-14` means released on March 14, 2025
+3. Naming rule modified in May 2025: BMCU version + major version + test sequence number (optional). Stable versions omit the sequence number. Example: `BMCU-C-V0.1-0013 Test` means for BMCU-C, V0.1 version, 13th test version.
+Note: When major version changes, the test sequence number continues incrementing without reset.
 
-### 适用于130的固件
+### Firmware for 130 Version
 
-推荐适用v0.2版本固件，由于较为早期，本站版本收集不完全，仅推荐v0.2（稳定版）固件
+Recommended to use v0.2 stable version. Due to its early stage, our collection is incomplete and only v0.2 (stable) is recommended.
 
-### 适用于BMCU-B（钢珠）/早期370版本的固件
+### Firmware for BMCU-B (Steel Ball)/Early 370 Version
 
-高人气固件为`3-14`，该版本好用，缓解了爆五通现象，但并未根治，若五通已变得脆弱，则仍有可能爆五通
+Popular version is `3-14`. This version improves performance and reduces (but doesn't completely eliminate) the "five-way burst" issue. If the five-way is already weakened, bursting may still occur.
 
-### 适用于BMCU-C（霍尔）的固件
+### Firmware for BMCU-C (Hall Effect)
 
-BMCU-C正在迭代中，该内容撰写于2025年5月26日，请注意时效性
+BMCU-C is under active development. This content was written on May 26, 2025 - please check timeliness.
 
-截至目前，BMCU-C的最新测试固件为`BMCU-C-V0.1-0013测试`，经我在A1上测试是好用的
+As of now, the latest test firmware is `BMCU-C-V0.1-0013 Test`, which has been tested working well on A1.
 
-另有人气较高的 建议用于A1的`4-23-2` 和 建议用于P/X系列的`4-23-3`
+Other popular versions:
 
-这两个固件的区别是，-3固件进料更猛，用于A1可能会有明显撞击声。
+- `4-23-2` recommended for A1
+- `4-23-3` recommended for P/X series
+
+The difference is that -3 version has more aggressive feeding and may cause noticeable impact noise on A1.

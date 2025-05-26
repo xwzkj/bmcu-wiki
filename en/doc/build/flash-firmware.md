@@ -1,81 +1,81 @@
-# BMCU固件烧录教程
+# BMCU Firmware Flashing Tutorial
 
-该文章适用于截至2025年5月26日的所有主板（包括早期主板，霍尔主板，各种c口主板）
+This article applies to all mainboards as of May 26, 2025 (including early versions, Hall-effect sensor mainboards, and various Type-C mainboards)
 
-## 您需准备
+## What You'll Need
 
-- bmcu主板
-- ch340串口模块
-- 杜邦线
-- 电脑
+- BMCU mainboard
+- CH340 serial module
+- Dupont wires
+- Computer
 
-请前往[下载中心](../other/download-center)中的链接下载您需要烧录的固件bin文件 和 固件烧录工具
+Please visit the [Download Center](../other/download-center) to download the required firmware bin file and flashing tool.
 
-![网盘分享](/assets/build/flash/网盘分享.jpg)
+![Cloud Storage Share](/assets/build/flash/网盘分享.jpg)
 
-## 固件烧录步骤
+## Firmware Flashing Steps
 
-::: danger 警告
-进行以下步骤之前，请使用万用表测量3.3v与GND、24v与GND是否短路，若存在短路，则可能烧毁您的串口模块，若您的电脑没有USB浪涌保护，USB接口亦可能被烧毁
+::: danger WARNING
+Before proceeding, use a multimeter to check for shorts between 3.3V and GND, and between 24V and GND. If shorts exist, it may damage your serial module. If your computer lacks USB surge protection, the USB port may also be damaged.
 :::
 
-### 安装驱动程序
+### Install Drivers
 
-请前往沁恒官网下载ch340串口芯片的驱动程序，并安装
+Visit WCH's official website to download and install the CH340 serial chip driver.
 
-[传送门](https://www.wch.cn/downloads/CH341SER_EXE.html)
+[Link](https://www.wch.cn/downloads/CH341SER_EXE.html)
 
-### 连接串口模块与bmcu主板
+### Connect Serial Module to BMCU Mainboard
 
-按照以下线序对应，使用杜邦线进行连接
+Connect using Dupont wires according to the following pinout:
 
-| 主板 | 模块 |
+| Mainboard | Module |
 | :--- | :--- |
 | V+   | 3.3v |
 | GND  | GND  |
 | TX   | RX   |
 | RX   | TX   |
 
-[烧录器链接](/assets/build/flash/烧录器连接.jpg)
+[Programmer Connection](/assets/build/flash/烧录器连接.jpg)
 
-### 检查电脑与模块连接
+### Verify Computer-Module Connection
 
-将烧录器连接至电脑
+Connect the programmer to your computer.
 
-在电脑的开始菜单搜索并打开“设备管理器”
+Search for and open "Device Manager" from the Start menu.
 
-![搜索设备管理器](/assets/build/flash/搜索设备管理器.jpg)
+![Search Device Manager](/assets/build/flash/搜索设备管理器.jpg)
 
-在设备管理器中，展开`端口（COM和LPT）`
+In Device Manager, expand `Ports (COM & LPT)`.
 
-应在内发现如图设备
+You should see a device as shown:
 
-![设备管理器](/assets/build/flash/设备管理器.jpg)
+![Device Manager](/assets/build/flash/设备管理器.jpg)
 
-记住此设备后面的端口号（图中为COM7）
+Note the port number (COM7 in the image).
 
-若没有，请检查驱动安装是否成功
+If not found, check if the driver installed correctly.
 
-亦或是您的主板焊接存在短路等问题，请立即拔掉插在电脑上的模块，防止模块过热烧毁！
+Alternatively, there may be soldering issues with your mainboard. Immediately disconnect the module from your computer to prevent overheating damage!
 
-您可不连接bmcu主板，单独插入串口模块来测试是否正常，若单独连接正常，则为您的主板焊接问题
+You can test the serial module alone without connecting the BMCU mainboard. If it works alone, the issue is with your mainboard's soldering.
 
-### 开始烧录
+### Begin Flashing
 
-打开烧录工具
+Open the flashing tool:
 
-1. 选择芯片型号为 `CH32V203`
-2. 点击搜索按钮
-3. 选择串口设备为上面步骤显示的端口号
-4. 选择固件文件
-    > 此步骤之后需要按住bmcu主板的按钮`B`，然后单击按钮`R`，按钮`B`在过程中不可放开
-5. 点击`解除保护`（若您的芯片是第一次烧录固件，则不需要此步骤）
-    > 此时应显示`解除读写保护成功`
-6. 点击`下载(D)`
-7. 等待右下角进度条跑完，显示成功
+1. Select chip model as `CH32V203`
+2. Click the search button
+3. Select the port number identified earlier
+4. Choose the firmware file
+    > After this step, press and hold button `B` on the BMCU mainboard, then click button `R`. Do not release button `B` during the process.
+5. Click `Unprotect` (skip if this is the first firmware flash for your chip)
+    > Should display `Read/Write protection removed successfully`
+6. Click `Download(D)`
+7. Wait for the progress bar at bottom right to complete, showing success
 
-![烧录工具](/assets/build/flash/烧录工具.jpg)
+![Flashing Tool](/assets/build/flash/烧录工具.jpg)
 
-### 确认烧录成功
+### Verify Successful Flash
 
-松开`B`键，单击`R`键，稍加等待，此时主板的ws2812灯珠亮起红色，则代表固件已在运行
+Release button `B` and click button `R`. After a short wait, if the mainboard's WS2812 LED lights up red, this indicates the firmware is running.

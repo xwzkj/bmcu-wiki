@@ -1,17 +1,19 @@
-# 什么是bmcu
+# What is BMCU
 
-BMCU是AMCU的下一代项目，是兼容于AMS lite的第三方开源自动换料系统，BMCU体积小巧，成本低廉，完全开源。
+**BMCU** is the next-generation project following **AMCU**. It is a third-party open-source automatic material switching system compatible with **AMS lite**. BMCU is compact, low-cost, and fully open-source. 🛠️
 
-他的稳定性不如AMS lite，以及作为第三方配件，后续可能会由于官方更新固件而无法使用
+Its stability is not as high as AMS lite, and as a third-party accessory, it may become unusable due to future official firmware updates. ⚠️
 
-::: info 以下内容来自立创开源硬件平台的[BMCU](https://oshwhub.com/bamboo-shoot-xmcu-pcb-team/bmcu)描述
-BMCU是根据开源资料设计的，根据Github上相关于bambubus的协议介绍，以及网友提供的参考数据，于是我们设计出了一个模拟AMS运行的系统，适用于A系列打印机。BMCU是在AMCU上特化而来，许多设计参考了网上能查到的AMS lite的工作原理。
+::: info The following description comes from the BMCU project on [Lichuang Open Source Hardware Platform (OSHWHub)](https://oshwhub.com/bamboo-shoot-xmcu-pcb-team/bmcu)
 
-因为其设计使用了许多开源内容，并且其功能和AMS lite过于相似，因此，BMCU是开源且不允许商业化的，仅供个人DIY学习使用。
+**BMCU** is designed based on open-source materials. Referring to the protocol information of **bambubus** on GitHub and community-provided reference data, we created a system that simulates the behavior of AMS, applicable to the A-series printers. BMCU is a specialized evolution of AMCU, and many of its design concepts are based on publicly available information about the working principles of **AMS lite**.
+
+Due to its reliance on open-source content and its high functional similarity to AMS lite, **BMCU is open-source but not allowed for commercial use**. It is strictly for personal DIY and educational purposes.
+
 :::
 
-## 关于该网站
+## About This Website
 
-该网站是由`@丸子`运维，由大家共同贡献的bmcu百科站，与拓竹官方没有任何关系
+This site is maintained by `@wanzi` and collaboratively contributed by the community as a BMCU knowledge base. It has **no affiliation** with **Bambu Lab**. 🌱
 
-如果该网站对您有所帮助，欢迎前往赞助页面向我[打赏](/doc/other/donate)，您的支持将使该网站得以获得更好的资源，为您提供更好的体验！
+If you find this site helpful, you are welcome to visit the [donation page](/doc/other/donate) and support us 💖. Your contribution will help us improve the site’s resources and offer a better experience for everyone! 🚀

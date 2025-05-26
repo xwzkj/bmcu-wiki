@@ -1,62 +1,62 @@
-# 制作前准备
+# Preparation Before Making
 
 :::warning
-外壳不要用透明耗材打印！！！！
-若不幸已经使用透明耗材打印，可以尝试将光电检测部分使用黑色马克笔涂色
+Do not use transparent filament to print the housing!!!!!
+If you have unfortunately used transparent filament, try coloring the optical detection area with a black marker.
 :::
 
-## 制作BMCU的材料
+## Materials Needed for Making BMCU
 
-::: details 我到底要做130版本还是370版本,或者别的分支衍生版本？
-各有优缺，这要根据你的需求来。
+::: details Should I make the 130 version, the 370 version, or another derivative version?
+Each has its own advantages and disadvantages, which depend on your needs.
 
-个人推荐最新的较为稳定的版本
+Personal recommendation is to go with the latest, more stable version.
 
-130版是较早版本，结构调试较为复杂，目前主要缺点是电机不太好买
+The 130 version is an earlier model with complex structural adjustments. The main drawback currently is that the motor is difficult to source.
 
-370版是较新版本，结构简单，电机动力足，但尚处于测试阶段，可能会改动硬件
+The 370 version is newer, with a simpler structure and powerful motors, but it's still in the testing phase and may involve hardware changes.
 
-各个版本区别详见[版本分支](/doc/prepare/versions)
+For detailed differences between versions, see [Version Branches](/doc/prepare/versions).
 :::
 
-首先购买制作BMCU所需的电子原件和机械部件，详情请见[材料清单](./list.md)页面或群文件
+First, purchase the necessary electronic components and mechanical parts for making BMCU. For more details, refer to the [Bill of Materials](./list.md) page or the group files.
 
->[点此加入群聊](https://qm.qq.com/q/wYYZ1IeaSk)
+>[Join the Group Chat Here](https://qm.qq.com/q/wYYZ1IeaSk)
 
 :::tip
-推荐采用[材料清单](./list.md)页面的链接下单，已经选好了数量和详细规格，**第三方改版的物料需要自行检查区别**
+It is recommended to place orders through the links provided on the [Bill of Materials](./list.md) page, where quantities and detailed specifications have been pre-selected. **For third-party modifications, please check the differences yourself**.
 :::
 
-:::danger 易错点
-在购买单片机时 请务必注意选择的详细规格，不要买103，要买203
+:::danger Common Mistakes
+When purchasing microcontrollers, make sure to choose the correct specifications. Do not buy the 103 model; instead, buy the 203 model.
 :::
 
-- 气动接头多买几个，BMCU用八个，耗材箱用四个，多备着也常用
-- 建议购买WD-40多用途产品、虎头润滑脂进行齿轮润滑，130版本建议使用`中高阻力`阻尼脂增加`三角板`离合结构的阻力
-- BMCU到五通之间的铁氟龙管不要过短，建议最少最少大于半米，以减少故障
-- 购买完表内零件，还需要前往嘉立创进行PCB电路板打样
+- Buy extra pneumatic fittings. BMCU uses eight, while the material box uses four. It's good to have extras as they are commonly used.
+- It is suggested to purchase WD-40 multi-purpose products and Tiger Head grease for gear lubrication. For the 130 version, using `medium-high resistance` damping grease is recommended to increase the resistance of the `triangle plate` clutch mechanism.
+- Ensure that the PTFE tube between the BMCU and the five-way connector is not too short. It is recommended to be at least half a meter long to reduce failures.
+- After purchasing the listed parts, proceed to JLCPCB for PCB fabrication.
 
-### 购买时常见问题
+### Common Issues When Purchasing
 
-::: details 版本的物料表看上去几乎一样？
-目前了解用到的物料通常很像，但具体数量和增加因版本不同差异较大，所以需要根据版本选择查看对应的物料表。
+::: details Why do the material lists for different versions look almost the same?
+Currently, the materials used are often similar, but the specific quantities and additions vary significantly by version. Therefore, it's necessary to select and view the corresponding material list based on the version.
 :::
 
-:::details 优信电子的130马达没货了怎么办
-如果不是追求极致的安静，可以选择370版本
+:::details What if Youxin Electronics does not have the 130 motor in stock?
+If you're not aiming for ultimate quietness, consider the 370 version.
 
-130电机购买可以[看这里的提示](./list.html#%E6%8C%A4%E5%87%BA%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86-%E5%B7%B2%E4%B9%98%E5%9B%9B%E9%80%9A%E9%81%93)
+For purchasing the 130 motor, [see the hints here](./list.html#%E6%8C%A4%E5%87%BA%E7%BB%84%E4%BB%B6%E9%83%A8%E5%88%86-%E5%B7%B2%E4%B9%98%E5%9B%9B%E9%80%9A%E9%81%93).
 :::
 
-## 制作BMCU的所需的常用工具
+## Common Tools Needed for Making BMCU
 
-| 名称                          | 是否必备 | 说明                                                |
-| :---------------------------- | :------- | :-------------------------------------------------- |
-| 刀头电烙铁+锡丝+助焊剂+镊子等 | 必备     | 用于焊接BMCU的电路部分，建议刀头的T12可调温焊台     |
-| 加热台/热风枪+锡膏+钢网       | 非必备   | PCB引脚密集，更推荐使用这些工具来焊接               |
-| 3D打印机一台                  | 必备     | 都做BMCU了，机器肯定有吧，用于打印外壳部分          |
-| PETG耗材                      | 必备(吧) | 相较于PLA，PETG耗材更适合打印耐用零件，大力推荐PETG |
-| 十字螺丝刀                    | 必备     | 用于安装螺丝，推荐3MM的螺丝刀                       |
-| 刻刀/美工刀                   | 非必备   | 可能有意想不到的用途，比如用来通模型的光电孔        |
-| 斜口钳（小蓝剪即可）          | 必备     | 用于修正打印件                                      |
-| CH340 USB转TTL模块            | 必备     | 用于固件烧录                                        |
+| Name                                                 | Required | Description                                                                                           |
+| :--------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
+| Soldering iron + solder wire + flux + tweezers, etc. | Required | Used for soldering the BMCU circuitry. A T12 adjustable temperature soldering station is recommended. |
+| Hotplate / hot air gun + solder paste + steel mesh   | Optional | Useful for densely populated PCBs, highly recommended for these tools.                                |
+| One 3D printer                                       | Required | Since you're making BMCU, you probably already have one for printing the housing.                     |
+| PETG filament                                        | Required | Compared to PLA, PETG is more suitable for printing durable parts. Highly recommended.                |
+| Phillips screwdriver                                 | Required | For installing screws, a 3mm screwdriver is recommended.                                              |
+| Craft knife / utility knife                          | Optional | May come in handy for unexpected uses, such as clearing the optical filament detection hole.          |
+| Diagonal pliers (small blue scissors will do)        | Required | For trimming printed parts.                                                                           |
+| CH340 USB-to-TTL module                              | Required | For firmware flashing.                                                                                |

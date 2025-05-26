@@ -1,37 +1,62 @@
-# 将BMCU用于P/X系列打印机
+# Using BMCU with P/X Series Printers
 
-::: danger 注意
-在拓竹对于P、X系列打印机的固件更新中，加入了对于AMS2 Pro和AMS HT的支持，而由于BMCU并非基于拓竹内部协议文档构建，导致BMCU在这些新版本固件中出现兼容性问题，具体表现为无法设置耗材参数。
+::: danger WARNING
+Bambu Lab's firmware updates for P/X series printers have added support for AMS2 Pro and AMS HT. Since BMCU is not developed based on Bambu Lab's internal protocol documentation, compatibility issues arise with these new firmware versions, specifically manifesting as inability to set filament parameters.
 
-对于P1，最新可用的打印机固件为`01.07.00.00`
+For P1 series:
 
-对于X1，最新可用的打印机固件为`01.08.50.32`
+- Latest compatible printer firmware: `01.07.00.00`
 
-该问题可能由作者`@4061N`于将来未知时间修复
+For X1 series: 
+
+- Latest compatible printer firmware: `01.08.50.32`
+
+This issue may be fixed by developer `@4061N` at an unspecified future date.
 :::
 
-从固件版本2-6开始，原版固件支持用于P/X系列，自动识别，并模拟AMS1的运行逻辑。
+Starting from firmware version 2-6, the original firmware supports P/X series printers with automatic identification and simulates AMS1 operation logic.
 
-故130版本不支持p系列
+Note: The 130 version does NOT support P series.
 
-它对于P/X系列打印机，**需要自行加装五通**，运行逻辑如下：
+For P/X series printers, you need to manually install a five-way connector. The operation logic is as follows:
 
-进料：与A系列无异
+**Loading filament**: Same as A series
 
-退料：与A系列退到五通外几厘米不同，由于不知道料管长度和五通位置，退料时BMCU会退回耗材丝到BMCU的断料检测后、BMG齿轮前，再稍微进一点，到达断料检测前，以确保不会留在五通内影响新的耗材丝送入、不会影响打印机的耗材丝在线识别
+**Unloading filament**: Unlike A series which retracts a few centimeters past the five-way connector, BMCU doesn't know the tube length or five-way position. It will:
 
-因为退料长度相当长，需要添加主动回卷，否则有可能导致缠料卡料（尤其是使用一个箱子装好几卷料的大箱子），从而无法进料，严重时导致bmcu齿轮组损坏。
+1. Retract filament past the filament sensor but before the BMG gears
+2. Then slightly advance to just before the sensor
+This ensures:
 
-建议的主动回卷包括但不限于 竹笋开发组的b1电动回卷、兔子回卷料架
+- No filament remains in the five-way to interfere with new filament loading
+- Doesn't affect the printer's filament presence detection
 
-对于五通的加装，请前往固件下载的网盘页面中查看对应图示。
+Because the retraction distance is quite long, active spool rewinding is required to prevent:
 
-亦可选择`@星尘`基于该版本改动退料时间的固件，以减少退料长度，缓解回卷压力。
+- Filament tangling/jamming (especially in multi-spool containers)
+- Feeding failures
+- Potential damage to BMCU gear systems (in severe cases)
 
-由于绝大多数个人用户将其用于A1，p系列的维护和资料并没有那么完全。
+Recommended active rewinding solutions include:
 
-## 关于多AMS/多BMCU
+- Bamboo Shoot Development Team's B1 electric rewinder
+- Rabbit rewinding spool holder
 
-由于每个BMCU的通讯地址相同，无法使用多个bmcu，理论可以通过更改固件实现，亦或通过`@神棍`制作的`bmcu-hub`实现多bmcu
+For five-way connector installation, refer to diagrams in the firmware download cloud storage.
 
-关于同时使用AMS和BMCU，理论可以通过并联4pin通讯线实现，但现实中没有人尝试过，故若您想要尝试，一切风险由您自己承担。
+Alternatively, you can use firmware modified by `@xingchen` which reduces retraction time/distance to ease rewinding requirements.
+
+Note: Since most users deploy BMCU with A1 series, P-series support and documentation is less comprehensive.
+
+## About Multiple AMS/BMCU Systems
+
+Each BMCU shares the same communication address, making multiple BMCU use impossible without modifications. Potential solutions:
+
+1. Firmware modification (theoretical)
+2. Using `bmcu-hub` developed by `@shenguan`
+
+Regarding simultaneous AMS+BMCU use:
+
+- Theoretically possible by parallel-connecting 4-pin communication cables
+- No known real-world attempts exist
+- Any attempts are at your own risk

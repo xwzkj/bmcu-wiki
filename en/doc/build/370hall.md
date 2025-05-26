@@ -1,230 +1,235 @@
-# BMCU-C（370霍尔版）制作教程
+# BMCU-C (370 Hall Sensor Version) Assembly Guide
 
-## 前言
+## Preface
 
-本文全文由丸子编写
+This guide was entirely written by wanzi 😊
 
-这是适用于BMCU-C v0.2版本通道组件的制作教程
+It is intended for the assembly of BMCU-C v0.2 channel modules.
 
-若还没有零件，请前往[材料清单](/doc/prepare/list)购买。
+If you don’t yet have the necessary parts, please refer to the [Bill of Materials](/doc/prepare/list) to purchase them 🛒
 
-该文章的撰写日期（25.4.16）是我的生日哦
+This article was written on my birthday (2025.4.16) 🎉
 
-如果该文章对您有所帮助，欢迎前往[支持wiki运行](../other/donate.md)赞赏我~
+If you found this guide helpful, feel free to [support the wiki](../other/donate.md) with a donation 💖
 
-## 组装前需提前准备
+## Preparation Before Assembly
 
-适用于本教程的整合包：敬请期待，先去群文件找
+Bundled resources for this tutorial: Coming soon. Please refer to the group file section for now 📁
 
-- 一套焊接完毕的BMCU`霍尔版`电路板，确保没有任何焊接缺陷（如虚焊、漏焊、连锡、焊错等），然后对其进行固件刷写，固件烧录教程暂时请前往群文件查找。
-- 对主板刷入适用于霍尔版的固件，截至25.4.16日，最新可用的固件为`BMCU-C-4-13测试`
-- 打印件外壳
-- 打印件[磁铁极性确定装置](https://makerworld.com.cn/zh/models/1141340)
+- A fully soldered BMCU "Hall version" PCB, ensuring no soldering defects (e.g. cold joints, missing solder, bridges, or wrong connections). Flash the firmware—refer to the group file section for instructions on how to flash the firmware.
+- The firmware flashed must be suitable for the Hall sensor version. As of 2025.4.16, the latest available firmware is `BMCU-C-4-13 Test`
+- 3D printed outer shell
+- 3D printed [magnet polarity detector](https://makerworld.com.cn/zh/models/1141340)
 
-![磁铁极性确定装置](/assets/build/build-370hall/极性确定装置.jpg)
+![Magnet Polarity Detector](/assets/build/build-370hall/极性确定装置.jpg)
 
-## 正文
+## Main Assembly
 
-### 组件名称介绍
+### Component Names Overview
 
-![组件名称介绍](/assets/build/build-370hall/名称介绍.jpg)
+![Component Names Overview](/assets/build/build-370hall/名称介绍.jpg)
 
-### 安装轴套
+### Insert the 62B Bushing
 
-按照下图将62B轴套塞入后盖以及中框中
+Insert the 62B bushings into the back cover and the mid-frame as shown.
 
-![安装轴套](/assets/build/build-370hall/轴套.jpg)
+![Insert Bushing](/assets/build/build-370hall/轴套.jpg)
 
-### 将D2*20轴与182A齿轮组装
+### Assemble the D2*20 Shaft and 182A Gear
 
-使两端露出部分长度近似
+Ensure both ends are protruding equally.
 
-![将D2*20轴与182A齿轮组装](/assets/build/build-370hall/齿轮轴.jpg)
+![Gear Assembly](/assets/build/build-370hall/齿轮轴.jpg)
 
-### 给370电机安装蜗杆并焊接电机线
+### Install Worm Gear on 370 Motor and Solder Motor Wires
 
-令电机轴与蜗杆齐平，若不放心可在此处点502胶水。
+Align the motor shaft flush with the worm gear. Optionally, apply 502 glue for reinforcement.
 
-电机有红点的引脚为正极
+The terminal with the red dot is the positive pole.
 
-![给370电机安装蜗杆并焊接电机线](/assets/build/build-370hall/蜗杆.jpg)
+![Worm Gear and Wiring](/assets/build/build-370hall/蜗杆.jpg)
 
-### 确定滑块磁铁的极性
+### Determine the Polarity of the Slider Magnets
 
 ::: tip
-尽管仍有很多确定磁极的方式，在此恳求您打印我设计的[磁铁极性确定装置](https://makerworld.com.cn/zh/models/1141340)，您的打印可以使我获得拓竹积分，作为我维护wiki的动力，万分感谢您的支持
+Although there are various ways to check polarity, please consider printing the [magnet polarity detector](https://makerworld.com.cn/zh/models/1141340) I designed. This helps me earn Bambu Lab credits as a motivation to maintain the wiki. Thank you for your support! 🙏
 :::
 
-找来一个容器（碗、盘子、水瓢、脸盆等均可），加入适量水
+Prepare a container (bowl, dish, basin, etc.) and fill it with some water 💧
 
-![一盆水](/assets/build/build-370hall/水.jpg)
+![Water Container](/assets/build/build-370hall/水.jpg)
 
-将两个D3*10磁铁吸在一起，放入[磁铁极性确定装置](https://makerworld.com.cn/zh/models/1141340)，并将装置浮在水面
+Attach two D3*10 magnets together, place them in the [polarity detector](https://makerworld.com.cn/zh/models/1141340), and float it on the water.
 
-![磁铁极性确定装置](/assets/build/build-370hall/磁铁极性.jpg)
+![Polarity Check](/assets/build/build-370hall/磁铁极性.jpg)
 
-待稳定后，磁铁朝向南方的一端为南极，另一端为北极
+Once stabilized, the side facing south is the South Pole, and the other is the North Pole 🧲
 
-### 将磁铁装入滑块
+### Insert Magnets into Slider
 
-按照下图方向摆放滑块，则磁铁南极朝下插入滑块此处（南极靠近气动接头安装位置）
+Align the slider as shown. Insert the magnet with its South Pole facing downward (toward the pneumatic joint side).
 
-![将磁铁装入滑块](/assets/build/build-370hall/滑块磁铁.jpg)
+![Insert Magnet into Slider](/assets/build/build-370hall/滑块磁铁.jpg)
 
-重要：**令磁铁处于滑块磁铁安装位的正中间**
+**Important:** The magnet must be centered exactly in the magnet slot of the slider ⚠️
 
-### 固定滑块磁铁
+### Secure Slider Magnet
 
-使用M2*8自攻螺丝拧入滑块
+Use an M2*8 self-tapping screw to fasten the magnet.
 
-![固定滑块磁铁](/assets/build/build-370hall/滑块螺丝.jpg)
+![Secure Magnet](/assets/build/build-370hall/滑块螺丝.jpg)
 
-### 安装电机
+### Install the Motor
 
-将电机放入此位置，并使用一颗M3*5机牙螺丝拧紧固定
+Insert the motor into the designated position and fix it with one M3*5 machine screw.
 
-![安装电机](/assets/build/build-370hall/电机螺丝.jpg)
+![Install Motor](/assets/build/build-370hall/电机螺丝.jpg)
 
-### 安装螺母与螺母塞
+### Install the Nut and Nut Retainer
 
-将一个M3六角螺母放入此处凹槽，并塞进螺母塞以固定（忘了拍图，挺好理解的，意会一下）
+Insert an M3 hex nut into the slot and use a retainer to secure it (no image available, but it should be intuitive).
 
-![安装螺母与螺母塞](/assets/build/build-370hall/螺母塞.jpg)
+![Nut Retainer](/assets/build/build-370hall/螺母塞.jpg)
 
-### 放入齿轮
+### Insert the Gear
 
-![放入齿轮](/assets/build/build-370hall/齿轮.jpg)
+![Insert Gear](/assets/build/build-370hall/齿轮.jpg)
 
-### 组装BMG主动轮
+### Assemble BMG Drive Gear
 
-参考370钢珠版教程的[相关部分](./370#安装bmg主动轮)
+Refer to the [corresponding section](./370#install-bmg-drive-wheel) in the 370 steel ball version guide.
 
-### 组装BMG从动轮
+### Assemble BMG Idler Gear
 
-参考370钢珠版教程的[相关部分](./370#组装bmg从动轮)
+Refer to the [corresponding section](./370#assemble-bmg-driven-wheel) in the 370 steel ball version guide.
 
-### 放入BMG主动轮
+### Insert BMG Drive Gear
 
-![放入BMG主动轮](/assets/build/build-370hall/bmg.jpg)
+![Insert BMG Gear](/assets/build/build-370hall/bmg.jpg)
 
-### 放入钢珠
+### Insert Steel Balls
 
-![放入钢珠](/assets/build/build-370hall/钢珠.jpg)
+![Insert Steel Balls](/assets/build/build-370hall/钢珠.jpg)
 
-### 放入断料滑块
+### Insert Jam Sensor Slider
 
-注意滑块方向
+Make sure to align the slider in the correct orientation.
 
-![放入断料滑块](/assets/build/build-370hall/断料滑块.jpg)
+![Jam Sensor Slider](/assets/build/build-370hall/断料滑块.jpg)
 
-### 上润滑
+### Apply Lubricant
 
-给齿轮进行润滑（可以拿下来润一圈放回去，BMG就不用润滑了）
+Lubricate the gears (you may take them out, apply grease, and reinsert them. No need to lubricate the BMG gear).
 
-![齿轮上润滑](/assets/build/build-370hall/润滑齿轮.jpg)
+![Lubricate Gears](/assets/build/build-370hall/润滑齿轮.jpg)
 
-给滑块进行润滑（可选）
+Optionally lubricate the slider.
 
-![滑块上润滑](/assets/build/build-370hall/润滑滑块.jpg)
+![Lubricate Slider](/assets/build/build-370hall/润滑滑块.jpg)
 
-### 安装滑块与滑块弹簧
+### Install Slider Springs
 
-将两个`0.8*12*25弹簧`放入滑块两端，卡在滑块安装位内（图中我为了演示临时使用了370钢珠版用的0.7*12*30弹簧，必须扶着才不会飞出来，您安装时不会这样困难）
+Insert two `0.8*12*25` springs into both ends of the slider and fit them in place.  
+(Note: I temporarily used `0.7*12*30` from the 370 version for demonstration. You won't encounter such difficulty during installation.)
 
-![安装滑块与滑块弹簧](/assets/build/build-370hall/滑块弹簧.jpg)
+![Slider Springs](/assets/build/build-370hall/滑块弹簧.jpg)
 
-### 安装断料滑块弹簧
+### Install Jam Sensor Spring
 
-将一个`0.3*4*5弹簧`放入断料滑块上方
+Insert a `0.3*4*5` spring above the jam sensor slider.
 
-![安装断料滑块弹簧](/assets/build/build-370hall/断料滑块弹簧.jpg)
+![Jam Sensor Spring](/assets/build/build-370hall/断料滑块弹簧.jpg)
 
-### 安装中框
+### Install the Mid-frame
 
-将中框扣在后盖上，滑块有磁铁的那部分是要穿过中框的
+Attach the mid-frame onto the back cover. Ensure the magnet-equipped part of the slider goes through the frame.
 
-![安装中框](/assets/build/build-370hall/中框.jpg)
+![Install Mid-frame](/assets/build/build-370hall/中框.jpg)
 
-拧上五个M2*8自攻螺丝固定
+Secure it with five M2*8 self-tapping screws.
 
-### 安装扳手
+### Install the Lever
 
-将一个`0.6*4*10弹簧`放入如下位置，放入准备好的扳手
+Insert a `0.6*4*10` spring into the designated slot, then place the lever.
 
-![安装扳手](/assets/build/build-370hall/扳手1.jpg)
+![Insert Lever Spring](/assets/build/build-370hall/扳手1.jpg)
 
 ::: tip
-若您的管线及料架阻力较大，或者您使用p1打印机，请使用[此模型](https://makerworld.com.cn/zh/models/1167775)垫在扳手弹簧槽内，以增大咬合力
+If your filament guide or spool has high resistance, or you’re using a P1 printer, use [this model](https://makerworld.com.cn/zh/models/1167775) under the spring to increase clamping force.
 :::
 
-用手按住扳手，穿入一根D2*20的轴
+Manually press the lever and insert a D2*20 shaft.
 
-![安装扳手](/assets/build/build-370hall/扳手2.jpg)
+![Insert Lever Shaft](/assets/build/build-370hall/扳手2.jpg)
 
-用东西垫着用力压入到底，在用螺丝刀深入压入凹坑底部
+Press it in with force using a tool, then use a screwdriver to push it firmly into the recess.
 
-![安装扳手](/assets/build/build-370hall/扳手3.jpg)
+![Secure Lever Shaft](/assets/build/build-370hall/扳手3.jpg)
 
-### 安装径向磁铁
+### Install Radial Magnet
 
-在BMG主动轮上方吸附一个D6*2.5的径向磁铁，确保不会被任何东西压到，确保跟着bmg转动（重要）
+Attach a D6*2.5 radial magnet above the BMG drive gear. Ensure it’s not obstructed and rotates with the gear (critical).
 
-![安装径向磁铁](/assets/build/build-370hall/径向磁铁.jpg)
+![Radial Magnet](/assets/build/build-370hall/径向磁铁.jpg)
 
-::: info 建议
-在此时插入耗材，使用12v~24v电源接通电机以`测试是否可以拉动耗材`、`磁铁是否跟着转`以及`将润滑脂抹匀`
+::: info Tip
+At this point, insert filament and use a 12V~24V power supply to test:  
+
+- whether filament can be pulled through  
+- whether the magnet rotates correctly  
+- and whether lubricant is evenly distributed  
 :::
 
 ::: tip
-可以塞入光纤到缓滑块旁边的小孔，塞到底剪断，用于导光
+You may insert a fiber optic cable into the small hole beside the slider for light guidance. Insert fully and trim the excess ✂️
 :::
 
-### 安装副板
+### Install the Sub-board
 
-将副板放在此处
+Place the sub-board as shown.
 
-![安装副板](/assets/build/build-370hall/副板.jpg)
+![Sub-board](/assets/build/build-370hall/副板.jpg)
 
-使用两个M2*8自攻螺丝固定，并焊接电机线
+Secure with two M2*8 self-tapping screws, then solder the motor wires.
 
-![螺丝拧紧并焊线](/assets/build/build-370hall/固定副板并焊接电机线.jpg)
+![Secure and Solder](/assets/build/build-370hall/固定副板并焊接电机线.jpg)
 
-将长出来的线塞进此处
+Tuck the excess wires into the slot.
 
-![整理线材](/assets/build/build-370hall/整理线材.jpg)
+![Wire Management](/assets/build/build-370hall/整理线材.jpg)
 
-### 安装前盖
+### Install the Front Cover
 
-用四个M2*8自攻螺丝固定
+Secure with four M2*8 self-tapping screws.
 
-![安装前盖](/assets/build/build-370hall/前盖.jpg)
+![Front Cover](/assets/build/build-370hall/前盖.jpg)
 
-### 安装气动接头
+### Install Pneumatic Connector
 
-将气动接头拧在滑块上
+Screw the pneumatic connector into the slider.
 
-![安装气动接头](/assets/build/build-370hall/气动接头.jpg)
+![Pneumatic Connector](/assets/build/build-370hall/气动接头.jpg)
 
-### 完成
+### Done
 
-现在您可以接上主板进行基本的进退料测试了
+You can now connect the board and perform basic filament loading/unloading tests 🎉
 
-若您发现无论如何4020规格的ws2812b灯珠都不会亮起，请检查您的焊接方向
+If your WS2812B (4020 size) LEDs do not light up under any condition, double-check the soldering direction.
 
-![侧贴2812示意图](../prepare/assets/侧贴2812.jpg)
+![WS2812 Side Mount Diagram](../prepare/assets/侧贴2812.jpg)
 
-#### 灯光状态
+#### LED Status Table
 
->下表中的`-`为不会影响此灯珠或此灯珠此时情况未知
+> In the table below, `-` indicates the LED is unaffected or its state is unknown.
 
-| 情况                 | 侧灯 | 顶灯（光纤） | 故障处理                       |
-| :------------------- | :--- | :----------- | :----------------------------- |
-| 未安装径向磁铁       | -    | 红           | 检查径向磁铁安装和as5600焊接   |
-| 正常情况             | -    | 蓝           | -                              |
-| 通道被选中（使用中） | -    | 白           | -                              |
-| 未插入耗材           | 黑   | -            | -                              |
-| 耗材在线             | 白   | -            | -                              |
-| 按下缓冲器（滑块）   | 蓝   | -            | 若侧灯为红色，反转滑块磁铁方向 |
-| 拔出缓冲器（滑块）   | 红   | -            | 若侧灯为蓝色，反转滑块磁铁方向 |
+| Condition                   | Side LED | Top LED (Fiber) | Troubleshooting                                     |
+| --------------------------- | -------- | --------------- | --------------------------------------------------- |
+| Radial magnet not installed | -        | Red             | Check radial magnet installation & AS5600 soldering |
+| Normal operation            | -        | Blue            | -                                                   |
+| Channel selected (active)   | -        | White           | -                                                   |
+| No filament inserted        | Black    | -               | -                                                   |
+| Filament online             | White    | -               | -                                                   |
+| Buffer pressed (slider)     | Blue     | -               | If side LED is red, reverse slider magnet polarity  |
+| Buffer released (slider)    | Red      | -               | If side LED is blue, reverse slider magnet polarity |
 
-主板：与打印机通讯正常为蓝色，不正常为红色，其他任何颜色为不正常
+Mainboard: Blue indicates normal communication with the printer; Red indicates abnormal; any other color is abnormal 🔧

@@ -41,9 +41,6 @@ function getConfig(): DefaultTheme.Config {
         outline: {
             level: [2, 6],
         },
-        lastUpdated: {
-            text: 'Last Updated',
-        }
     }
 }
 export default getConfig()

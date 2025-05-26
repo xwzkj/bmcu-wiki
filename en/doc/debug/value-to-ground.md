@@ -1,73 +1,75 @@
-# 对地值参考
+```markdown
+# Reference for Ground Value
 
-::: info 提示
-该页面全部内容有群友`@→`提供，`@丸子`进行少许排版改动
+::: info Note
+All content on this page is provided by group member `@→`, with minor formatting adjustments by `@wanzi`.
 
-该内容适用于原版主板，不适合改版以及霍尔版
+This content applies to the original motherboard and is not suitable for modified or Hall-effect versions.
 :::
 
-## 基础解释
+## Basic Explanation
 
-知道的不多，捡我知道的说。
+I don't know much, but I'll share what I do know.
 
-- [什么是对地值](https://baike.baidu.com/item/%E5%AF%B9%E5%9C%B0%E6%89%93%E9%98%BB%E5%80%BC/5430067)
+- [What is Ground Value?](https://baike.baidu.com/item/%E5%AF%B9%E5%9C%B0%E6%89%93%E9%98%BB%E5%80%BC/5430067)
   
-- 为什么用对地值，因电路中存在大量二极管。且二极管的特性，其压降常在一个特定范围，数值较为直观。
+- Why use ground value? Because circuits contain many diodes, and the characteristic of diodes is that their voltage drop often falls within a specific range, making the values more intuitive.
   
-- **对地值**也是常说的对地阻值，但它不是电阻值，而是电路中二极管对地的压降值，单位是V，至于为什么叫对地阻值，那我也不知道，你得问维修界的，通常读取这个数值时是不带单位的，如0.450V称值450。
+- **Ground Value** is also commonly referred to as ground resistance, but it is not a resistance value. Instead, it is the voltage drop of a diode to ground in the circuit, measured in volts (V). The reason it's called ground resistance is unclear—you'd have to ask those in the repair field. Typically, this value is read without units, e.g., 0.450V is referred to as 450.
 
-- 要注意的是芯片工艺，温度，二极管类型，万用表不同表笔输出的电压不同都会对这个值的测量产生浮动范围，因此文中得值均做参考，实际得值要与芯片其他脚位做参考对比，那怎么得到最正确值，你可以焊前测量记录。通常集成度较高的芯片，值更低，如CPU通常0.2V+，硅二极管0.6-0.7V，硅晶体管:0.7-1.2V，肖特基0.2-0.4V。
+- Note that factors like chip manufacturing processes, temperature, diode type, and the voltage output of different multimeter probes can cause fluctuations in this measurement. Therefore, the values provided here are for reference only. Actual values should be compared with other pins on the chip. How to get the most accurate value? You can measure and record before soldering. Typically, highly integrated chips have lower values, such as CPUs (usually 0.2V+), silicon diodes (0.6-0.7V), silicon transistors (0.7-1.2V), and Schottky diodes (0.2-0.4V).
 
-## 怎么测量对地值
+## How to Measure Ground Value
 
-- 测量对地值，需要把万用表打到**二极管档位**，很多表二极管档和蜂鸣档直接融合，数值较低会蜂鸣，较大会显示压降，有些则需要打到蜂鸣档按功能键，使用时注意单位即可。
+- To measure ground value, set the multimeter to the **diode test mode**. Many multimeters combine the diode test and continuity test modes, where lower values trigger a beep and higher values display the voltage drop. Some require switching to the continuity test mode and pressing a function key. Pay attention to the units when using.
 
 ![pE1n95n.png](/assets/debug/value-to-ground/e4845bbf337c17b77b81704ee1c7f3b8.png)
 
-- 如图在测量时把红表笔接PCB的 GND 端，黑笔去触碰被测点（**测负电压时需要反过来，如电脑电源的-5V -12V**）
+- As shown in the image, connect the red probe to the PCB's GND (e.g., the negative terminal of the 24V input MX3.0 connector) and use the black probe to touch the test point (**reverse the probes for negative voltage measurements, such as -5V or -12V in a computer power supply**).
   
-- 被测点中如果串联电容，值应无穷大，如该点同时联通多个芯片，则该线路上任意一点的值相同且代表最小值的芯片。
+- If the test point is connected in series with a capacitor, the value should be infinite (OL). If the point is connected to multiple chips, the value on any point of the line will be the same and represent the lowest value among the connected chips.
 
-## 测量
+## Measurement
 
-### 示例
+### Example
 
 ![pE1wqG6.png](/assets/debug/value-to-ground/pE1wqG6.png)
-如图的排针座，我们把红笔接触到PCB中任意GND，如24V输入MX3.0端子的负极，黑笔测量RX，可能会得到的值 **730 790 430 0.000 OL** 。前文说过，该值体现的是被测点经过芯片到达GND的压降，会显示最小芯片的值，而RX点通过电路图我们可得知它同时连接CH32的31脚、75176的1脚、排阻RN3的3脚上拉。下面来分析一下各值。
+For the pin header shown in the image, we connect the red probe to any GND on the PCB (e.g., the negative terminal of the 24V input MX3.0 connector) and use the black probe to measure RX. Possible readings include **730, 790, 430, 0.000, OL**. As mentioned earlier, this value reflects the voltage drop from the test point through the chip to GND, showing the lowest value among the connected chips. From the circuit diagram, we know the RX point is connected to pin 31 of the CH32, pin 1 of the 75176, and pin 3 of the pull-up resistor RN3. Below is an analysis of these values.
 
 - **730**  
-该值为75176芯片的值，表示该点与芯片未断路、且75176与GND连接正常，75176芯片无异样，但并不能表明该点与芯片CH32 31脚、RN3 3脚是否虚焊开路，芯片引脚是否连锡，可测试这些点是否值相同且。
+This is the value of the 75176 chip, indicating no open circuit between the point and the chip, and that the 75176 is properly connected to GND without abnormalities. However, it does not confirm whether the point is open or has cold solder joints with pin 31 of the CH32 or pin 3 of RN3, or whether the chip pins are bridged. Test these points to see if their values match or are 730.
 
 - **790**
-该值为CH32的值，未显示最小值730，表明可能存在开路。同上RN3值应相同或为730.
+This is the value of the CH32. If the minimum value of 730 is not displayed, it may indicate an open circuit. Similarly, RN3's value should match or be 730.
 
 - **430**
-该值为3V3对地值，该点与3V3短路，可能原因RN3 3脚与3V3连锡。
+This is the ground value of 3V3, indicating a short between the point and 3V3. Possible causes include solder bridging between pin 3 of RN3 and 3V3.
 
 - **0.000**
-对地导通。
+Short to ground.
 
 - **OL**
-该点与芯片开路。  
+Open circuit between the point and the chip.  
 
-### 排座对地值参考
+### Pin Header Ground Value Reference
 
-- 我的数值参考
+- My reference values:
 ![pE1uQoj.png](/assets/debug/value-to-ground/pE1uQoj.png)
 
-### 2.0接口对地值参考
+### 2.0 Interface Ground Value Reference
 
-- 我的数值参考
+- My reference values:
 ![pE1rrlV.png](/assets/debug/value-to-ground/pE1rrlV.png)
 
-- 群友的数值参考
+- Group member's reference values:
 ![pE1ro6K.png](/assets/debug/value-to-ground/pE1ro6K.png)
 
-### 小板对地值参考
+### Small Board Ground Value Reference
 
-- 我的数值参考
+- My reference values:
 ![pE1r5Sx.png](/assets/debug/value-to-ground/pE1r5Sx.png)
-- 群友的数值参考
+- Group member's reference values:
 ![pE1rjfI.png](/assets/debug/value-to-ground/pE1rjfI.png)
-- 那我的值跟上面都不一样，无法对比怎么办？正如人与人的体质不一样，芯片也不一样，上下浮动正常，就算数值超出1.0V，击穿部分但如果它没全坏，有些部分还是能工作的，只要不是对地短路，都可以放心上电试试。
-- 我的数值跟上面都一样，确认连线正确，TTL设备完好，还是无法烧录，无法解锁识别怎么办？搬板大法，建议只焊接芯片CH32、排阻RN3，短接B按钮的焊点，只满足TTL工作条件进行烧录测试。
+- What if my values don't match any of the above? Just as people have different physiques, chips vary too. Minor fluctuations are normal. Even if the value exceeds 1.0V or some parts are damaged, as long as there's no short to ground, you can safely power it on and test.
+- What if my values match the above, connections are correct, the TTL device is intact, but I still can't flash or unlock/recognize it? Try the "board transplant" method: solder only the CH32 chip and resistor RN3, short the solder points of the B button, and ensure only the TTL working conditions are met for flashing tests.
+```

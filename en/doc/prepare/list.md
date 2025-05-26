@@ -1,257 +1,218 @@
-# 材料清单
+# Bill of Materials
 
 ::: warning
-该页面内容暂时仅为原版物料表，欢迎改版作者补充改版
+The content on this page is currently only the original version of the material list. Contributors are welcome to add revised versions.
 :::
 
-**该页面为制作用的材料，所用工具请前往[制作前准备](./prepare)查看**
+**This page contains materials used for production. Tools required can be found at [Preparation Before Production](./prepare).**
 
-建议都多买几个以防万一
+It's recommended to purchase a few extra parts, just in case.
 
-## 主板原件清单（原版主板）
+## Mainboard Components List (Original Mainboard)
 
-### 主机PCB
+### Host PCB
 
-| 序号 | 数量 | 名称           | 封装/型号          | 参考购买链接（已选择好对应型号）                                                  | 点此购买选择购买数量 | 备注             |
-| ---- | ---- | -------------- | ------------------ | --------------------------------------------------------------------------------- | -------------------- | ---------------- |
-| 1    | 4    | PH2.0座子      | PH2.0/10P（卧贴）  | [点此购买](https://item.taobao.com/item.htm?id=553223118722&skuId=5947676967159)  | 1                    |                  |
-| 2    | 3    | 10kΩ排阻       | 0603*4             | [点此购买](https://item.taobao.com/item.htm?id=522573249593&skuId=5718679317165)  | 1                    |                  |
-| 3    | 12   | 100nF(50V耐压) | C0603              | [点此购买](https://item.taobao.com/item.htm?id=522573286298&skuId=5728018873000)  | 1                    |                  |
-| 4    | 4    | 0.68R电阻      | R1210              | [点此购买](https://item.taobao.com/item.htm?id=524216878082&skuId=5708982665135)  | 1                    |                  |
-| 5    | 4    | AT8236         | SOP8               | [点此购买](https://item.taobao.com/item.htm?id=803949868593)                      | 4（推荐5）           |                  |
-| 6    | 2    | 微动开关       | KEY-SMD_B3U-1000PM | [点此购买](https://item.taobao.com/item.htm?id=546724645617&skuId=3950794532931)  | 1                    |                  |
-| 7    | 1    | CH32V203C8T6   | LQFP48             | [点此购买](https://item.taobao.com/item.htm?id=708687799232&skuId=4970679344122)  | 1（推荐2）           |                  |
-| 8    | 1    | MX3.0座子      | 4pin               | [点此购买](https://detail.tmall.com/item.htm?id=624554633508&skuId=4592301798674) | 1                    |                  |
-| 9    | 2    | 2.54排针       | 4pin               | [点此购买](https://item.taobao.com/item.htm?id=571300127803&skuId=4197730409553)  | 1                    |                  |
-| 10   | 1    | SMBJ24CA       | DO-214AA           | [点此购买](https://item.taobao.com/item.htm?id=565061951670)                      | 1                    |                  |
-| 11   | 1    | TP75176E-SR    | SOP8               | [点此购买](https://item.taobao.com/item.htm?id=654383182827)                      | 1（推荐2）           | 链接里的商品能用 |
-| 12   | 1    | WS2812B        | 5050               | [点此购买](https://item.taobao.com/item.htm?id=686018450822)                      | 5（推荐7）           |                  |
-| 13   | 2    | 10Ω电阻        | 0603               | [点此购买](https://item.taobao.com/item.htm?id=525724626983)                      | 1                    |                  |
-| 14   | 1    | 120Ω电阻       | 0603               | [点此购买](https://item.taobao.com/item.htm?id=525735174372)                      | 1                    |                  |
-| 15   | 1    | PSM712         | SOT23-3            | [点此购买](https://item.taobao.com/item.htm?id=652999552289)                      | 1（推荐2）           |                  |
+| No. | Quantity | Name              | Package/Model             | Reference Purchase Link (Correct model already selected)                         | Buy Now and Select Quantity | Notes |
+|-----|----------|-------------------|----------------------------|----------------------------------------------------------------------------------|-----------------------------|-------|
+| 1   | 4        | PH2.0 Connector   | PH2.0/10P (SMD Horizontal) | [Buy Here](https://item.taobao.com/item.htm?id=553223118722&skuId=5947676967159) | 1                           |       |
+| 2   | 3        | 10kΩ Resistor Array | 0603*4                     | [Buy Here](https://item.taobao.com/item.htm?id=522573249593&skuId=5718679317165) | 1                           |       |
+| 3   | 12       | 100nF (50V)       | C0603                      | [Buy Here](https://item.taobao.com/item.htm?id=522573286298&skuId=5728018873000) | 1                           |       |
+| 4   | 4        | 0.68R Resistor    | R1210                      | [Buy Here](https://item.taobao.com/item.htm?id=524216878082&skuId=5708982665135) | 1                           |       |
+| 5   | 4        | AT8236            | SOP8                       | [Buy Here](https://item.taobao.com/item.htm?id=803949868593)                     | 4 (Recommended 5)           |       |
+| 6   | 2        | Micro Switch      | KEY-SMD_B3U-1000PM         | [Buy Here](https://item.taobao.com/item.htm?id=546724645617&skuId=3950794532931) | 1                           |       |
+| 7   | 1        | CH32V203C8T6      | LQFP48                     | [Buy Here](https://item.taobao.com/item.htm?id=708687799232&skuId=4970679344122) | 1 (Recommended 2)           |       |
+| 8   | 1        | MX3.0 Connector   | 4pin                       | [Buy Here](https://detail.tmall.com/item.htm?id=624554633508&skuId=4592301798674)| 1                           |       |
+| 9   | 2        | 2.54mm Pin Header | 4pin                       | [Buy Here](https://item.taobao.com/item.htm?id=571300127803&skuId=4197730409553) | 1                           |       |
+| 10  | 1        | SMBJ24CA          | DO-214AA                   | [Buy Here](https://item.taobao.com/item.htm?id=565061951670)                     | 1                           |       |
+| 11  | 1        | TP75176E-SR       | SOP8                       | [Buy Here](https://item.taobao.com/item.htm?id=654383182827)                     | 1 (Recommended 2)           | The item in the link works |
+| 12  | 1        | WS2812B           | 5050                       | [Buy Here](https://item.taobao.com/item.htm?id=686018450822)                     | 5 (Recommended 7)           |       |
+| 13  | 2        | 10Ω Resistor      | 0603                       | [Buy Here](https://item.taobao.com/item.htm?id=525724626983)                     | 1                           |       |
+| 14  | 1        | 120Ω Resistor     | 0603                       | [Buy Here](https://item.taobao.com/item.htm?id=525735174372)                     | 1                           |       |
+| 15  | 1        | PSM712            | SOT23-3                    | [Buy Here](https://item.taobao.com/item.htm?id=652999552289)                     | 1 (Recommended 2)           |       |
 
-#### 以下二选一
+#### Choose One of the Following
 
-##### 使用电源模块
+##### Use Power Module
 
-| 名称         | 规格     | 购买点此购买                                                                     | 购买数量   | 备注               |
-| ------------ | -------- | -------------------------------------------------------------------------------- | ---------- | ------------------ |
-| 3.3V电源模块 | 24V-3.3V | [点此购买](https://item.taobao.com/item.htm?id=644346322045&skuId=4634423556340) | 1（推荐2） | 焊接简单，成本更低 |
+| Name              | Specification | Purchase Link                                                                   | Quantity   | Notes                             |
+|-------------------|---------------|----------------------------------------------------------------------------------|------------|-----------------------------------|
+| 3.3V Power Module | 24V-3.3V      | [Buy Here](https://item.taobao.com/item.htm?id=644346322045&skuId=4634423556340) | 1 (Recommended 2) | Easy to solder, lower cost        |
 
-##### 使用IC
+##### Use IC
 
-| 名称         | 封装/型号 | 购买点此购买                                                                     | 购买数量   | 备注                 |
-| ------------ | --------- | -------------------------------------------------------------------------------- | ---------- | -------------------- |
-| TPS54202DDCR | SOT23-6   | [点此购买](https://item.taobao.com/item.htm?id=635845819681)                     | 1（推荐2） | 自由搭配，有替代元件 |
-| 47pF         | C0603     | [点此购买](https://item.taobao.com/item.htm?id=537579223445)                     | 1          |                      |
-| 15kΩ         | R0603     | [点此购买](https://item.taobao.com/item.htm?id=525796963242)                     | 1          |                      |
-| 68kΩ         | R0603     | [点此购买](https://item.taobao.com/item.htm?id=525878306847)                     | 1          |                      |
-| 22uF         | C0805     | [点此购买](https://item.taobao.com/item.htm?id=555159599251)                     | 1          |                      |
-| 10uH         | 7.3*6.8mm | [点此购买](https://item.taobao.com/item.htm?id=522572781147&skuId=4554704774433) | 1（推荐2） |                      |
+| Name         | Package/Model | Purchase Link                                                                   | Quantity   | Notes                          |
+|--------------|---------------|----------------------------------------------------------------------------------|------------|--------------------------------|
+| TPS54202DDCR | SOT23-6       | [Buy Here](https://item.taobao.com/item.htm?id=635845819681)                    | 1 (Recommended 2) | Flexible combination, has alternatives |
+| 47pF         | C0603         | [Buy Here](https://item.taobao.com/item.htm?id=537579223445)                    | 1          |                                |
+| 15kΩ         | R0603         | [Buy Here](https://item.taobao.com/item.htm?id=525796963242)                    | 1          |                                |
+| 68kΩ         | R0603         | [Buy Here](https://item.taobao.com/item.htm?id=525878306847)                    | 1          |                                |
+| 22uF         | C0805         | [Buy Here](https://item.taobao.com/item.htm?id=555159599251)                    | 1          |                                |
+| 10uH         | 7.3*6.8mm     | [Buy Here](https://item.taobao.com/item.htm?id=522572781147&skuId=4554704774433)| 1 (Recommended 2) |                                |
 
----
+### Component PCB (Already Multiplied by 4)
 
-### 组件PCB（已乘4）
+| No. | Quantity | Name                  | Link                                                                             | Quantity                            | Notes                                           |
+|-----|----------|-----------------------|----------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------------|
+| 1   | 4        | WS2812B               | See Host Section No. 12                                                        | Already purchased 5 from host part  |                                                 |
+| 2   | 16       | 100nF                 | See Host Section No. 3                                                         | Already purchased 50 from host part |                                                 |
+| 3   | 4        | PH2.0 Connector       | See Host Section No. 1                                                         | Already purchased 10 from host part |                                                 |
+| 4   | 4        | PH2.0 Ribbon Cable (10Pin) | [Buy Here](https://item.taobao.com/item.htm?id=607000261049&skuId=4258117528707) | 4 Recommended 5                     | Male-to-male, reversed pinout                   |
+| 5   | 8        | 470R Resistor         | [Buy Here](https://item.taobao.com/item.htm?id=525787826203)                    |                                     |                                                 |
+| 6   | 8        | ITR9606 Opto-switch   | [Buy Here](https://item.taobao.com/item.htm?id=522574501806)                    | 8 Recommended 9                     |                                                 |
+| 7   | 4        | AS5600                | [Buy Here](https://item.taobao.com/item.htm?id=727363140181&skuId=5045141320013)| 4 Recommended 5                     | Cheaper first orders from different stores; buy radial magnets separately |
+| 8   | 4        | 6*2.5 Radial Magnet   | [Buy Here](https://item.taobao.com/item.htm?id=596454786426&skuId=4489093727846)| 1                                   | Used with AS5600 above                          |
+| 9   | 4        | LM393                 | [Buy Here](https://item.taobao.com/item.htm?id=548082479129)                    | 4 Recommended 5                     |                                                 |
+| 10  | 8        | 1K Resistor           | [Buy Here](https://item.taobao.com/item.htm?id=525795113143)                    |                                     |                                                 |
+| 11  | 8        | LED (0603)            | [Buy Here](https://item.taobao.com/item.htm?id=522554271548)                    |                                     |                                                 |
 
-| 序号 | 数量 | 名称               | 链接                                                                             | 数量                         | 备注                                             |
-| ---- | ---- | ------------------ | -------------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------ |
-| 1    | 4    | WS2812B            | 见主机部分序号12                                                                 | 主机已购买5只，无需额外购买  |                                                  |
-| 2    | 16   | 100nF              | 见主机部分序号3                                                                  | 主机已购买50只，无需额外购买 |                                                  |
-| 3    | 4    | PH2.0座子          | 见主机部分序号1                                                                  | 主机已购买10只，无需额外购买 |                                                  |
-| 4    | 4    | PH2.0排线（10Pin） | [点此购买](https://item.taobao.com/item.htm?id=607000261049&skuId=4258117528707) | 4 推荐5                      | 公对公反向                                       |
-| 5    | 8    | 470R电阻           | [点此购买](https://item.taobao.com/item.htm?id=525787826203)                     |                              |                                                  |
-| 6    | 8    | ITR9606光电开关    | [点此购买](https://item.taobao.com/item.htm?id=522574501806)                     | 8 推荐9                      |                                                  |
-| 7    | 4    | AS5600             | [点此购买](https://item.taobao.com/item.htm?id=727363140181&skuId=5045141320013) | 4 推荐5                      | 各家店铺首单便宜，可以分开买，然后单独买径向磁铁 |
-| 8    | 4    | 6*2.5径向磁铁      | [点此购买](https://item.taobao.com/item.htm?id=596454786426&skuId=4489093727846) | 1                            | 配合上面的5600                                   |
-| 9    | 4    | LM393              | [点此购买](https://item.taobao.com/item.htm?id=548082479129)                     | 4 推荐5                      |                                                  |
-| 10   | 8    | 1K电阻             | [点此购买](https://item.taobao.com/item.htm?id=525795113143)                     |                              |                                                  |
-| 11   | 8    | LED（0603）        | [点此购买](https://item.taobao.com/item.htm?id=522554271548)                     |                              |                                                  |
+> **If purchasing according to the recommended quantities, the total component cost will be approximately ¥80, including shipping**
 
-> **若按推荐量购买，元件总花费80元，包含运费**
+## Hall Sensor Mainboard
 
-## 霍尔主板
+### Mainboard
 
-### 主板
+The following components are additional compared to the original mainboard. They look like `this`
 
-相较原版主板多的零件`长这样`
+| No. | Quantity | Name                   | Link                                                                              | Quantity   | Notes |
+|-----|----------|------------------------|-----------------------------------------------------------------------------------|------------|-------|
+| 1   | 12       | 100nF Capacitor        | [Buy Here](https://item.taobao.com/item.htm?id=522573286298&skuId=5728018873000) | 1          | -     |
+| 2   | 1        | MX3.0 2*2 Connector    | [Buy Here](https://detail.tmall.com/item.htm?id=624554633508&skuId=4592301798674) | 1          | -     |
+| 3   | 4        | PH2.0 10P Connector    | [Buy Here](https://item.taobao.com/item.htm?id=553223118722&skuId=5947676967159) | 1          | -     |
+| 4   | 1        | SMBJ24CA               | [Buy Here](https://item.taobao.com/item.htm?id=565061951670)                     | 1          | -     |
+| 5   | 1        | PSM712                 | [Buy Here](https://item.taobao.com/item.htm?id=652999552289)                     | 1 (Recommended 2) | -     |
+| 6   | 1        | `1N5819WS`             | [Buy Here](https://item.taobao.com/item.htm?id=522574162326)                     | 1          | -     |
+| 7   | 1        | `SS54`                 | [Buy Here](https://item.taobao.com/item.htm?id=545422588725)                     | 1          | -     |
+| 8   | 1        | 2.54mm Pin Header      | [Buy Here](https://item.taobao.com/item.htm?id=571300127803&skuId=4197730409553) | 1          | -     |
+| 9   | 1        | 5050 WS2812B LED       | [Buy Here](https://item.taobao.com/item.htm?id=686018450822)                     | 5 (Recommended 7) | -     |
+| 10  | 1        | `AO3401A`              | [Buy Here](https://item.taobao.com/item.htm?id=652880800645)                     | 1 (Recommended 2) | -     |
+| 11  | 4        | 0.68Ω Resistor         | [Buy Here](https://item.taobao.com/item.htm?id=524216878082&skuId=5708982665135) | 1          | -     |
+| 12  | 3        | 10Ω Resistor           | [Buy Here](https://item.taobao.com/item.htm?id=525724626983)                     | 1          | -     |
+| 13  | 1        | 120Ω Resistor          | [Buy Here](https://item.taobao.com/item.htm?id=525735174372)                     | 1          | -     |
+| 14  | 1        | 470Ω Resistor          | [Buy Here](https://item.taobao.com/item.htm?id=525787826203)                     | 1          | -     |
+| 15  | 3        | 10kΩ Resistor Array    | [Buy Here](https://item.taobao.com/item.htm?id=522573249593&skuId=5718679317165) | 1          | -     |
+| 16  | 2        | Micro Switch           | [Buy Here](https://item.taobao.com/item.htm?id=546724645617&skuId=3950794532931) | 1          | -     |
+| 17  | 1        | CH32V203C8T6           | [Buy Here](https://item.taobao.com/item.htm?id=708687799232&skuId=4970679344122) | 1 (Recommended 2) | -     |
+| 18  | 1        | TP75176                | [Buy Here](https://item.taobao.com/item.htm?id=654383182827)                     | 1 (Recommended 2) | -     |
+| 19  | 4        | AT8236                 | [Buy Here](https://item.taobao.com/item.htm?id=803949868593)                     | 4 (Recommended 5) | -     |
+| 20   | 1        | `22uF Capacitor (1206)`| [Buy Here](https://detail.tmall.com/item.htm?id=610909966642&skuId=4470354411947)| 1         | -     |
 
-| 序号 | 数量 | 名称               | 链接                                                                              | 数量       | 备注 |
-| ---- | ---- | ------------------ | --------------------------------------------------------------------------------- | ---------- | ---- |
-| 1    | 12   | 100nF电容          | [点此购买](https://item.taobao.com/item.htm?id=522573286298&skuId=5728018873000)  | 1          | -    |
-| 2    | 1    | MX3.0 2*2座子      | [点此购买](https://detail.tmall.com/item.htm?id=624554633508&skuId=4592301798674) | 1          | -    |
-| 3    | 4    | PH2.0 10P座子      | [点此购买](https://item.taobao.com/item.htm?id=553223118722&skuId=5947676967159)  | 1          | -    |
-| 4    | 1    | SMBJ24CA           | [点此购买](https://item.taobao.com/item.htm?id=565061951670)                      | 1          | -    |
-| 5    | 1    | PSM712             | [点此购买](https://item.taobao.com/item.htm?id=652999552289)                      | 1（推荐2） | -    |
-| 6    | 1    | `1N5819WS`         | [点此购买](https://item.taobao.com/item.htm?id=522574162326)                      | 1          | -    |
-| 7    | 1    | `SS54`             | [点此购买](https://item.taobao.com/item.htm?id=545422588725)                      | 1          | -    |
-| 8    | 1    | 2.54排针           | [点此购买](https://item.taobao.com/item.htm?id=571300127803&skuId=4197730409553)  | 1          | -    |
-| 9    | 1    | 5050 ws2812b灯珠   | [点此购买](https://item.taobao.com/item.htm?id=686018450822)                      | 5（推荐7） | -    |
-| 10   | 1    | `AO3401A`          | [点此购买](https://item.taobao.com/item.htm?id=652880800645)                      | 1（推荐2） | -    |
-| 11   | 4    | 0.68Ω电阻          | [点此购买](https://item.taobao.com/item.htm?id=524216878082&skuId=5708982665135)  | 1          | -    |
-| 12   | 3    | 10Ω电阻            | [点此购买](https://item.taobao.com/item.htm?id=525724626983)                      | 1          | -    |
-| 13   | 1    | 120Ω电阻           | [点此购买](https://item.taobao.com/item.htm?id=525735174372)                      | 1          | -    |
-| 14   | 1    | 470Ω电阻           | [点此购买](https://item.taobao.com/item.htm?id=525787826203)                      | 1          | -    |
-| 15   | 3    | 10kΩ排阻           | [点此购买](https://item.taobao.com/item.htm?id=522573249593&skuId=5718679317165)  | 1          | -    |
-| 16   | 2    | 微动开关           | [点此购买](https://item.taobao.com/item.htm?id=546724645617&skuId=3950794532931)  | 1          | -    |
-| 17   | 1    | CH32V203C8T6       | [点此购买](https://item.taobao.com/item.htm?id=708687799232&skuId=4970679344122)  | 1（推荐2） | -    |
-| 18   | 1    | 75176              | [点此购买](https://item.taobao.com/item.htm?id=654383182827)                      | 1（推荐2） | -    |
-| 19   | 4    | AT8236             | [点此购买](https://item.taobao.com/item.htm?id=803949868593)                      | 4（推荐5） | -    |
-| 20   | 1    | `22uF电容（1206）` | [点此购买](https://detail.tmall.com/item.htm?id=610909966642&skuId=4470354411947) | 1          | -    |
+#### Power Supply - Discrete Components (Choose One)
 
-#### 电源-分立元件（二选一）
+| Name         | Package/Model | Purchase Link                                                                   | Quantity   | Notes                          |
+|--------------|---------------|----------------------------------------------------------------------------------|------------|--------------------------------|
+| TPS54202DDCR | SOT23-6       | [Buy Here](https://item.taobao.com/item.htm?id=635845819681)                    | 1 (Recommended 2) | Flexible combination, has alternatives |
+| 47pF         | C0603         | [Buy Here](https://item.taobao.com/item.htm?id=537579223445)                    | 1          |                                |
+| 15kΩ         | R0603         | [Buy Here](https://item.taobao.com/item.htm?id=525796963242)                    | 1          |                                |
+| 68kΩ         | R0603         | [Buy Here](https://item.taobao.com/item.htm?id=525878306847)                    | 1          |                                |
+| 22uF         | C0805         | [Buy Here](https://item.taobao.com/item.htm?id=555159599251)                    | 1          |                                |
+| 10uH         | 7.3*6.8mm     | [Buy Here](https://item.taobao.com/item.htm?id=522572781147&skuId=4554704774433)| 1 (Recommended 2) |                                |
 
-| 名称         | 封装/型号 | 购买点此购买                                                                     | 购买数量   | 备注                 |
-| ------------ | --------- | -------------------------------------------------------------------------------- | ---------- | -------------------- |
-| TPS54202DDCR | SOT23-6   | [点此购买](https://item.taobao.com/item.htm?id=635845819681)                     | 1（推荐2） | 自由搭配，有替代元件 |
-| 47pF         | C0603     | [点此购买](https://item.taobao.com/item.htm?id=537579223445)                     | 1          |                      |
-| 15kΩ         | R0603     | [点此购买](https://item.taobao.com/item.htm?id=525796963242)                     | 1          |                      |
-| 68kΩ         | R0603     | [点此购买](https://item.taobao.com/item.htm?id=525878306847)                     | 1          |                      |
-| 22uF         | C0805     | [点此购买](https://item.taobao.com/item.htm?id=555159599251)                     | 1          |                      |
-| 10uH         | 7.3*6.8mm | [点此购买](https://item.taobao.com/item.htm?id=522572781147&skuId=4554704774433) | 1（推荐2） |                      |
+#### Power Supply - Module Option (Choose One)
 
-#### 电源-模块（二选一）
+| Name              | Specification | Purchase Link                                                                   | Quantity   | Notes                             |
+|-------------------|---------------|----------------------------------------------------------------------------------|------------|-----------------------------------|
+| 3.3V Power Module | 24V-3.3V      | [Buy Here](https://item.taobao.com/item.htm?id=644346322045&skuId=4634423556340) | 1 (Recommended 2) | Easy to solder, lower cost        |
 
-| 名称         | 规格     | 购买点此购买                                                                     | 购买数量   | 备注               |
-| ------------ | -------- | -------------------------------------------------------------------------------- | ---------- | ------------------ |
-| 3.3V电源模块 | 24V-3.3V | [点此购买](https://item.taobao.com/item.htm?id=644346322045&skuId=4634423556340) | 1（推荐2） | 焊接简单，成本更低 |
+### Component Board - Already Multiplied by 4
 
-### 组件板-已乘四
+| No. | Quantity | Name                   | Link                                                                               | Quantity   | Notes                                             |
+|-----|----------|------------------------|------------------------------------------------------------------------------------|------------|---------------------------------------------------|
+| 1   | 28       | 100nF Capacitor        | Already purchased sufficiently above                                              | -          | -                                                 |
+| 2   | 4        | PH2.0 10P Connector    | Already included in previous purchases                                            | -          | -                                                 |
+| 3   | 4        | 5050 WS2812B           | Already covered in prior purchases                                                | -          | -                                                 |
+| 4   | 4        | `4020 WS2812B`         | [Buy](https://item.taobao.com/item.htm?from=cart&id=762141789765&skuId=5249831268204) | 4 Recommended 5 | - |
+| 5   | 8        | 470Ω Resistor          | Already sufficiently purchased                                                    | -          | -                                                 |
+| 6   | 16       | `10kΩ Resistor`        | [Buy Here](https://item.taobao.com/item.htm?id=525777943950&skuId=5869585235035) | 1          | -                                                 |
+| 7   | 4        | AS5600                 | [Buy](https://item.taobao.com/item.htm?id=727363140181&skuId=5045141320013)      | 4 Recommended 5 | First orders from different stores are cheaper; buy radial magnets separately |
+| 8   | 4        | 6*2.5 Radial Magnet    | [Buy Here](https://item.taobao.com/item.htm?id=596454786426&skuId=4489093727846)| 1          | Use with AS5600 above                             |
+| 9   | 4        | ITR9606 Opto-switch    | [Buy Here](https://item.taobao.com/item.htm?id=522574501806)                    | 4 Recommended 5 | -                                                 |
+| 10  | 4        | `49E Hall Sensor`      | [Buy Here](https://item.taobao.com/item.htm?id=562009105674)                    | 4 Recommended 5 | -                                                 |
+| 11  | 4        | `LMV358`               | [Buy Here](https://item.taobao.com/item.htm?id=551634695027)                    | 4 Recommended 5 | -                                                 |
+| 12  | 4        | PH2.0 Ribbon Cable (10Pin) | [Buy Here](https://item.taobao.com/item.htm?id=607000261049&skuId=4258117528707) | 4 Recommended 5 | Male-to-male, reversed pinout                     |
 
-| 序号 | 数量 | 名称               | 链接                                                                                 | 数量    | 备注                                             |
-| ---- | ---- | ------------------ | ------------------------------------------------------------------------------------ | ------- | ------------------------------------------------ |
-| 1    | 28   | 100nF电容          | 上面已经买够了                                                                       | -       | -                                                |
-| 2    | 4    | PH2.0 10P座子      | 上面买够了已经                                                                       | -       | -                                                |
-| 3    | 4    | 5050 ws2812b       | 买够了上面已经                                                                       | -       | -                                                |
-| 4    | 4    | `4020 ws2812b`     | [买](https://item.taobao.com/item.htm?from=cart&id=762141789765&skuId=5249831268204) | 4 推荐5 | -                                                |
-| 5    | 8    | 470Ω电阻           | 已经买够了上面                                                                       | -       | -                                                |
-| 6    | 16   | `10kΩ电阻`         | [我要买](https://item.taobao.com/item.htm?id=525777943950&skuId=5869585235035)       | 1       | -                                                |
-| 7    | 4    | AS5600             | [买](https://item.taobao.com/item.htm?id=727363140181&skuId=5045141320013)           | 4 推荐5 | 各家店铺首单便宜，可以分开买，然后单独买径向磁铁 |
-| 8    | 4    | 6*2.5径向磁铁      | [买！](https://item.taobao.com/item.htm?id=596454786426&skuId=4489093727846)         | 1       | 配合上面的5600                                   |
-| 9    | 4    | ITR9606光电        | [快买](https://item.taobao.com/item.htm?id=522574501806)                             | 4 推荐5 | -                                                |
-| 10   | 4    | `49E霍尔`          | [点这儿买](https://item.taobao.com/item.htm?id=562009105674)                         | 4 推荐5 | -                                                |
-| 11   | 4    | `LMV358`           | [o(*￣▽￣*)ブ买买买](https://item.taobao.com/item.htm?id=551634695027)                 | 4 推荐5 | -                                                |
-| 12   | 4    | PH2.0排线（10Pin） | [点此购买](https://item.taobao.com/item.htm?id=607000261049&skuId=4258117528707)     | 4 推荐5 | 公对公反向                                       |
+**Note: Pay attention to the orientation of the 4020 WS2812B LED during soldering—it is side-mounted.**
 
-**注意4020的ws2812b的焊接朝向，它是侧贴**
+[4020 WS2812 Orientation Example](/assets/prepare/侧贴2812.jpg)
 
-![4020 2812朝向示意](/assets/prepare/侧贴2812.jpg)
+## 370 Hall Effect Version
 
-## 370钢珠版
+### Extrusion Channel (Quantity already multiplied by 4)
 
-注意：**这个物料表为2025-3-14打包的钢珠版制作，该版本并非稳定版，正在测试中** 相关模型请前往群文件查找对应日期打包的版本
+Different from the 370 steel ball version which `looks like this`
 
-为了方便130版升级，以下需要额外购买的（完全新增/数量增加）零件名称`长这样`
+| Item Name                  | Total Qty | Purchase Link                                                                     | Order Qty  | Notes                                                          |
+| -------------------------- | --------- | --------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------- |
+| MR85ZZ Bearing             | 8         | [Buy Here](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8          | Recommended to purchase 9                                      |
+| BMG Gear Set               | 4         | [Buy Here](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4          | -                                                              |
+| D5x22mm Shaft              | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1          | Has precision issues, select shafts with smaller tolerance     |
+| D2x20mm Shaft              | 16        | [Buy Here](https://item.taobao.com/item.htm?id=25771992682)                       | 16         | Recommended to purchase 17                                     |
+| 182A Gear                  | 8         | [Buy Here](https://item.taobao.com/item.htm?id=18760030298)                       | 12         | `Must specify 4.2MM thickness`; Recommended to buy extras       |
+| 682A Worm Gear             | 4         | [Buy Here](https://item.taobao.com/item.htm?id=20964703851)                       | 4          | Recommended to purchase 5                                      |
+| RS370 Motor 24V 6000RPM    | 4         | [Buy Here](https://item.taobao.com/item.htm?id=693694363820&skuId=5676948302798)  | 4          | Recommended to purchase 5                                      |
+| M3*5 Machine Screw         | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=535431829802&skuId=4932222933924) | 1          | For securing 370 motor                                         |
+| Wire (5cm+)                | 8         | [Buy Here](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1          | Minimum 5cm length required                                   |
+| 62B Shaft Collar           | 32        | [Buy Here](https://item.taobao.com/item.htm?id=557038811656)                      | 5          | -                                                              |
+| PC4 Pneumatic Fitting 6mm  | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=818091079521&skuId=5688154930484) | 4          | Recommended to buy 8 (extra for filament box)                  |
+| 5mm Stainless Steel Ball   | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=774271088783&skuId=5299497505386) | 1          | -                                                              |
+| 0.3*4x5mm Stainless Spring | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800015352191) | 1          | Ball spring                                                   |
+| `0.6*4x10mm Spring Steel`  | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=585259720029&skuId=4133932358206) | 1          | Wrench spring, must specify size. Personal recommendation: 15mm length for P series |
+| `0.8*12*25mm Stainless`    | 8         | [Buy Here](https://detail.tmall.com/item.htm?id=550601588733&skuId=3358115281469) | 1          | `Must specify size` Buffer spring, can use 0.7mm spring steel |
+| M2*8 Countersunk Screw     | 48        | [Buy Here](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1          | -                                                              |
+| 1.5mm Light Guide Fiber    | 1m        | [Buy Here](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1          | Can be replaced with transparent filament                      |
+| `N35 3*10mm Cylinder Magnet` | 8      | [Buy Here](https://item.taobao.com/item.htm?id=672213824269&skuId=5014364542698)  | 1          | Can also use 20mm length (link provided) as two stacked, 10mm is for CMCU preparation |
 
-### 挤出组件部分（已乘四通道）
+### Base Assembly
 
-| 名称                   | 总数量 | 购买链接                                                                          | 选择购买量 | 备注                               |
-| ---------------------- | ------ | --------------------------------------------------------------------------------- | ---------- | ---------------------------------- |
-| MR85ZZ轴承             | 8      | [点此购买](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8          | 推荐购买9个                        |
-| BMG齿轮套装            | 4      | [点此购买](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4          | -                                  |
-| D5x22mm轴              | 4      | [点此购买](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1          | 该轴有精度问题，使用前挑选公差小的 |
-| `D2x20mm轴`            | 16     | [点此购买](https://item.taobao.com/item.htm?id=25771992682)                       | 16         | 推荐购买17个                       |
-| `182A齿轮`             | 12     | [点此购买](https://item.taobao.com/item.htm?id=18760030298)                       | 12         | `需备注4.2MM厚度`；推荐多买        |
-| `682A蜗杆齿轮`         | 4      | [点此购买](https://item.taobao.com/item.htm?id=20964703851)                       | 4          | 推荐购买5个                        |
-| `RS370电机 24V 6000转` | 4      | [点此购买](https://item.taobao.com/item.htm?id=693694363820&skuId=5676948302798)  | 4          | 推荐购买5个                        |
-| `M3*5机牙螺丝`         | 4      | [点此购买](https://detail.tmall.com/item.htm?id=535431829802&skuId=4932222933924) | 1          | 固定370电机                        |
-| 导线                   | 8      | [点此购买](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1          | 需5cm以上                          |
-| `62B轴套`              | 32     | [点此购买](https://item.taobao.com/item.htm?id=557038811656)                      | 5          | -                                  |
-| PC4气动头 6mm          | 4      | [点此购买](https://detail.tmall.com/item.htm?id=818091079521&skuId=5688154930484) | 4          | 推荐购买8个（耗材箱可多买）        |
-| `5MM不锈钢钢珠`        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=774271088783&skuId=5299497505386) | 1          | -                                  |
-| `弹簧0.3*4x5mm`        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800015352191) | 1          | 钢珠弹簧                           |
-| 弹簧0.6*4x10mm         | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800019104052) | 1          | 扳手弹簧 给p系列用个人建议15长度   |
-| `弹簧0.6*12x30mm`      | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4804987529206) | 1          | 缓冲弹簧                           |
-| M2*8沉头自攻螺丝       | 48     | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1          | -                                  |
-| 1.5mm导光纤维          | 1m     | [点此购买](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1          | 也可以用透明耗材替代               |
+| Item Name                 | Total Qty | Purchase Link                                                                     | Order Qty  | Notes                     |
+| ------------------------- | --------- | --------------------------------------------------------------------------------- | ---------- | ------------------------- |
+| M2*8 Countersunk Screw    | 4         | Already included                                                                  | -          | Above quantity sufficient (100pcs) |
+| M3*14 Countersunk Screw   | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=638268009719&skuId=4581001685948) | 1          | -                         |
+| M3 Hex Nut                | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=549640610734&skuId=5271411287015) | 1          | -                         |
+| MX3.0-4P Mirror Cable     | 1         | [Buy Here](https://item.taobao.com/item.htm?id=748449242763&skuId=5162239945869)  | 1          | -                         |
 
-### 底座部分
+## 130 Original Version
 
-| 名称                | 总数量 | 购买链接                                                                          | 选择购买量 | 备注                    |
-| ------------------- | ------ | --------------------------------------------------------------------------------- | ---------- | ----------------------- |
-| M2*8沉头自攻螺丝    | 4      | 已有                                                                              | -          | 上述购买量足够（100只） |
-| `M3*14沉头机牙螺丝` | 4      | [点此购买](https://detail.tmall.com/item.htm?id=638268009719&skuId=4581001685948) | 1          | -                       |
-| `M3六角螺母`        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=549640610734&skuId=5271411287015) | 1          | -                       |
-| MX3.0-4P镜像连接线  | 1      | [点此购买](https://item.taobao.com/item.htm?id=748449242763&skuId=5162239945869)  | 1          | -                       |
+### Extrusion Assembly (Quantity multiplied by 4 channels)
 
-## 370霍尔版
+::: warning WARNING
+130 motors are out of stock at Youxin Electronics. Recommended alternatives:
 
-### 挤出通道（已经乘以四）
-
-区别于370钢珠版的`长这样`
-
-| 名称                    | 总数量 | 购买链接                                                                          | 选择购买量 | 备注                                                           |
-| ----------------------- | ------ | --------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------- |
-| MR85ZZ轴承              | 8      | [点此购买](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8          | 推荐购买9个                                                    |
-| BMG齿轮套装             | 4      | [点此购买](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4          | -                                                              |
-| D5x22mm轴               | 4      | [点此购买](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1          | 该轴有精度问题，使用前挑选公差小的                             |
-| D2x20mm轴               | 16     | [点此购买](https://item.taobao.com/item.htm?id=25771992682)                       | 16         | 推荐购买17个                                                   |
-| 182A齿轮                | 8      | [点此购买](https://item.taobao.com/item.htm?id=18760030298)                       | 12         | `需备注4.2MM厚度`；推荐多买                                    |
-| 682A蜗杆齿轮            | 4      | [点此购买](https://item.taobao.com/item.htm?id=20964703851)                       | 4          | 推荐购买5个                                                    |
-| RS370电机 24V 6000转    | 4      | [点此购买](https://item.taobao.com/item.htm?id=693694363820&skuId=5676948302798)  | 4          | 推荐购买5个                                                    |
-| M3*5机牙螺丝            | 4      | [点此购买](https://detail.tmall.com/item.htm?id=535431829802&skuId=4932222933924) | 1          | 固定370电机                                                    |
-| 导线                    | 8      | [点此购买](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1          | 需5cm以上                                                      |
-| 62B轴套                 | 32     | [点此购买](https://item.taobao.com/item.htm?id=557038811656)                      | 5          | -                                                              |
-| PC4气动头 6mm           | 4      | [点此购买](https://detail.tmall.com/item.htm?id=818091079521&skuId=5688154930484) | 4          | 推荐购买8个（耗材箱可多买）                                    |
-| 5MM不锈钢钢珠           | 4      | [点此购买](https://detail.tmall.com/item.htm?id=774271088783&skuId=5299497505386) | 1          | -                                                              |
-| 不锈钢弹簧0.3\*4x5mm    | 4      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=4800015352191) | 1          | 钢珠弹簧                                                       |
-| `弹簧钢弹簧0.6*4x10mm`  | 4      | [点此购买](https://detail.tmall.com/item.htm?id=585259720029&skuId=4133932358206) | 1          | 扳手弹簧 更换为弹簧钢材质 `需备注尺寸` 给p系列用个人建议15长度 |
-| `不锈钢弹簧0.8*12*25mm` | 8      | [点此购买](https://detail.tmall.com/item.htm?id=550601588733&skuId=3358115281469) | 1          | `自己备注尺寸` 缓冲弹簧，弹簧钢材质可以买0.7mm                 |
-| M2*8沉头自攻螺丝        | 48     | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1          | -                                                              |
-| 1.5mm导光纤维           | 1m     | [点此购买](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1          | 也可以用透明耗材替代                                           |
-| `n35 3*10mm圆柱磁铁`    | 8      | [点此购买](https://item.taobao.com/item.htm?id=672213824269&skuId=5014364542698)  | 1          | 也可以用链接里的20mm长度替代两个吸一起，这里的10mm是备战cmcu   |
-
-### 底座
-
-| 名称               | 总数量 | 购买链接                                                                          | 选择购买量 | 备注                    |
-| ------------------ | ------ | --------------------------------------------------------------------------------- | ---------- | ----------------------- |
-| M2*8沉头自攻螺丝   | 4      | 已有                                                                              | -          | 上述购买量足够（100只） |
-| M3*14沉头机牙螺丝  | 4      | [点此购买](https://detail.tmall.com/item.htm?id=638268009719&skuId=4581001685948) | 1          | -                       |
-| M3六角螺母         | 4      | [点此购买](https://detail.tmall.com/item.htm?id=549640610734&skuId=5271411287015) | 1          | -                       |
-| MX3.0-4P镜像连接线 | 1      | [点此购买](https://item.taobao.com/item.htm?id=748449242763&skuId=5162239945869)  | 1          | -                       |
-
-## 130原版
-
-### 挤出组件部分（已乘四通道）
-
-::: warning 警告
-130电机优信电子没货了，建议去[闲鱼](https://m.tb.cn/h.TqiacGI?tk=Za9zehEXEfn)买12v6000转的 万宝至 的电机
-
-或者
-
-买`尚诚电子`的[这个链接](https://item.taobao.com/item.htm?id=658929653603&skuId=4925420858114)（这个之前是FN的，现在是SK，FK的，我只试过FN的可以用），但是噪音偏大、轴短（蜗杆不要插到底）
+- Purchase 12V 6000RPM Mabuchi motors from [Xianyu](https://m.tb.cn/h.TqiacGI?tk=Za9zehEXEfn)
+- OR
+- Purchase from Shangcheng Electronics [this link](https://item.taobao.com/item.htm?id=658929653603&skuId=4925420858114) (previously FN version, now SK/FK - only FN has been tested), but has more noise and shorter shaft (don't insert worm gear all the way)
 :::
 
-| 名称             | 总数量 | 购买链接                                                                          | 选择购买量   | 备注                       |
-| ---------------- | ------ | --------------------------------------------------------------------------------- | ------------ | -------------------------- |
-| MR85ZZ轴承       | 8      | [点此购买](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8（推荐9）   |                            |
-| BMG齿轮套装      | 4      | [点此购买](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4            |                            |
-| D5x22mm轴        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1            | 精度不好，用之前选公差小的 |
-| D2x10mm轴        | 16     | [点此购买](https://detail.tmall.com/item.htm?id=680516964370&skuId=4882059537282) | 1            |                            |
-| D2x20mm轴        | 12     | [点此购买](https://item.taobao.com/item.htm?id=25771992682)                       | 12（推荐15） |                            |
-| 20082B双层直齿轮 | 8      | [点此购买](https://item.taobao.com/item.htm?id=18751470868&skuId=45440640259)     | 8（推荐9）   |                            |
-| 182A齿轮         | 8      | [点此购买](https://item.taobao.com/item.htm?id=18760030298)                       | 8（推荐9）   | `需备注4.2MM厚度`          |
-| 242A齿轮         | 4      | [点此购买](https://item.taobao.com/item.htm?id=18762710098)                       | 4（推荐5）   |                            |
-| 682A蜗杆齿轮     | 4      | [点此购买](https://item.taobao.com/item.htm?id=20964703851)                       | 4（推荐5）   |                            |
-| FF-130 SH电机    | 4      | [点此购买](https://item.taobao.com/item.htm?id=586011289551)                      | 4（推荐5）   | 没货了                     |
-| 导线（5cm以上）  | 8      | [点此购买](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1            |                            |
-| 62B轴套          | 28     | [点此购买](https://item.taobao.com/item.htm?id=557038811656)                      | 3（推荐4）   |                            |
-| PC4气动头 6mm    | 4      | [点此购买](https://detail.tmall.com/item.htm?id=644546493913&skuId=4816633895773) | 4（推荐5）   |                            |
-| 弹簧0.5*6x10mm   | 4      | [点此购买](https://detail.tmall.com/item.htm?id=649882524891&skuId=4728198936053) | 1            |                            |
-| 弹簧0.6*4x10mm   | 4      | [点此购买](https://detail.tmall.com/item.htm?id=651034855393&skuId=4686988224285) | 1            |                            |
-| M2*8沉头自攻螺丝 | 48     | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1            |                            |
-| 1.5mm导光纤维    | 1m     | [点此购买](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1            | 也可以用透明耗材替代       |
+| Item Name             | Total Qty | Purchase Link                                                                     | Order Qty    | Notes                      |
+| --------------------- | --------- | --------------------------------------------------------------------------------- | ------------ | -------------------------- |
+| MR85ZZ Bearing       | 8         | [Buy Here](https://item.taobao.com/item.htm?id=729395585260&skuId=5058406261745)  | 8 (rec. 9)   |                            |
+| BMG Gear Set         | 4         | [Buy Here](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4            |                            |
+| D5x22mm Shaft        | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1            | Poor precision, select carefully |
+| D2x10mm Shaft        | 16        | [Buy Here](https://detail.tmall.com/item.htm?id=680516964370&skuId=4882059537282) | 1            |                            |
+| D2x20mm Shaft        | 12        | [Buy Here](https://item.taobao.com/item.htm?id=25771992682)                       | 12 (rec. 15) |                            |
+| 20082B Double Gear   | 8         | [Buy Here](https://item.taobao.com/item.htm?id=18751470868&skuId=45440640259)     | 8 (rec. 9)   |                            |
+| 182A Gear            | 8         | [Buy Here](https://item.taobao.com/item.htm?id=18760030298)                       | 8 (rec. 9)   | `Must specify 4.2MM thickness` |
+| 242A Gear            | 4         | [Buy Here](https://item.taobao.com/item.htm?id=18762710098)                       | 4 (rec. 5)   |                            |
+| 682A Worm Gear       | 4         | [Buy Here](https://item.taobao.com/item.htm?id=20964703851)                       | 4 (rec. 5)   |                            |
+| FF-130 SH Motor      | 4         | [Buy Here](https://item.taobao.com/item.htm?id=586011289551)                      | 4 (rec. 5)   | Out of stock               |
+| Wire (5cm+)          | 8         | [Buy Here](https://item.taobao.com/item.htm?id=555198400702&skuId=3425843024777)  | 1            |                            |
+| 62B Shaft Collar     | 28        | [Buy Here](https://item.taobao.com/item.htm?id=557038811656)                      | 3 (rec. 4)   |                            |
+| PC4 Pneumatic Fitting 6mm | 4      | [Buy Here](https://detail.tmall.com/item.htm?id=644546493913&skuId=4816633895773) | 4 (rec. 5)   |                            |
+| 0.5*6x10mm Spring    | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=649882524891&skuId=4728198936053) | 1            |                            |
+| 0.6*4x10mm Spring    | 4         | [Buy Here](https://detail.tmall.com/item.htm?id=651034855393&skuId=4686988224285) | 1            |                            |
+| M2*8 Countersunk Screw | 48      | [Buy Here](https://detail.tmall.com/item.htm?id=535515124518&skuId=3193947919795) | 1            |                            |
+| 1.5mm Light Guide Fiber | 1m     | [Buy Here](https://item.taobao.com/item.htm?id=641328879680&skuId=4600996816890)  | 1            | Can be replaced with transparent filament |
 
-### 底座部分
+### Base Assembly
 
-| 名称               | 总数量 | 购买链接                                                                          | 选择购买量 | 备注                      |
-| ------------------ | ------ | --------------------------------------------------------------------------------- | ---------- | ------------------------- |
-| M2*8沉头自攻螺丝   | 3      | 已有                                                                              | -          | 上述购买量已足够（100只） |
-| M3*14沉头自攻螺丝  | 9      | [点此购买](https://detail.tmall.com/item.htm?id=535515124518&skuId=4431253120193) | 1          |                           |
-| MX3.0-4P镜像连接线 | 1      | [点此购买](https://item.taobao.com/item.htm?id=748449242763&skuId=5162239945869)  | 1          | 公对公反向                |
+| Item Name                 | Total Qty | Purchase Link                                                                     | Order Qty  | Notes                     |
+| ------------------------- | --------- | --------------------------------------------------------------------------------- | ---------- | ------------------------- |
+| M2*8 Countersunk Screw    | 3         | Already included                                                                  | -          | Above quantity sufficient (100pcs) |
+| M3*14 Countersunk Screw   | 9         | [Buy Here](https://detail.tmall.com/item.htm?id=535515124518&skuId=4431253120193) | 1          |                           |
+| MX3.0-4P Mirror Cable     | 1         | [Buy Here](https://item.taobao.com/item.htm?id=748449242763&skuId=5162239945869)  | 1          | Male-to-male reverse      |
 
-### 支架部分
+### Bracket Assembly
 
-| 名称          | 总数量 | 购买链接                                                                          | 选择购买量 | 备注 |
-| ------------- | ------ | --------------------------------------------------------------------------------- | ---------- | ---- |
-| M3*10普通螺丝 | 2      | [点此购买](https://detail.tmall.com/item.htm?id=534706775015&skuId=3191939497531) | 1          |      |
-| M3螺母        | 2      | [点此购买](https://detail.tmall.com/item.htm?id=584675839451&skuId=5087996454459) | 1          |      |
+| Item Name          | Total Qty | Purchase Link                                                                     | Order Qty  | Notes |
+| ------------------ | --------- | --------------------------------------------------------------------------------- | ---------- | ----- |
+| M3*10 Screw        | 2         | [Buy Here](https://detail.tmall.com/item.htm?id=534706775015&skuId=3191939497531) | 1          |       |
+| M3 Nut             | 2         | [Buy Here](https://detail.tmall.com/item.htm?id=584675839451&skuId=5087996454459) | 1          |       |

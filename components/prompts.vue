@@ -194,9 +194,10 @@ const showthird = () => {
         content: () => h('div', { class: 'vp-doc' },
             ['为了提供更好的访问体验，该站点有多个域名。\n\n大陆访问者请访问:\n',
                 h('a', { href: 'https://bmcu.wanzii.cn', target: '_blank' }, 'https://bmcu.wanzii.cn'),
-                '\n\nIf you are not in Mainland China, please visit:\n',
-                h('a', { href: 'https://xwzkj.github.io/bmcu-doc', target: '_blank' }, 'https://xwzkj.github.io/bmcu-doc'),
-                '\n\nIn addition, there is a French website that is not related to this website and provides information in English:',
+                '\nIf you are not in Mainland China, please visit:\n',
+                h('a', { href: 'https://bmcu-cf.wanzii.cn', target: '_blank' }, 'https://bmcu-cf.wanzii.cn'),
+                '\n\n  The English content on this website is translated from Chinese by AI, which may result in inaccuracies and outdated content updates',
+                '\n\n  In addition, there is a French website that is not related to this website and provides information in English:',
                 h('a', { href: 'https://wiki.yuekai.fr', target: '_blank' }, 'https://wiki.yuekai.fr'),
             ])
     })
