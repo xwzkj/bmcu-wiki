@@ -57,7 +57,7 @@
 
 通常为磁铁或磁编码器（5600芯片）异常，请确认磁铁使用的是径向磁铁，带顶丝的挤出机齿轮不在扳手上，顶丝拧紧且电路板焊接无误
 
-![进退料异常.png](./assets/进退料异常.jpg)
+![进退料异常.png](/assets/debug/进退料异常.jpg)
 
 ### （130版）三角板跟着电机空转 只可 进/退 料
 
@@ -74,7 +74,7 @@
 
 若您使用的是类原版外壳，请检查是否安装了齿轮架
 
-![齿轮架](./assets/齿轮架.png)
+![齿轮架](/assets/debug/齿轮架.png)
 
 >除此之外 请注意齿轮润滑，以免后续发生更多问题
 
@@ -84,7 +84,7 @@
 
 [官方教程](https://wiki.bambulab.com/zh/a1/troubleshooting/ams-lite-filament-hub-cannot-hold-tube)
 
-![五通拆解图.jpg](./assets/五通拆解图.jpg)
+![五通拆解图.jpg](/assets/debug/五通拆解图.jpg)
 
 ### （370版）爆五通
 

@@ -11,7 +11,7 @@
 
 请前往[下载中心](../other/download-center)中的链接下载您需要烧录的固件bin文件 和 固件烧录工具
 
-![网盘分享](assets/flash/网盘分享.jpg)
+![网盘分享](/assets/build/flash/网盘分享.jpg)
 
 ## 固件烧录步骤
 
@@ -36,7 +36,7 @@
 | TX   | RX   |
 | RX   | TX   |
 
-[烧录器链接](assets/flash/烧录器连接.jpg)
+[烧录器链接](/assets/build/flash/烧录器连接.jpg)
 
 ### 检查电脑与模块连接
 
@@ -44,13 +44,13 @@
 
 在电脑的开始菜单搜索并打开“设备管理器”
 
-![搜索设备管理器](assets/flash/搜索设备管理器.jpg)
+![搜索设备管理器](/assets/build/flash/搜索设备管理器.jpg)
 
 在设备管理器中，展开`端口（COM和LPT）`
 
 应在内发现如图设备
 
-![设备管理器](assets/flash/设备管理器.jpg)
+![设备管理器](/assets/build/flash/设备管理器.jpg)
 
 记住此设备后面的端口号（图中为COM7）
 
@@ -74,7 +74,7 @@
 6. 点击`下载(D)`
 7. 等待右下角进度条跑完，显示成功
 
-![烧录工具](assets/flash/烧录工具.jpg)
+![烧录工具](/assets/build/flash/烧录工具.jpg)
 
 ### 确认烧录成功
 
