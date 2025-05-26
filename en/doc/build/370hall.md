@@ -216,7 +216,7 @@ You can now connect the board and perform basic filament loading/unloading tests
 
 If your WS2812B (4020 size) LEDs do not light up under any condition, double-check the soldering direction.
 
-![WS2812 Side Mount Diagram](../prepare/assets/侧贴2812.jpg)
+![WS2812 Side Mount Diagram](/assets/prepare/侧贴2812.jpg)
 
 #### LED Status Table
 
