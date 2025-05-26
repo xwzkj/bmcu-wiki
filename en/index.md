@@ -3,30 +3,29 @@
 layout: home
 
 hero:
-  image: 
+  image:
     light: /竹笋-黑.png
     dark: /竹笋-白.png
-    alt: 竹笋logo
-  name: "BMCU-wiki"
-  text: "BMCU的资料整合站"
-  tagline: 由BMCU社区共同打造
+    alt: bamboo shoots logo
+  name: BMCU-wiki
+  text: BMCU's data consolidation site
+  tagline: Created by the BMCU Community
   actions:
     - theme: brand
-      text: 查看资料
-      link: /doc/prepare/what-is-it
+      text: View Documentation
+      link: /en/doc/prepare/what-is-it
     - theme: alt
-      text: 前往gitee
+      text: Go to gitee
       link: https://gitee.com/at_4061N/BMCU
     - theme: alt
-      text: 前往立创开源硬件平台
+      text: Go to Litron Open Source Hardware Platform
       link: https://oshwhub.com/bamboo-shoot-xmcu-pcb-team/bmcu
 
-features:
-  - title: 成本低
-    details: 复刻成本仅需200+
-  - title: 兼容好
-    details: 适用于拓竹A1系列打印机，也稍有适配于P系列
-  - title: 开源
-    details: 开放共享，改版众多
+features: 
+  - title: Low cost
+    details: Replica cost only 200+
+  - title: Compatible
+    details: Suitable for Taktake A1 series printers, also slightly adapted to the P series
+  - title: Open Source
+    details: Open source, many revisions
 ---
-

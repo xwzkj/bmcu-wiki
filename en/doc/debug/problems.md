@@ -1,114 +1,111 @@
-# 常见问题
+# Frequently Asked Questions
 
-::: warning 提示
-本页内容仅为群聊内容或个人经验整理，未必准确
+::: warning NOTE
+The content on this page is compiled from group chat discussions and personal experiences, and may not be 100% accurate.
 
-绝大部分问题是焊接技术不过关导致的，请先行检查PCB焊接是否正常！！！
+Most issues are caused by poor soldering techniques - please check your PCB soldering first!!!
 :::
 
-## 固件相关
+## Firmware Related
 
-### 无法解除读写保护/固件烧录问题
+### Unable to remove write protection/firmware flashing issues
 
-检查以下项目：
+Check the following:
 
-- 是否已安装USB转TTL(串口)模块的驱动，通常是CH340通用串口驱动。
-- 是否选择了正确的处理器型号'CH32V203'，以及下载方式为'串口'。
-- 是否选择正确的端口号（前往设备管理器的`端口（COM和LPT）`中查看与购买模块所用芯片名称一致的项目的端口号，并在烧录软件中确认正确）
-  > 如果设备管理器中有识别，但是烧录软件中没有对应的端口号，就点一下`搜索`按钮再展开列表选择
-- 接线是否正确 正确的接线如下：
+- Have you installed the USB-to-TTL (serial) module driver? Typically the CH340 universal serial driver.
+- Have you selected the correct processor model 'CH32V203' and download method 'Serial'?
+- Is the correct COM port selected? (Check under Device Manager > Ports (COM & LPT) for the port number matching your module's chip, then verify in flashing software)
+  > If the port appears in Device Manager but not in flashing software, click 'Search' then expand the dropdown to select
+- Correct wiring connections:
 
-    | 主板 | 模块 |
+    | Board | Module |
     | :--- | :--- |
     | V+   | 3.3v |
     | GND  | GND  |
     | TX   | RX   |
     | RX   | TX   |
 
-  > 市面上有极少数模块是tx接tx rx接rx的（例如esp01s的专用串口模块），这类模块请参考商品说明
+  > A very few modules require TX-TX/RX-RX connections (e.g. ESP01S dedicated modules) - refer to product documentation
 
-- 是否正确按键，正确的操作为：
+- Correct button sequence:
   
-    1.接入杜邦线，并将串口模块接入计算机
+    1. Connect DuPont wires and plug serial module into computer
+    2. Hold 'B' button, briefly press 'R' button
+    3. Remove protection and flash firmware on computer
+    > Recommended to hold B button throughout the entire process
 
-    2.按住`B`键，短按`R`键
+- Check PCB soldering for cold joints, missed connections, or solder bridges
 
-    3.在计算机上解除保护 并刷入固件
-    > 文档中推荐全过程不松开B键
+- For CH340/CP2102 modules: Try clicking Download > Enable Auto Download > Confirm > Download again > "Write Protection Enabled" prompt appears. This usually occurs when the chip already has firmware.
 
-- 检查PCB焊接是否正常，是否有虚焊/漏焊/连锡
+- For other modules: Consider purchasing CH340/CP2102 modules like [this one](https://item.taobao.com/item.htm?abbucket=18&id=723291896174)
 
-- 如果没有问题并且使用了ch340/cp2102的模块，可以尝试先点击下载-提示开启自动下载-确定-再次点击下载-提示读写保护已使能-这时即可进行解除保护，通常可能会在芯片已经下载过固件后遇到。
+### (370 version) Motor rotates in wrong direction
 
-- 如果不是ch340/cp2102的模块，可以去买这两个芯片的模块，我用的是[这个](https://item.taobao.com/item.htm?abbucket=18&id=723291896174)
+Usually caused by firmware auto-direction detection failure. Solutions:
 
-### （370）电机方向反了
+- Reflash firmware
+- Disconnect problematic channel > Restart BMCU (press R) > Reconnect channel > Restart BMCU
+- Alternatively, simply swap the motor's positive/negative wires
 
-一般是固件自动识别方向出了问题，您可以尝试以下方法触发重新识别：
+## Filament Loading/Unloading
 
-- 重新刷入固件
-- 拔下有问题的通道，按r重启bmcu，插回有问题的通道，按r重启bmcu
+### Filament position detection failure/abnormal movement
 
-或者您可以简单粗暴的对调该电机的正负极
+Usually caused by magnet or magnetic encoder (5600 chip) issues. Verify:
+- Using radial magnets
+- Extruder gear with set screw is not on the wrench
+- Set screw is tight
+- PCB soldering is correct
 
-## 进退料相关
+![Loading Issue](/assets/debug/进退料异常.jpg)
 
-### 无法检测耗材位置 料丝行程异常
+### (130 version) Triangle plate spins freely with motor - only loads/unloads
 
-通常为磁铁或磁编码器（5600芯片）异常，请确认磁铁使用的是径向磁铁，带顶丝的挤出机齿轮不在扳手上，顶丝拧紧且电路板焊接无误
+Caused by insufficient triangle plate resistance. Solutions:
+- Apply damping grease to triangle plate gear
+- Apply small drop of 502 glue to gear shaft (face downward to prevent runoff), rotate gear before fully dry
+- Redesign/print triangle plate using models like `@xiaoxinleziren`'s [design](https://www.bilibili.com/video/BV1PuPCehEP3) or spring-loaded versions
+- Some users mount BMCU sideways to eliminate gravity effects
 
-![进退料异常.png](/assets/debug/进退料异常.jpg)
+### (130 version) Gear clicking noise during motor rotation
 
-### （130版）三角板跟着电机空转 只可 进/退 料
+Worm gear not inserted deeply enough. For original 'Mabuchi FF130-SH' motors, insert worm gear flush with motor shaft. For other motors, experiment with depth.
 
-该问题是由于三角板阻力过小导致，解决方法如下：
+For original-style housings, check if gear bracket is installed:
 
-- 在三角板齿轮上添加阻尼脂以增加阻力
-- 在三角板齿轮的轴处用502点一下，并将滴了502的一面朝下放置（防止流进齿轮），快干了的时候转一转齿轮，这样可以增加阻力又不会导致阻力不均
-- 更换三角板的模型设计，重新打印制作，例如使用 `@晓心乐子人` [视频简介](https://www.bilibili.com/video/BV1PuPCehEP3)中的模型 或 加弹簧的三角板 等
-- 群友还有将BMCU侧置以避免重力影响的操作
+![Gear Bracket](/assets/debug/齿轮架.png)
 
-### （130版）电机转的时候齿轮咔咔响
+> Also ensure proper gear lubrication to prevent future issues
 
-蜗杆插入不够深，如果使用的是原版的`万宝至FF130-SH`，请直接把蜗杆插到与电机轴平齐，若是其他版本请自行摸索
+### PTFE tube won't stay in five-way connector
 
-若您使用的是类原版外壳，请检查是否安装了齿轮架
+Solution: [Disassemble five-way connector](https://wiki.bambulab.com/zh/a1/maintenance/filament_hub_cleaning), flatten metal clip slightly, and ensure PTFE tube near extruder is vertical
 
-![齿轮架](/assets/debug/齿轮架.png)
+[Official guide](https://wiki.bambulab.com/zh/a1/troubleshooting/ams-lite-filament-hub-cannot-hold-tube)
 
->除此之外 请注意齿轮润滑，以免后续发生更多问题
+![Five-way Disassembly](/assets/debug/五通拆解图.jpg)
 
-### 五通咬不住特氟龙管
+### (370 version) Five-way connector failure
 
-方案：[将五通拆开](https://wiki.bambulab.com/zh/a1/maintenance/filament_hub_cleaning)，把铁片压平一些，并让特氟龙管靠近挤出机一侧垂直
+- Confirm firmware version - versions before 3-14 are more prone to failure
+- Use extended buffer modification or external buffer (recommended)
+- Use five-way reinforcement (temporary fix, best combined with above)
+- Switch to BMCU-C Hall effect version (permanent solution)
 
-[官方教程](https://wiki.bambulab.com/zh/a1/troubleshooting/ams-lite-filament-hub-cannot-hold-tube)
+Find related models on Makerworld
 
-![五通拆解图.jpg](/assets/debug/五通拆解图.jpg)
+## During Printing
 
-### （370版）爆五通
+### Frequent filament purging during prints
 
-- 确认固件版本，3-14版（不含）之前的早期版本更加容易爆五通
-- 采用缓冲器加长改版或直接使用`外置缓冲器`（推荐后者）
-- 使用五通加固件（治标不治本，建议搭配上一条使用）
-- 使用BMCU-C霍尔版(根治)
+Likely caused by filament length detection issues. Possible causes:
 
-相关打印件请自行前往makerworld查找
+- Radial magnet not rotating with BMG gear
+- Using 3mm ID PTFE tube between BMCU and printer reduces buffering
+- Excessively long PTFE tube sections
+- Non-standard filament diameter (unconfirmed theory)
 
-## 打印中
+## More Issues
 
-### 打印中经常去吐料槽冲刷耗材
-
-疑似为耗材丝里程检测问题。
-
-可能情况如下：
-
-- 径向磁铁没跟着bmg转动
-- bmcu与打印机之间使用了用内径3mm的特氟龙管，导致主动送料的bmcu缓冲不频繁，进而导致高速打印时里程对不上
-- 同第二条的理，这段使用了过长的特氟龙管也会导致此现象
-
-亦有猜测为耗材线径不标准导致，暂无定论
-
-## 更多问题
-
-请前往[130安装教程的常见问题板块](/doc/build/130#常见问题及处理解析)查看
+Visit the [FAQ section of the 130 installation guide](/doc/build/130#常见问题及处理解析) for additional troubleshooting.
