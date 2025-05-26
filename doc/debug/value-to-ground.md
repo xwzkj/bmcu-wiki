@@ -22,7 +22,7 @@
 
 - 测量对地值，需要把万用表打到**二极管档位**，很多表二极管档和蜂鸣档直接融合，数值较低会蜂鸣，较大会显示压降，有些则需要打到蜂鸣档按功能键，使用时注意单位即可。
 
-![pE1n95n.png](./assets/value-to-ground/e4845bbf337c17b77b81704ee1c7f3b8.png)
+![pE1n95n.png](/assets/debug/value-to-ground/e4845bbf337c17b77b81704ee1c7f3b8.png)
 
 - 如图在测量时把红表笔接PCB的 GND 端，黑笔去触碰被测点（**测负电压时需要反过来，如电脑电源的-5V -12V**）
   
@@ -32,7 +32,7 @@
 
 ### 示例
 
-![pE1wqG6.png](./assets/value-to-ground/pE1wqG6.png)
+![pE1wqG6.png](/assets/debug/value-to-ground/pE1wqG6.png)
 如图的排针座，我们把红笔接触到PCB中任意GND，如24V输入MX3.0端子的负极，黑笔测量RX，可能会得到的值 **730 790 430 0.000 OL** 。前文说过，该值体现的是被测点经过芯片到达GND的压降，会显示最小芯片的值，而RX点通过电路图我们可得知它同时连接CH32的31脚、75176的1脚、排阻RN3的3脚上拉。下面来分析一下各值。
 
 - **730**  
@@ -53,21 +53,21 @@
 ### 排座对地值参考
 
 - 我的数值参考
-![pE1uQoj.png](./assets/value-to-ground/pE1uQoj.png)
+![pE1uQoj.png](/assets/debug/value-to-ground/pE1uQoj.png)
 
 ### 2.0接口对地值参考
 
 - 我的数值参考
-![pE1rrlV.png](./assets/value-to-ground/pE1rrlV.png)
+![pE1rrlV.png](/assets/debug/value-to-ground/pE1rrlV.png)
 
 - 群友的数值参考
-![pE1ro6K.png](./assets/value-to-ground/pE1ro6K.png)
+![pE1ro6K.png](/assets/debug/value-to-ground/pE1ro6K.png)
 
 ### 小板对地值参考
 
 - 我的数值参考
-![pE1r5Sx.png](./assets/value-to-ground/pE1r5Sx.png)
+![pE1r5Sx.png](/assets/debug/value-to-ground/pE1r5Sx.png)
 - 群友的数值参考
-![pE1rjfI.png](./assets/value-to-ground/pE1rjfI.png)
+![pE1rjfI.png](/assets/debug/value-to-ground/pE1rjfI.png)
 - 那我的值跟上面都不一样，无法对比怎么办？正如人与人的体质不一样，芯片也不一样，上下浮动正常，就算数值超出1.0V，击穿部分但如果它没全坏，有些部分还是能工作的，只要不是对地短路，都可以放心上电试试。
 - 我的数值跟上面都一样，确认连线正确，TTL设备完好，还是无法烧录，无法解锁识别怎么办？搬板大法，建议只焊接芯片CH32、排阻RN3，短接B按钮的焊点，只满足TTL工作条件进行烧录测试。

@@ -21,25 +21,25 @@
 - 打印件外壳
 - 打印件[磁铁极性确定装置](https://makerworld.com.cn/zh/models/1141340)
 
-![磁铁极性确定装置](./assets/build-370hall/极性确定装置.jpg)
+![磁铁极性确定装置](/assets/build/build-370hall/极性确定装置.jpg)
 
 ## 正文
 
 ### 组件名称介绍
 
-![组件名称介绍](./assets/build-370hall/名称介绍.jpg)
+![组件名称介绍](/assets/build/build-370hall/名称介绍.jpg)
 
 ### 安装轴套
 
 按照下图将62B轴套塞入后盖以及中框中
 
-![安装轴套](./assets/build-370hall/轴套.jpg)
+![安装轴套](/assets/build/build-370hall/轴套.jpg)
 
 ### 将D2*20轴与182A齿轮组装
 
 使两端露出部分长度近似
 
-![将D2*20轴与182A齿轮组装](./assets/build-370hall/齿轮轴.jpg)
+![将D2*20轴与182A齿轮组装](/assets/build/build-370hall/齿轮轴.jpg)
 
 ### 给370电机安装蜗杆并焊接电机线
 
@@ -47,7 +47,7 @@
 
 电机有红点的引脚为正极
 
-![给370电机安装蜗杆并焊接电机线](./assets/build-370hall/蜗杆.jpg)
+![给370电机安装蜗杆并焊接电机线](/assets/build/build-370hall/蜗杆.jpg)
 
 ### 确定滑块磁铁的极性
 
@@ -57,11 +57,11 @@
 
 找来一个容器（碗、盘子、水瓢、脸盆等均可），加入适量水
 
-![一盆水](./assets/build-370hall/水.jpg)
+![一盆水](/assets/build/build-370hall/水.jpg)
 
 将两个D3*10磁铁吸在一起，放入[磁铁极性确定装置](https://makerworld.com.cn/zh/models/1141340)，并将装置浮在水面
 
-![磁铁极性确定装置](./assets/build-370hall/磁铁极性.jpg)
+![磁铁极性确定装置](/assets/build/build-370hall/磁铁极性.jpg)
 
 待稳定后，磁铁朝向南方的一端为南极，另一端为北极
 
@@ -69,7 +69,7 @@
 
 按照下图方向摆放滑块，则磁铁南极朝下插入滑块此处（南极靠近气动接头安装位置）
 
-![将磁铁装入滑块](./assets/build-370hall/滑块磁铁.jpg)
+![将磁铁装入滑块](/assets/build/build-370hall/滑块磁铁.jpg)
 
 重要：**令磁铁处于滑块磁铁安装位的正中间**
 
@@ -77,23 +77,23 @@
 
 使用M2*8自攻螺丝拧入滑块
 
-![固定滑块磁铁](./assets/build-370hall/滑块螺丝.jpg)
+![固定滑块磁铁](/assets/build/build-370hall/滑块螺丝.jpg)
 
 ### 安装电机
 
 将电机放入此位置，并使用一颗M3*5机牙螺丝拧紧固定
 
-![安装电机](./assets/build-370hall/电机螺丝.jpg)
+![安装电机](/assets/build/build-370hall/电机螺丝.jpg)
 
 ### 安装螺母与螺母塞
 
 将一个M3六角螺母放入此处凹槽，并塞进螺母塞以固定（忘了拍图，挺好理解的，意会一下）
 
-![安装螺母与螺母塞](./assets/build-370hall/螺母塞.jpg)
+![安装螺母与螺母塞](/assets/build/build-370hall/螺母塞.jpg)
 
 ### 放入齿轮
 
-![放入齿轮](./assets/build-370hall/齿轮.jpg)
+![放入齿轮](/assets/build/build-370hall/齿轮.jpg)
 
 ### 组装BMG主动轮
 
@@ -105,45 +105,45 @@
 
 ### 放入BMG主动轮
 
-![放入BMG主动轮](./assets/build-370hall/bmg.jpg)
+![放入BMG主动轮](/assets/build/build-370hall/bmg.jpg)
 
 ### 放入钢珠
 
-![放入钢珠](./assets/build-370hall/钢珠.jpg)
+![放入钢珠](/assets/build/build-370hall/钢珠.jpg)
 
 ### 放入断料滑块
 
 注意滑块方向
 
-![放入断料滑块](./assets/build-370hall/断料滑块.jpg)
+![放入断料滑块](/assets/build/build-370hall/断料滑块.jpg)
 
 ### 上润滑
 
 给齿轮进行润滑（可以拿下来润一圈放回去，BMG就不用润滑了）
 
-![齿轮上润滑](./assets/build-370hall/润滑齿轮.jpg)
+![齿轮上润滑](/assets/build/build-370hall/润滑齿轮.jpg)
 
 给滑块进行润滑（可选）
 
-![滑块上润滑](./assets/build-370hall/润滑滑块.jpg)
+![滑块上润滑](/assets/build/build-370hall/润滑滑块.jpg)
 
 ### 安装滑块与滑块弹簧
 
 将两个`0.8*12*25弹簧`放入滑块两端，卡在滑块安装位内（图中我为了演示临时使用了370钢珠版用的0.7*12*30弹簧，必须扶着才不会飞出来，您安装时不会这样困难）
 
-![安装滑块与滑块弹簧](./assets/build-370hall/滑块弹簧.jpg)
+![安装滑块与滑块弹簧](/assets/build/build-370hall/滑块弹簧.jpg)
 
 ### 安装断料滑块弹簧
 
 将一个`0.3*4*5弹簧`放入断料滑块上方
 
-![安装断料滑块弹簧](./assets/build-370hall/断料滑块弹簧.jpg)
+![安装断料滑块弹簧](/assets/build/build-370hall/断料滑块弹簧.jpg)
 
 ### 安装中框
 
 将中框扣在后盖上，滑块有磁铁的那部分是要穿过中框的
 
-![安装中框](./assets/build-370hall/中框.jpg)
+![安装中框](/assets/build/build-370hall/中框.jpg)
 
 拧上五个M2*8自攻螺丝固定
 
@@ -151,7 +151,7 @@
 
 将一个`0.6*4*10弹簧`放入如下位置，放入准备好的扳手
 
-![安装扳手](./assets/build-370hall/扳手1.jpg)
+![安装扳手](/assets/build/build-370hall/扳手1.jpg)
 
 ::: tip
 若您的管线及料架阻力较大，或者您使用p1打印机，请使用[此模型](https://makerworld.com.cn/zh/models/1167775)垫在扳手弹簧槽内，以增大咬合力
@@ -159,17 +159,17 @@
 
 用手按住扳手，穿入一根D2*20的轴
 
-![安装扳手](./assets/build-370hall/扳手2.jpg)
+![安装扳手](/assets/build/build-370hall/扳手2.jpg)
 
 用东西垫着用力压入到底，在用螺丝刀深入压入凹坑底部
 
-![安装扳手](./assets/build-370hall/扳手3.jpg)
+![安装扳手](/assets/build/build-370hall/扳手3.jpg)
 
 ### 安装径向磁铁
 
 在BMG主动轮上方吸附一个D6*2.5的径向磁铁，确保不会被任何东西压到，确保跟着bmg转动（重要）
 
-![安装径向磁铁](./assets/build-370hall/径向磁铁.jpg)
+![安装径向磁铁](/assets/build/build-370hall/径向磁铁.jpg)
 
 ::: info 建议
 在此时插入耗材，使用12v~24v电源接通电机以`测试是否可以拉动耗材`、`磁铁是否跟着转`以及`将润滑脂抹匀`
@@ -183,27 +183,27 @@
 
 将副板放在此处
 
-![安装副板](./assets/build-370hall/副板.jpg)
+![安装副板](/assets/build/build-370hall/副板.jpg)
 
 使用两个M2*8自攻螺丝固定，并焊接电机线
 
-![螺丝拧紧并焊线](./assets/build-370hall/固定副板并焊接电机线.jpg)
+![螺丝拧紧并焊线](/assets/build/build-370hall/固定副板并焊接电机线.jpg)
 
 将长出来的线塞进此处
 
-![整理线材](./assets/build-370hall/整理线材.jpg)
+![整理线材](/assets/build/build-370hall/整理线材.jpg)
 
 ### 安装前盖
 
 用四个M2*8自攻螺丝固定
 
-![安装前盖](./assets/build-370hall/前盖.jpg)
+![安装前盖](/assets/build/build-370hall/前盖.jpg)
 
 ### 安装气动接头
 
 将气动接头拧在滑块上
 
-![安装气动接头](./assets/build-370hall/气动接头.jpg)
+![安装气动接头](/assets/build/build-370hall/气动接头.jpg)
 
 ### 完成
 
