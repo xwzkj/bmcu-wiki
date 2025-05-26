@@ -79,7 +79,11 @@ export default defineConfig({
       },
       {
         text: '其他',
-        items: [{ text: '支持wiki运行', link: '/doc/other/donate' }]
+        items: [
+          { text: "将BMCU用于P/X系列打印机", link: "/doc/other/bmcu-on-px" },
+          { text: '下载中心', link: '/doc/other/download-center' },
+          { text: '支持wiki运行', link: '/doc/other/donate' }
+        ]
       }
     ],
 
