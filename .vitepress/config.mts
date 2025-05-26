@@ -63,6 +63,7 @@ export default defineConfig({
       {
         text: '制作中',
         items: [
+          { text: '固件烧录', link: '/doc/build/flash-firmware' },
           { text: '130制作教程', link: '/doc/build/130' },
           { text: '180制作教程', link: '/doc/build/180' },
           { text: 'BMCU370x制作教程（星尘微动版）', link: '/doc/build/bmcu370x' },
