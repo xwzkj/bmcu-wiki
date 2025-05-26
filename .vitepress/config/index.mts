@@ -29,7 +29,7 @@ export default defineConfig({
     ]
   ],
   lastUpdated: true,
-  cleanUrls: true,
+  // cleanUrls: true,
   sitemap: {
     hostname: 'https://bmcu.wanzii.cn'
   },
