@@ -1,3 +1,28 @@
 node_modules
 .vitepress/cache
 .vitepress/dist
+
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 系统相关
+*.log
+*.tmp
+*.bak
+
+# VS Code 工作区配置
+.vscode/
