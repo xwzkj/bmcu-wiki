@@ -34,7 +34,7 @@ function getConfig(): DefaultTheme.Config {
                 items: [
                     { text: "Using BMCU with P/X Series Printers", link: "/en/doc/other/bmcu-on-px" },
                     { text: 'Download Center', link: '/en/doc/other/download-center' },
-                    { text: 'Support the Wiki', link: '/en/doc/other/donate' }
+                    // { text: 'Support the Wiki', link: '/en/doc/other/donate' }
                 ]
             }
         ],
