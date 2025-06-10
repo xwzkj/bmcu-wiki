@@ -76,7 +76,7 @@ function getConfig(): DefaultTheme.Config {
                     { text: 'XMCU抓包工具', link: '/doc/other/packet-sniffer' },
                     { text: "将BMCU用于P/X系列打印机", link: "/doc/other/bmcu-on-px" },
                     { text: '下载中心', link: '/doc/other/download-center' },
-                    { text: '支持wiki运行', link: '/doc/other/donate' }
+                    // { text: '支持wiki运行', link: '/doc/other/donate' }
                 ]
             }
         ],
