@@ -24,22 +24,6 @@ jobs:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
-      # - name: Add SSH host key
-      #   run: |
-      #     mkdir -p ~/.ssh
-      #     ssh-keyscan ${{secrets.SERVER_IP}} >> ~/.ssh/known_hosts
-      #     chmod 644 ~/.ssh/known_hosts
-
-      # - name: Setup SSH Key
-      #   run: |
-      #     mkdir -p ~/.ssh
-      #     echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
-      #     chmod 600 ~/.ssh/id_ed25519
-
-
-      # - name: 手动 SSH 连接测试
-      #   run: ssh -vvv -i ~/.ssh/id_ed25519 root@${{secrets.SERVER_IP}}
-
 
       # 拉取代码
       - name: pull
@@ -74,35 +58,30 @@ jobs:
         uses: actions/deploy-pages@v4
           
           
-      - name: 为服务器构建
-        run: |
-          jq '.base = "/"' conf.json > tmp.json 
-          mv tmp.json conf.json
-          npm install
-          npm run build
-
-      - name: 打包文件为tar.gz
-        run: cd .vitepress/dist && tar -czvf ../../site.tar.gz *
-
-      - name: 发布到服务器
-        uses: marcodallasanta/ssh-scp-deploy@v1.2.0
-        with:
-          local: 'site.tar.gz'                                                  # Local file path - REQUIRED false - DEFAULT ./
-          remote: '/opt/xwzkj/temp/' # Remote file path - REQUIRED false - DEFAULT ~/
-          host: ${{secrets.SERVER_IP}}                                 # Remote server address - REQUIRED true
-          port: '22'                                                   # Remote server port - REQUIRED false - DEFAULT 22
-          user: 'root'                                                 # Remote server user - REQUIRED true
-          key: ${{secrets.SSH_PRIVATE_KEY}}                                        # Remote server private key - REQUIRED at least one of "password" or "key" 
-          pre_upload: rm -f /opt/xwzkj/temp/site.tar.gz
-          # 删掉之前的打包
-          # Command to run via ssh before scp upload - REQUIRED false
-          post_upload: cd /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index/ && rm -rf * && tar -xzvf /opt/xwzkj/temp/site.tar.gz && rm -f /opt/xwzkj/temp/site.tar.gz
-          # Command to run via ssh after scp upload - REQUIRED false
-          ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
-          scp_options: -v
-          
-      # - name: 服务器网络连通性测试
+      # - name: 为服务器构建
       #   run: |
-      #     ping -c 4 ${{secrets.SERVER_IP}}
-          
+      #     jq '.base = "/"' conf.json > tmp.json 
+      #     mv tmp.json conf.json
+      #     npm install
+      #     npm run build
+
+      # - name: 打包文件为tar.gz
+      #   run: cd .vitepress/dist && tar -czvf ../../site.tar.gz *
+
+      # - name: 发布到服务器
+      #   uses: marcodallasanta/ssh-scp-deploy@v1.2.0
+      #   with:
+      #     local: 'site.tar.gz'                                                  # Local file path - REQUIRED false - DEFAULT ./
+      #     remote: '/opt/xwzkj/temp/' # Remote file path - REQUIRED false - DEFAULT ~/
+      #     host: ${{secrets.SERVER_IP}}                                 # Remote server address - REQUIRED true
+      #     port: '22'                                                   # Remote server port - REQUIRED false - DEFAULT 22
+      #     user: 'root'                                                 # Remote server user - REQUIRED true
+      #     key: ${{secrets.SSH_PRIVATE_KEY}}                                        # Remote server private key - REQUIRED at least one of "password" or "key" 
+      #     pre_upload: rm -f /opt/xwzkj/temp/site.tar.gz
+      #     # 删掉之前的打包
+      #     # Command to run via ssh before scp upload - REQUIRED false
+      #     post_upload: cd /opt/1panel/apps/openresty/openresty/www/sites/bmcu.xwzkj.top/index/ && rm -rf * && tar -xzvf /opt/xwzkj/temp/site.tar.gz && rm -f /opt/xwzkj/temp/site.tar.gz
+      #     # Command to run via ssh after scp upload - REQUIRED false
+      #     ssh_options: -o StrictHostKeyChecking=no                     # A set of ssh_option separated by -o - REQUIRED false - DEFAULT -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+      #     scp_options: -v
           
