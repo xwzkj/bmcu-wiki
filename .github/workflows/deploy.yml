@@ -38,10 +38,17 @@ jobs:
 
       # github pages相关
 
+      # - name: 为pages构建
+      #   run: |
+      #     jq '.base = "/bmcu-doc/"' conf.json > tmp.json 
+      #     mv tmp.json conf.json
+      #     npm install
+      #     npm run build
+
+
+      # 现在使用自定义域名，不用改base
       - name: 为pages构建
         run: |
-          jq '.base = "/bmcu-doc/"' conf.json > tmp.json 
-          mv tmp.json conf.json
           npm install
           npm run build
 
