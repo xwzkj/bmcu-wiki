@@ -211,7 +211,7 @@ const showthird = () => {
             content: () => h('div', { class: 'vp-doc' },
                 ['  丸子因学业暂停wiki维护，欢迎大家前往',
                     h('a', { href: 'https://github.com/xwzkj/bmcu-doc', target: '_blank' }, 'github仓库'),
-                    '提交pr\n\n  目前该站点关联的域名将被重定向至github pages',
+                    '提交pr\n\n  目前该站点关联的域名将被重定向至github pages，它使用cloudflare cdn，并未使用又拍云。',
                     // h('a', { href: 'https://xwzkj.github.io/bmcu-doc', target: '_blank' }, 'https://xwzkj.github.io/bmcu-doc'),
                     '\n\n  The English content on this website is translated from Chinese by AI, which may result in inaccuracies and outdated content updates',
                     '\n\n  In addition, there is a French website that is not related to this website and provides information in English:',
