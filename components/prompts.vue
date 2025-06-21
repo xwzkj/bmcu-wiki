@@ -7,7 +7,7 @@ const notification = useNotification()
 
 let preStatus = { studyOnly: 0, hard: 0, websites: 0, websitesV1: 0 }
 
-let preLocalStorage = JSON.parse(localStorage.getItem('prompts-status') ?? {})
+let preLocalStorage = JSON.parse(localStorage.getItem('prompts-status') ?? '{}')
 
 for (let key in preLocalStorage) {
     preStatus[key] = preLocalStorage[key]
