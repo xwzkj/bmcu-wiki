@@ -20,7 +20,7 @@ BMCU通过模拟bambu bus通讯协议、模拟ams lite和ams的运行逻辑，�
 
 <!-- 如果该网站对您有所帮助，欢迎前往赞助页面向我[打赏](/doc/other/donate)，您的支持将使该网站得以获得更好的资源，为您提供更好的体验！ -->
 
-该网站目前放养，欢迎各位大神前往[GitHub](https://github.com/xwzkj/bmcu-doc)提交pull request以对该站点进行内容贡献
+该网站目前放养，欢迎各位大神前往[GitHub](https://github.com/xwzkj/bmcu-wiki)提交pull request以对该站点进行内容贡献
 
 ### 贡献须知
 
