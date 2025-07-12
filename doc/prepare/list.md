@@ -229,7 +229,7 @@ bmcu使用的特氟龙管为2.5*4mm规格的乳白色或灰色PTFE管，**不可
 | BMG齿轮套装      | 4      | [点此购买](https://item.taobao.com/item.htm?id=623450049026&skuId=5274263566537)  | 4            |                            |
 | D5x22mm轴        | 4      | [点此购买](https://detail.tmall.com/item.htm?id=690274527829&skuId=5659167538247) | 1            | 精度不好，用之前选公差小的 |
 | D2x10mm轴        | 16     | [点此购买](https://detail.tmall.com/item.htm?id=680516964370&skuId=4882059537282) | 1            |                            |
-| D2x20mm轴        | 12     | [点此购买](https://item.taobao.com/item.htm?id=25771992682)                       | 12（推荐15） |                            |
+| D2x20mm轴        | 16     | [点此购买](https://item.taobao.com/item.htm?id=25771992682)                       | 16（推荐20） |                            |
 | 20082B双层直齿轮 | 8      | [点此购买](https://item.taobao.com/item.htm?id=18751470868&skuId=45440640259)     | 8（推荐9）   |                            |
 | 182A齿轮         | 8      | [点此购买](https://item.taobao.com/item.htm?id=18760030298)                       | 8（推荐9）   | `需备注4.2MM厚度`          |
 | 242A齿轮         | 4      | [点此购买](https://item.taobao.com/item.htm?id=18762710098)                       | 4（推荐5）   |                            |
