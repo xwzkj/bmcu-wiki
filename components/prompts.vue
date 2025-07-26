@@ -20,7 +20,7 @@ let text = ref({
         name: '中文',
         title: '警告',
         text1: '该项目仅供学习，任何销售行为与我们无关',
-        text2: '我们最近发现有卖家在aliexpress等平台对bmcu成品进行销售，此行为与我们无关'
+        text2: '我们最近发现有卖家在aliexpress等平台对bmcu成品进行销售，此行为与我们无关,我们谴责商业化行为'
     },
     en: {
         name: 'English',
@@ -175,7 +175,7 @@ lang.value = (() => {
 console.log('自动识别语言:', lang.value);
 
 const showfirst = () => {
-    if (preStatus.studyOnly < 5) {
+    if (preStatus.studyOnly < 2) {
         show.value[0] = true
         preStatus.studyOnly++
         localStorage.setItem('prompts-status', JSON.stringify(preStatus))
@@ -185,7 +185,7 @@ const showfirst = () => {
 
 }
 const showsecond = () => {
-    if (preStatus.hard < 3) {
+    if (preStatus.hard < 2) {
         show.value[1] = true
         preStatus.hard++
         localStorage.setItem('prompts-status', JSON.stringify(preStatus))
