@@ -20,6 +20,9 @@ hero:
     - theme: alt
       text: 前往立创开源硬件平台
       link: https://oshwhub.com/bamboo-shoot-xmcu-pcb-team/bmcu
+    - theme: alt
+      text: 前往wiki GitHub
+      link: https://github.com/xwzkj/bmcu-wiki
 
 features:
   - title: 成本低
