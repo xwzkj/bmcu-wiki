@@ -42,10 +42,11 @@ BMCU通过模拟bambu bus通讯协议、模拟ams lite和ams的运行逻辑，�
 
 1. 改动后的内容可以正确运行并被`vitepress`渲染
 2. 单个图片大小**不超过500KB**，过大的图片会导致较差的浏览体验，可通过[工具](https://github.com/meowtec/Imagine)进行批量压缩
-3. 内容的准确性和时效性
-4. 页面的**易读性**
-5. 新增的内容在站点中不重复存在
-6. 其他可能被认为需要被确认的条目
+3. **页面的语法应符合标准**，应通过vscode插件[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)的语法检查
+4. 内容的准确性和时效性
+5. 页面的**易读性**
+6. 新增的内容在站点中不重复存在
+7. 其他可能被认为需要被确认的条目
 
 若您的提交不符合以上要求，请修改后再次提交，谢谢
 
