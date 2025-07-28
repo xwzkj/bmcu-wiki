@@ -11,7 +11,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "devDependencies": {
     "vite": "^6.1.1",
     "vitepress": "^1.6.3"
