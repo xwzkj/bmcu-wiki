@@ -1,6 +1,6 @@
 # Download Center
 
-All resources are available via this cloud storage link: [Click Here](https://www.123912.com/s/qX7iVv-ZVxbv?提取码:wanz)
+All resources are available via this cloud storage link: [Click Here](https://www.123912.com/s/qX7iVv-1Eabv?pwd=wanz)
 
 Extraction Code: wanz
 
