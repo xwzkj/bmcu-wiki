@@ -1,6 +1,6 @@
 # 下载中心
 
-以下所有资源的网盘链接：[点此](https://www.123912.com/s/qX7iVv-ZVxbv?提取码:wanz)
+以下所有资源的网盘链接：[点此](https://www.123912.com/s/qX7iVv-1Eabv?pwd=wanz)
 
 提取码：wanz
 
