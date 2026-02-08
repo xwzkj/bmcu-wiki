@@ -194,33 +194,25 @@ const showsecond = () => {
     }
 }
 const showthird = () => {
-    if (preStatus?.websitesV1 < 5)
+    if (preStatus?.websitesV1 < 5 || true) {
         notification.create({
             title: '提示',
             duration: 60 * 1000,
-            //        content: () => h('div', { class: 'vp-doc' },
-            //            ['为了提供更好的访问体验，该站点有多个域名。\n\n大陆访问者请访问:\n',
-            //                h('a', { href: 'https://bmcu.wanzii.cn', target: '_blank' }, 'https://bmcu.wanzii.cn'),
-            //                '\nIf you are not in Mainland China, please visit:\n',
-            //                h('a', { href: 'https://bmcu-cf.wanzii.cn', target: '_blank' }, 'https://bmcu-cf.wanzii.cn'),
-            //                '\n\n  The English content on this website is translated from Chinese by AI, which may result in inaccuracies and outdated content updates',
-            //                '\n\n  In addition, there is a French website that is not related to this website and provides information in English:',
-            //                h('a', { href: 'https://wiki.yuekai.fr', target: '_blank' }, 'https://wiki.yuekai.fr'),
-            //            ]),
-
             content: () => h('div', { class: 'vp-doc' },
-                ['  丸子因学业暂停wiki维护，欢迎大家前往',
+                [
+                    h('span', { style: { color: 'red' } }, '  本站内容已停更很久 请自行根据页面底部“最后更新于”判断时效性！'),
+                    '\n  丸子因学业暂停wiki维护，欢迎大家前往',
                     h('a', { href: 'https://github.com/xwzkj/bmcu-doc', target: '_blank' }, 'github仓库'),
-                    '提交pr\n\n  目前源站更改为github pages，并使用cloudflare cdn，未使用又拍云。',
-                    // h('a', { href: 'https://xwzkj.github.io/bmcu-doc', target: '_blank' }, 'https://xwzkj.github.io/bmcu-doc'),
+                    '提交pr\n\n  目前源站更改为github pages，并使用cloudflare cdn。',
                     '\n\n  因目前的服务托管不会造成费用，捐赠入口已关闭。',
                     '\n\n  The English content on this website is translated from Chinese by AI, which may result in inaccuracies and outdated content updates',
                     '\n\n  In addition, there is a French website that is not related to this website and provides information in English:',
                     h('a', { href: 'https://wiki.yuekai.fr', target: '_blank' }, 'https://wiki.yuekai.fr'),
                 ]),
         })
-    preStatus.websitesV1++
-    localStorage.setItem('prompts-status', JSON.stringify(preStatus))
+        // preStatus.websitesV1++
+        // localStorage.setItem('prompts-status', JSON.stringify(preStatus))
+    }
 }
 
 showfirst() // 打开第一个弹窗
