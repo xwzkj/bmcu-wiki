@@ -56,11 +56,13 @@ function getConfig(): DefaultTheme.Config {
                 text: '制作中',
                 items: [
                     { text: '固件烧录', link: '/doc/build/flash-firmware' },
-                    { text: '130制作教程', link: '/doc/build/130' },
-                    { text: '180制作教程', link: '/doc/build/180' },
-                    { text: 'BMCU370x制作教程（星尘微动版）', link: '/doc/build/bmcu370x' },
-                    { text: 'BMCU-B（370钢珠版）制作教程', link: '/doc/build/370' },
-                    { text: 'BMCU-C（370霍尔版）制作教程', link: '/doc/build/370hall' },
+                    { text: 'BMCU-C-370X星尘霍尔单微动版(副板半过时)', link: '/doc/build/bmcu370x' },
+                    { text: 'BMCU-C-370原版霍尔光电版', link: '/doc/build/370hall' },
+                    { text: 'BMCU-C-40V-370霍尔双微动优化版', link: '/doc/build/bmcu370_40V' },
+                    { text: 'BMCU-A-130(副板过时)', link: '/doc/build/130' },
+                    // { text: 'BMCU-B-370钢珠版制作教程(完全过时)', link: '/doc/build/370' },
+                    // { text: 'BMCU-A-180制作教程(完全过时)', link: '/doc/build/180' },
+                    
                 ]
             },
             {
