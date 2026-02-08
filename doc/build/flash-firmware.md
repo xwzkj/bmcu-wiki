@@ -36,7 +36,7 @@
 | TX   | RX   |
 | RX   | TX   |
 
-[烧录器链接](/assets/build/flash/烧录器连接.jpg)
+![烧录器链接](/assets/build/flash/烧录器连接.jpg)
 
 ### 检查电脑与模块连接
 
