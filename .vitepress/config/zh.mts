@@ -60,8 +60,8 @@ function getConfig(): DefaultTheme.Config {
                     { text: 'BMCU-C-370原版霍尔光电版', link: '/doc/build/370hall' },
                     { text: 'BMCU-C-40V-370霍尔双微动优化版', link: '/doc/build/bmcu370_40V' },
                     { text: 'BMCU-A-130(副板过时)', link: '/doc/build/130' },
-                    // { text: 'BMCU-B-370钢珠版制作教程(完全过时)', link: '/doc/build/370' },
-                    // { text: 'BMCU-A-180制作教程(完全过时)', link: '/doc/build/180' },
+                    { text: 'BMCU-B-370钢珠版制作教程(完全过时)', link: '/doc/build/370' },
+                    { text: 'BMCU-A-180制作教程(完全过时)', link: '/doc/build/180' },
                     
                 ]
             },
